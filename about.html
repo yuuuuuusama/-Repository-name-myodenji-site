@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知る | 感応山 妙傳寺</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --floral-white: #FFFAF0;
+            --cherry-pink: #FADADD;
+            --deep-pink: #D48A94;
+            --gold-yellow: #E6B422;
+            --soft-yellow: #FFF9E5;
+            --charcoal: #333333;
+            --text-gray: #555555;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Shippori Mincho', serif;
+            background-color: var(--floral-white);
+            color: var(--charcoal);
+            line-height: 1.8;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: rgba(255, 250, 240, 0.95);
+            border-bottom: 2px solid var(--gold-yellow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo a { text-decoration: none; color: inherit; }
+        .logo h1 { font-size: 1.4rem; letter-spacing: 0.1em; margin: 0; }
+        .logo span { font-size: 0.8rem; display: block; color: var(--gold-yellow); font-weight: bold; }
+
+        .main-nav ul { display: flex; list-style: none; gap: 20px; }
+        .main-nav a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        .main-nav a:hover { color: var(--deep-pink); }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        .hamburger span { display: block; width: 25px; height: 2px; background: var(--charcoal); }
+
+        .mobile-nav { display: none; background: var(--floral-white); border-top: 1px solid var(--gold-yellow); }
+        .mobile-nav ul { list-style: none; padding: 10px 20px; }
+        .mobile-nav li { border-bottom: 1px solid #eee; }
+        .mobile-nav a { display: block; padding: 12px 0; text-decoration: none; color: var(--charcoal); font-weight: 700; }
+        .mobile-nav.open { display: block; }
+
+        /* --- Page Hero --- */
+        .page-hero {
+            background: var(--soft-yellow);
+            border-bottom: 3px solid var(--gold-yellow);
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .page-hero h2 {
+            font-size: 2.2rem;
+            color: var(--charcoal);
+            margin-bottom: 10px;
+        }
+        .page-hero p { color: var(--text-gray); font-size: 1rem; }
+
+        /* --- 目次 --- */
+        .toc {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .toc-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .toc-grid a {
+            background: #fff;
+            border: 1px solid var(--gold-yellow);
+            color: var(--charcoal);
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-grid a:hover {
+            background: var(--gold-yellow);
+            color: #fff;
+        }
+
+        /* --- Sections --- */
+        .detail-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            border-bottom: 1px solid var(--cherry-pink);
+        }
+        .detail-section:last-of-type { border-bottom: none; }
+
+        .section-label {
+            font-size: 0.8rem;
+            color: var(--gold-yellow);
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+        }
+
+        .detail-section h3 {
+            font-size: 1.8rem;
+            color: var(--charcoal);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--gold-yellow);
+        }
+
+        .detail-section p {
+            color: var(--text-gray);
+            font-size: 1rem;
+            margin-bottom: 20px;
+            max-width: 700px;
+        }
+
+        .detail-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border: 1px solid var(--cherry-pink);
+        }
+
+        /* 御守護神タグ */
+        .deity-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .deity-item {
+            background: var(--cherry-pink);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .deity-detail {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .deity-card {
+            background: #fff;
+            border: 1px solid var(--cherry-pink);
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .deity-card h4 {
+            color: var(--deep-pink);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* 年中行事テーブル */
+        .events-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .events-table th, .events-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        .events-table th {
+            background: var(--soft-yellow);
+            color: var(--charcoal);
+            font-weight: bold;
+            width: 120px;
+        }
+
+        /* 法雨バックナンバー */
+        .newsletter-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .newsletter-list li {
+            background: #fff;
+            border: 1px solid var(--cherry-pink);
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .newsletter-list li span { font-size: 0.85rem; color: var(--text-gray); }
+
+        /* 戻るボタン */
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: var(--gold-yellow);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover { background: #cfa11d; }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--charcoal);
+            color: #fff;
+            padding: 60px 20px 20px;
+            text-align: center;
+        }
+        .footer-logo { font-size: 1.8rem; margin-bottom: 20px; }
+        .copyright { margin-top: 40px; font-size: 0.8rem; color: #999; }
+
+        @media (max-width: 768px) {
+            .main-nav { display: none; }
+            .hamburger { display: flex; }
+            .detail-section { padding: 50px 20px; }
+            .detail-section h3 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <span>日蓮宗</span>
+                <h1>感応山 妙傳寺</h1>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#home">ホーム</a></li>
+                <li><a href="index.html#about">知る</a></li>
+                <li><a href="index.html#rituals">仏事・弔い</a></li>
+                <li><a href="index.html#ossuary">納骨堂・墓</a></li>
+                <li><a href="index.html#prayer">ご祈祷</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="メニュー">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html#home">ホーム</a></li>
+            <li><a href="index.html#about">知る</a></li>
+            <li><a href="index.html#rituals">仏事・弔い</a></li>
+            <li><a href="index.html#ossuary">納骨堂・墓</a></li>
+            <li><a href="index.html#prayer">ご祈祷</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="page-hero">
+    <h2>知る</h2>
+    <p>妙傳寺の歴史と歩み</p>
+</div>
+
+<!-- 目次 -->
+<div class="toc">
+    <div class="toc-grid">
+        <a href="#myodenji">妙傳寺について</a>
+        <a href="#greeting">ご挨拶</a>
+        <a href="#nichiren">日蓮宗について</a>
+        <a href="#grounds">境内案内</a>
+        <a href="#deities">御守護神</a>
+        <a href="#newsletter">妙傳寺だより「法雨」</a>
+        <a href="#events">年中行事</a>
+    </div>
+</div>
+
+<!-- 妙傳寺について -->
+<section id="myodenji" class="detail-section">
+    <div class="section-label">ABOUT</div>
+    <h3>妙傳寺について</h3>
+    <img src="temple.jpg" alt="妙傳寺" class="detail-img">
+    <p>感応山妙傳寺は、北海道室蘭市常盤町に所在する日蓮宗の寺院です。</p>
+    <p>当山は室蘭の地において、長きにわたり地域の皆様の信仰の拠り所として歩んでまいりました。法華経の教えのもと、先祖供養・各種祈祷・仏事全般を承り、皆様の心に寄り添い続けております。</p>
+    <p>どうぞお気軽にご参拝ください。</p>
+    <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
+</section>
+
+<!-- ご挨拶 -->
+<section id="greeting" class="detail-section">
+    <div class="section-label">GREETING</div>
+    <h3>ご挨拶</h3>
+    <p>皆様、いつも妙傳寺へのご参拝・ご支援を賜り、誠にありがとうございます。</p>
+    <p>当山住職としてこの地に立ち、日々感じるのは、人と人との縁の尊さ、そして仏法の深さです。どのような悩みを抱えたお方も、どうかこの寺の門をくぐり、ともに手を合わせていただければと思います。</p>
+    <p>「南無妙法蓮華経」のお題目を唱えることは、心を整え、日常に静けさをもたらします。仏事・ご相談はもちろん、何気ないお参りも大歓迎です。皆様のお越しを心よりお待ち申し上げております。</p>
+    <p style="text-align:right; font-weight:bold; margin-top:30px;">感応山 妙傳寺 住職</p>
+    <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
+</section>
+
+<!-- 日蓮宗について -->
+<section id="nichiren" class="detail-section">
+    <div class="section-label">NICHIREN SHU</div>
+    <h3>日蓮宗について</h3>
+    <p>日蓮宗は、鎌倉時代の僧・日蓮聖人（1222〜1282年）が開いた仏教宗派です。法華経（妙法蓮華経）をすべての仏教経典の根本と位置づけ、「南無妙法蓮華経」のお題目を唱えることを実践の中心としています。</p>
+    <p>日蓮聖人は、混乱した時代にあって、正しい法華経の教えによってのみ人も国も救われると説き続けました。その精神は現代においても受け継がれ、私たちの日々の生活に法華経の教えを活かすことを大切にしています。</p>
+    <p>お題目「南無妙法蓮華経」には、すべての命への感謝と、仏の知恵への帰依の意味が込められています。</p>
+    <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
+</section>
+
+<!-- 境内案内 -->
+<section id="grounds" class="detail-section">
+    <div class="section-label">GROUNDS</div>
+    <h3>境内案内</h3>
+    <img src="temple.jpg" alt="境内" class="detail-img">
+    <p>感応山妙傳寺の境内には、荘厳な本堂をはじめ、各守護神をお祀りする諸堂が立ち並びます。四季折々に異なる表情を見せる境内は、日々のお参りの場としてはもちろん、心を落ち着かせる静かな空間としてご利用いただけます。</p>
+    <p>ご参拝の際はどうぞ境内をゆっくりとご散策ください。</p>
+    <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
+</section>
+
+<!-- 御守護神 -->
+<section id="deities" class="detail-section">
+    <div class="section-label">DEITIES</div>
+    <h3>御守護神</h3>
+    <p>当山には、様々なご利益をもたらす守護神様方がお祀りされています。</p>
+    <div class="deity-detail">
+        <div class="deity-card">
+            <h4>鬼子母神</h4>
+            <p>子育て・安産・家内安全のご利益で知られる女神。子を守る慈悲深い守護神として広く信仰されています。</p>
+        </div>
+        <div class="deity-card">
+            <h4>大黒天</h4>
+            <p>商売繁盛・五穀豊穣・福徳のご利益をもたらす神様。笑顔と打ち出の小槌が象徴です。</p>
+        </div>
+        <div class="deity-card">
+            <h4>八大龍王</h4>
+            <p>雨や水を司る龍神の王。海上安全・雨乞い・諸願成就のご利益があるとされます。</p>
+        </div>
+        <div class="deity-card">
+            <h4>慈母観音菩薩</h4>
+            <p>母の慈愛のように人々を救う観音菩薩。水子供養・子授け・縁結びのご利益で信仰されます。</p>
+        </div>
+        <div class="deity-card">
+            <h4>妙蘭弁才天</h4>
+            <p>音楽・芸術・知恵・財運を司る女神。学業成就・芸能上達・金運向上のご利益があります。</p>
+        </div>
+        <div class="deity-card">
+            <h4>三宝荒神</h4>
+            <p>仏・法・僧の三宝を守護し、火と竈の神としても知られます。家内安全・厄除けのご利益があります。</p>
+        </div>
+    </div>
+    <a href="index.html#about" class="back-btn" style="margin-top:40px; display:inline-block;">← 知るトップへ戻る</a>
+</section>
+
+<!-- 妙傳寺だより「法雨」 -->
+<section id="newsletter" class="detail-section">
+    <div class="section-label">NEWSLETTER</div>
+    <h3>妙傳寺だより「法雨」</h3>
+    <p>「法雨（ほうう）」は、妙傳寺が定期的にお届けしているおたよりです。季節の法話や行事のご案内、住職からのメッセージなどをお届けしています。</p>
+    <ul class="newsletter-list">
+        <li>
+            <span>最新号</span>
+            <strong>2026年 春号</strong>
+            <span>準備中</span>
+        </li>
+        <li>
+            <span>バックナンバー</span>
+            <strong>2025年 冬号</strong>
+            <span>準備中</span>
+        </li>
+        <li>
+            <span>バックナンバー</span>
+            <strong>2025年 秋号</strong>
+            <span>準備中</span>
+        </li>
+    </ul>
+    <p style="margin-top:20px; font-size:0.9rem; color:var(--text-gray);">※ 購読をご希望の方はお問い合わせください。</p>
+    <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
+</section>
+
+<!-- 年中行事 -->
+<section id="events" class="detail-section">
+    <div class="section-label">ANNUAL EVENTS</div>
+    <h3>年中行事</h3>
+    <p>妙傳寺では、年間を通じてさまざまな仏教行事を執り行っております。</p>
+    <table class="events-table">
+        <tr><th>1月</th><td>初詣・修正会（しゅしょうえ）</td></tr>
+        <tr><th>2月</th><td>節分会・星まつり</td></tr>
+        <tr><th>3月</th><td>春彼岸会</td></tr>
+        <tr><th>4月</th><td>花まつり（釈尊降誕会）</td></tr>
+        <tr><th>7月</th><td>盂蘭盆会（うらぼんえ）・施餓鬼会</td></tr>
+        <tr><th>9月</th><td>秋彼岸会</td></tr>
+        <tr><th>10月</th><td>お会式（宗祖日蓮聖人御忌）</td></tr>
+        <tr><th>12月</th><td>成道会・除夜の鐘</td></tr>
+    </table>
+    <p style="margin-top:20px; font-size:0.9rem; color:var(--text-gray);">※ 日程は年により変わる場合があります。詳細はお問い合わせください。</p>
+    <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
+</section>
+
+<footer>
+    <div class="footer-logo">感応山 妙傳寺</div>
+    <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+</footer>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('mobileNav').classList.remove('open');
+        });
+    });
+
+    document.getElementById('hamburger').addEventListener('click', function () {
+        document.getElementById('mobileNav').classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>

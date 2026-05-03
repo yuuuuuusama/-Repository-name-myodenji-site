@@ -338,6 +338,28 @@
             color: #999;
         }
 
+        /* --- Card Link --- */
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .card-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(232, 167, 176, 0.3);
+            border-color: var(--gold-yellow);
+        }
+        .card-more {
+            display: block;
+            margin-top: auto;
+            padding-top: 15px;
+            font-size: 0.85rem;
+            color: var(--gold-yellow);
+            font-weight: bold;
+        }
+
         /* --- Mobile Optimization --- */
         @media (max-width: 768px) {
             .main-nav { display: none; }
@@ -405,23 +427,27 @@
             <p>妙傳寺の歴史と歩み</p>
         </div>
         <div class="card-grid">
-            <div class="card">
+            <a href="about.html#myodenji" class="card card-link">
                 <h3>妙傳寺について</h3>
                 <p>当山の縁起と、室蘭の地で受け継がれてきた信仰の歴史についてご紹介します。</p>
-            </div>
-            <div class="card">
+                <span class="card-more">詳しく見る →</span>
+            </a>
+            <a href="about.html#greeting" class="card card-link">
                 <h3>ご挨拶</h3>
                 <p>住職・役僧の紹介。皆様の心に寄り添うお寺であり続けるための想いを綴ります。</p>
-            </div>
-            <div class="card">
+                <span class="card-more">詳しく見る →</span>
+            </a>
+            <a href="about.html#nichiren" class="card card-link">
                 <h3>日蓮宗について</h3>
                 <p>「南無妙法蓮華経」のお題目を唱え、法華経の教えを広める日蓮宗の教義について。</p>
-            </div>
-            <div class="card">
+                <span class="card-more">詳しく見る →</span>
+            </a>
+            <a href="about.html#grounds" class="card card-link">
                 <h3>境内案内</h3>
                 <p>四季折々の表情を見せる本堂や境内の諸堂をご案内いたします。</p>
-            </div>
-            <div class="card">
+                <span class="card-more">詳しく見る →</span>
+            </a>
+            <a href="about.html#deities" class="card card-link">
                 <h3>御守護神</h3>
                 <p>当山に祀られている守護神様方です。</p>
                 <div class="deity-grid">
@@ -432,15 +458,18 @@
                     <span class="deity-item">妙蘭弁才天</span>
                     <span class="deity-item">三宝荒神</span>
                 </div>
-            </div>
-            <div class="card">
+                <span class="card-more">詳しく見る →</span>
+            </a>
+            <a href="about.html#newsletter" class="card card-link">
                 <h3>妙傳寺だより「法雨」</h3>
                 <p>定期的にお届けしているおたよりのバックナンバーや最新号をご覧いただけます。</p>
-            </div>
-            <div class="card">
+                <span class="card-more">詳しく見る →</span>
+            </a>
+            <a href="about.html#events" class="card card-link">
                 <h3>年中行事</h3>
                 <p>初詣からお盆、お会式まで、年間を通じて行われる仏教行事のご案内です。</p>
-            </div>
+                <span class="card-more">詳しく見る →</span>
+            </a>
         </div>
     </section>
 
