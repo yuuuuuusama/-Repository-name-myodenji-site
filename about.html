@@ -221,6 +221,43 @@
         }
         .newsletter-list li span { font-size: 0.85rem; color: var(--text-gray); }
 
+        /* ご挨拶 */
+        .greeting-block { margin-bottom: 40px; }
+        .greeting-title {
+            font-size: 1.3rem;
+            color: var(--deep-pink);
+            margin-bottom: 15px;
+            padding-left: 12px;
+            border-left: 3px solid var(--gold-yellow);
+        }
+        .greeting-subtitle {
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: var(--charcoal);
+            margin-bottom: 15px;
+        }
+        .greeting-sign {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 20px;
+            color: var(--charcoal);
+        }
+        .greeting-photo-placeholder {
+            background: var(--soft-yellow);
+            border: 1px dashed var(--gold-yellow);
+            padding: 30px;
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .greeting-divider {
+            border: none;
+            border-top: 1px solid var(--cherry-pink);
+            margin: 40px 0;
+        }
+
         /* 戻るボタン */
         .back-btn {
             display: inline-block;
@@ -322,10 +359,29 @@
 <section id="greeting" class="detail-section">
     <div class="section-label">GREETING</div>
     <h3>ご挨拶</h3>
-    <p>皆様、いつも妙傳寺へのご参拝・ご支援を賜り、誠にありがとうございます。</p>
-    <p>当山住職としてこの地に立ち、日々感じるのは、人と人との縁の尊さ、そして仏法の深さです。どのような悩みを抱えたお方も、どうかこの寺の門をくぐり、ともに手を合わせていただければと思います。</p>
-    <p>「南無妙法蓮華経」のお題目を唱えることは、心を整え、日常に静けさをもたらします。仏事・ご相談はもちろん、何気ないお参りも大歓迎です。皆様のお越しを心よりお待ち申し上げております。</p>
-    <p style="text-align:right; font-weight:bold; margin-top:30px;">感応山 妙傳寺 住職</p>
+
+    <!-- 住職 -->
+    <div class="greeting-block">
+        <h4 class="greeting-title">敷居のない、開かれたお寺を目指して</h4>
+        <div class="greeting-photo-placeholder">※ 住職の写真をここに掲載予定</div>
+        <p>「お寺は決して特別な場所ではありません。悩みがある時、あるいは何気ない日常の中で、ふと立ち寄りたくなる『心の休憩所』でありたいと願っています。」</p>
+        <p class="greeting-sign">感応山 妙傳寺 住職</p>
+    </div>
+
+    <hr class="greeting-divider">
+
+    <!-- 副住職 -->
+    <div class="greeting-block">
+        <h4 class="greeting-title">時代に寄り添い、あなたの「今」を支える仏教を。</h4>
+        <p class="greeting-subtitle">「お寺は、今をより良く生きるための場所です」</p>
+        <p>こんにちは、感応山 妙傳寺の副住職です。</p>
+        <p>お寺と聞くと『敷居が高い』『お葬式の時だけ行く場所』というイメージを持たれるかもしれません。しかし、日蓮宗の教えは、今を生きる私たちが困難を乗り越え、自分らしく輝くための知恵に満ちています。</p>
+        <p>私自身、皆さまと同じ時代を生きる一人として、伝統を大切に守りながらも、現代の悩みやライフスタイルに寄り添った形でお題目をお伝えしていきたいと考えています。</p>
+        <p>どんなに些細な悩み事でも、あるいはちょっとした嬉しい報告でも構いません。散歩の途中にふらりと立ち寄るような気軽さで、妙傳寺の門を叩いてみてください。</p>
+        <p>乾いた心に、そっとお題目の雨（法雨）が潤いを与えてくれる。そんな安らぎのひとときを、皆さまと共に分かち合えれば幸いです。</p>
+        <p class="greeting-sign">感応山 妙傳寺 副住職</p>
+    </div>
+
     <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
 </section>
 
