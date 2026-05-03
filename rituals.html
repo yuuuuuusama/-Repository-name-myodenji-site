@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仏事・弔い | 感応山 妙傳寺</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --floral-white: #FFFAF0;
+            --cherry-pink: #FADADD;
+            --deep-pink: #D48A94;
+            --gold-yellow: #E6B422;
+            --soft-yellow: #FFF9E5;
+            --charcoal: #333333;
+            --text-gray: #555555;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Shippori Mincho', serif; background-color: var(--floral-white); color: var(--charcoal); line-height: 1.8; }
+
+        header { background-color: rgba(255, 250, 240, 0.95); border-bottom: 2px solid var(--gold-yellow); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo a { text-decoration: none; color: inherit; }
+        .logo h1 { font-size: 1.4rem; letter-spacing: 0.1em; margin: 0; }
+        .logo span { font-size: 0.8rem; display: block; color: var(--gold-yellow); font-weight: bold; }
+        .main-nav ul { display: flex; list-style: none; gap: 20px; }
+        .main-nav a { text-decoration: none; color: var(--charcoal); font-weight: 700; font-size: 0.95rem; transition: color 0.3s; }
+        .main-nav a:hover { color: var(--deep-pink); }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 5px; }
+        .hamburger span { display: block; width: 25px; height: 2px; background: var(--charcoal); }
+        .mobile-nav { display: none; background: var(--floral-white); border-top: 1px solid var(--gold-yellow); }
+        .mobile-nav ul { list-style: none; padding: 10px 20px; }
+        .mobile-nav li { border-bottom: 1px solid #eee; }
+        .mobile-nav a { display: block; padding: 12px 0; text-decoration: none; color: var(--charcoal); font-weight: 700; }
+        .mobile-nav.open { display: block; }
+
+        .page-hero { background: var(--soft-yellow); border-bottom: 3px solid var(--gold-yellow); padding: 50px 20px; text-align: center; }
+        .page-hero h2 { font-size: 2.2rem; color: var(--charcoal); margin-bottom: 10px; }
+        .page-hero p { color: var(--text-gray); font-size: 1rem; }
+
+        .toc { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .toc-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .toc-grid a { background: #fff; border: 1px solid var(--gold-yellow); color: var(--charcoal); text-decoration: none; padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; font-weight: bold; transition: background 0.2s, color 0.2s; }
+        .toc-grid a:hover { background: var(--gold-yellow); color: #fff; }
+
+        .detail-section { max-width: 900px; margin: 0 auto; padding: 80px 20px; border-bottom: 1px solid var(--cherry-pink); }
+        .detail-section:last-of-type { border-bottom: none; }
+        .section-label { font-size: 0.8rem; color: var(--gold-yellow); font-weight: bold; letter-spacing: 0.2em; margin-bottom: 10px; }
+        .detail-section h3 { font-size: 1.8rem; color: var(--charcoal); padding-bottom: 15px; margin-bottom: 30px; border-bottom: 2px solid var(--gold-yellow); }
+        .detail-section h4 { font-size: 1.2rem; color: var(--deep-pink); margin: 30px 0 15px; padding-left: 12px; border-left: 3px solid var(--gold-yellow); }
+        .detail-section p { color: var(--text-gray); font-size: 1rem; margin-bottom: 20px; max-width: 700px; }
+        .detail-section ul { color: var(--text-gray); margin: 0 0 20px 1.5em; max-width: 700px; }
+        .detail-section ul li { margin-bottom: 8px; }
+
+        .photo-slot { width: 100%; height: 200px; background: var(--soft-yellow); border: 1px dashed var(--gold-yellow); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-gray); font-size: 0.85rem; margin-bottom: 20px; border-radius: 4px; gap: 8px; }
+        .photo-slot-icon { font-size: 1.8rem; opacity: 0.5; }
+
+        .info-table { width: 100%; border-collapse: collapse; margin: 20px 0; max-width: 700px; }
+        .info-table th, .info-table td { padding: 12px 15px; border-bottom: 1px solid #eee; text-align: left; font-size: 0.95rem; }
+        .info-table th { background: var(--soft-yellow); color: var(--charcoal); font-weight: bold; width: 160px; vertical-align: top; }
+
+        .back-btn { display: inline-block; margin-top: 20px; padding: 10px 25px; background: var(--gold-yellow); color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px; transition: background 0.3s; }
+        .back-btn:hover { background: #cfa11d; }
+
+        footer { background: var(--charcoal); color: #fff; padding: 60px 20px 20px; text-align: center; }
+        .footer-logo { font-size: 1.8rem; margin-bottom: 20px; }
+        .copyright { margin-top: 40px; font-size: 0.8rem; color: #999; }
+
+        @media (max-width: 768px) {
+            .main-nav { display: none; }
+            .hamburger { display: flex; }
+            .detail-section { padding: 50px 20px; }
+            .detail-section h3 { font-size: 1.4rem; }
+            .info-table th, .info-table td { display: block; width: 100%; }
+            .info-table th { border-bottom: none; padding-bottom: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <span>日蓮宗</span>
+                <h1>感応山 妙傳寺</h1>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#home">ホーム</a></li>
+                <li><a href="index.html#about">知る</a></li>
+                <li><a href="index.html#rituals">仏事・弔い</a></li>
+                <li><a href="index.html#ossuary">納骨堂・墓</a></li>
+                <li><a href="index.html#prayer">ご祈祷</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="メニュー">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html#home">ホーム</a></li>
+            <li><a href="index.html#about">知る</a></li>
+            <li><a href="index.html#rituals">仏事・弔い</a></li>
+            <li><a href="index.html#ossuary">納骨堂・墓</a></li>
+            <li><a href="index.html#prayer">ご祈祷</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="page-hero">
+    <h2>仏事・弔い</h2>
+    <p>大切な方への想いをかたちに</p>
+</div>
+
+<div class="toc">
+    <div class="toc-grid">
+        <a href="#monthly">月参り</a>
+        <a href="#memorial">法事・先祖供養</a>
+        <a href="#funeral">お葬式</a>
+        <a href="#eternal">永代供養</a>
+        <a href="#mizuko">水子供養</a>
+        <a href="#pet">ペット供養</a>
+    </div>
+</div>
+
+<section id="monthly" class="detail-section">
+    <div class="section-label">MONTHLY</div>
+    <h3>月参り（つきまいり）</h3>
+    <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（月参り）</div>
+    <p>毎月、ご命日にあわせて僧侶がご自宅へ伺い、お仏壇の前でお経をお唱えする供養です。日々の暮らしの中でご先祖さまと向き合うひとときを、僧侶が共にお勤めいたします。</p>
+    <p>故人さまの月命日のご供養はもちろん、お仏壇の取り扱いや日々のお勤めについてのご相談も承ります。お気軽にお声がけください。</p>
+    <h4>月参りの流れ</h4>
+    <ul>
+        <li>事前にご都合の良い日時をご相談ください</li>
+        <li>当日、僧侶がご自宅へお伺いします</li>
+        <li>お仏壇の前でお題目・お経をお唱えします（約20〜30分）</li>
+        <li>ご家族でお焼香・ご供養いただきます</li>
+    </ul>
+    <a href="index.html#rituals" class="back-btn">← 仏事・弔いトップへ戻る</a>
+</section>
+
+<section id="memorial" class="detail-section">
+    <div class="section-label">MEMORIAL</div>
+    <h3>法事・先祖供養</h3>
+    <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（法事）</div>
+    <p>四十九日・一周忌・三回忌をはじめとする年回法要を、本堂またはご自宅にて執り行います。法要は故人さまへの感謝を表し、ご先祖さまとの繋がりを改めて確かめる大切な営みです。</p>
+    <h4>主な年回法要</h4>
+    <table class="info-table">
+        <tr><th>四十九日</th><td>ご逝去から49日目。忌明けの大切な節目です。</td></tr>
+        <tr><th>百ヶ日</th><td>ご逝去から100日目の供養。</td></tr>
+        <tr><th>一周忌</th><td>ご逝去から満1年。</td></tr>
+        <tr><th>三回忌</th><td>満2年（数えで3年目）。</td></tr>
+        <tr><th>七回忌</th><td>満6年（数えで7年目）。</td></tr>
+        <tr><th>十三回忌・十七回忌・二十三回忌・二十七回忌・三十三回忌</th><td>以降、節目ごとに営みます。</td></tr>
+    </table>
+    <p>お塔婆のお申し込みや、お斎（おとき）の手配などについてもご相談に応じます。日程はお早めにご連絡いただけますと幸いです。</p>
+    <a href="index.html#rituals" class="back-btn">← 仏事・弔いトップへ戻る</a>
+</section>
+
+<section id="funeral" class="detail-section">
+    <div class="section-label">FUNERAL</div>
+    <h3>お葬式</h3>
+    <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（葬儀）</div>
+    <p>日蓮宗の作法に則り、故人さまをお見送りいたします。お題目をお唱えし、戒名（法号）をお授けすることで、故人さまが安らかに仏さまのもとへ旅立たれるよう、心を込めてお勤めいたします。</p>
+    <h4>急なご不幸の際は</h4>
+    <p>急を要するご葬儀のご相談は、24時間お電話にて承っております。葬儀社がまだお決まりでない場合のご相談にも応じます。</p>
+    <p style="font-size: 1.4rem; color: var(--gold-yellow); font-weight: bold;">☎ 0143-22-4284</p>
+    <h4>お葬式の流れ</h4>
+    <ul>
+        <li>ご逝去のご連絡 → 枕経（まくらぎょう）</li>
+        <li>お通夜</li>
+        <li>葬儀・告別式</li>
+        <li>火葬・収骨</li>
+        <li>初七日法要・還骨勤行</li>
+    </ul>
+    <p>ご家族のお気持ちに寄り添い、形式に縛られすぎず、故人さまらしいお見送りができるようご相談に応じます。</p>
+    <a href="index.html#rituals" class="back-btn">← 仏事・弔いトップへ戻る</a>
+</section>
+
+<section id="eternal" class="detail-section">
+    <div class="section-label">ETERNAL MEMORIAL</div>
+    <h3>永代供養</h3>
+    <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（永代供養）</div>
+    <p>「お墓の継承者がいない」「遠方で頻繁にお参りできない」など、現代のさまざまなご事情に応じて、当山が永代にわたりご供養を続ける制度です。</p>
+    <p>毎日の読経を通じて、故人さまへの感謝と祈りを永遠に繋ぎ続けます。お一人さまでも、ご夫婦でも、ご家族単位でもお申し込みいただけます。</p>
+    <h4>こんな方にご利用いただいています</h4>
+    <ul>
+        <li>お墓の後継ぎがいらっしゃらない方</li>
+        <li>お子さまに負担をかけたくないとお考えの方</li>
+        <li>遠方にお住まいで、お参りが難しい方</li>
+        <li>生前のうちに供養先を決めておきたい方</li>
+    </ul>
+    <p>詳細・費用などはお気軽にお問い合わせください。</p>
+    <a href="index.html#rituals" class="back-btn">← 仏事・弔いトップへ戻る</a>
+</section>
+
+<section id="mizuko" class="detail-section">
+    <div class="section-label">MIZUKO</div>
+    <h3>水子供養</h3>
+    <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（水子供養）</div>
+    <p>この世に生を受けることが叶わなかった、小さな命のためのご供養です。流産・死産・中絶などにより別れを経験されたご家族の心に寄り添い、その魂が安らかであるようお祈りいたします。</p>
+    <p>ご供養はご家族のお気持ちが最も大切です。お一人で抱え込まず、まずはお気軽にご相談ください。当山の慈母観音菩薩さまが、優しくその御魂を見守ってくださいます。</p>
+    <a href="index.html#rituals" class="back-btn">← 仏事・弔いトップへ戻る</a>
+</section>
+
+<section id="pet" class="detail-section">
+    <div class="section-label">PET MEMORIAL</div>
+    <h3>ペット供養</h3>
+    <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（ペット供養）</div>
+    <p>家族の一員として共に過ごしたペットたちへの感謝と弔いの気持ちを、お経とともにお捧げいたします。動物たちもまた、私たちの大切な仏縁を結ぶ存在です。</p>
+    <h4>承っているご供養</h4>
+    <ul>
+        <li>ご逝去時の枕経・葬儀</li>
+        <li>四十九日・年回法要</li>
+        <li>納骨（ペット供養墓）</li>
+        <li>合同供養祭への参列</li>
+    </ul>
+    <p>「家族同然だった存在を、きちんと見送ってあげたい」というお気持ちを大切に、心を込めてお勤めいたします。</p>
+    <a href="index.html#rituals" class="back-btn">← 仏事・弔いトップへ戻る</a>
+</section>
+
+<footer>
+    <div class="footer-logo">感応山 妙傳寺</div>
+    <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+</footer>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('mobileNav').classList.remove('open');
+        });
+    });
+    document.getElementById('hamburger').addEventListener('click', function () {
+        document.getElementById('mobileNav').classList.toggle('open');
+    });
+</script>
+
+</body>
+</html>
