@@ -258,6 +258,35 @@
             margin: 40px 0;
         }
 
+        /* 境内案内リスト */
+        .grounds-list { margin-top: 30px; }
+        .grounds-item {
+            display: flex;
+            gap: 20px;
+            padding: 25px 0;
+            border-bottom: 1px solid var(--cherry-pink);
+        }
+        .grounds-item:last-child { border-bottom: none; }
+        .grounds-num {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: var(--gold-yellow);
+            min-width: 36px;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .grounds-body h4 {
+            font-size: 1.1rem;
+            color: var(--charcoal);
+            margin-bottom: 5px;
+        }
+        .grounds-subtitle {
+            font-size: 0.9rem;
+            color: var(--deep-pink);
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
         /* 戻るボタン */
         .back-btn {
             display: inline-block;
@@ -389,9 +418,20 @@
 <section id="nichiren" class="detail-section">
     <div class="section-label">NICHIREN SHU</div>
     <h3>日蓮宗について</h3>
-    <p>日蓮宗は、鎌倉時代の僧・日蓮聖人（1222〜1282年）が開いた仏教宗派です。法華経（妙法蓮華経）をすべての仏教経典の根本と位置づけ、「南無妙法蓮華経」のお題目を唱えることを実践の中心としています。</p>
-    <p>日蓮聖人は、混乱した時代にあって、正しい法華経の教えによってのみ人も国も救われると説き続けました。その精神は現代においても受け継がれ、私たちの日々の生活に法華経の教えを活かすことを大切にしています。</p>
-    <p>お題目「南無妙法蓮華経」には、すべての命への感謝と、仏の知恵への帰依の意味が込められています。</p>
+    <h4 class="greeting-title">『南無妙法蓮華経』お題目の心</h4>
+    <p>日蓮宗は、お釈迦さまが説かれた最高の教えである『法華経（ほけきょう）』をよりどころとする宗団です。この法華経を身をもって実証し、布教された日蓮大聖人（にちれんだいしょうにん）を宗祖とお仰ぎしています。</p>
+    <p>法華経の教えを信じ、その魂が込められた『南無妙法蓮華経』のお題目をお唱えすることで、私たち自身の内にある「仏の心」を呼び覚まします。私たちがこの信行に励み、教えを弘めていくことは、個人のしあわせにとどまらず、人類の幸福、ひいては世界平和へとつながっていくものであると確信しています。</p>
+
+    <h4 class="greeting-title" style="margin-top:40px;">宗旨</h4>
+    <table class="events-table">
+        <tr><th>名称</th><td>日蓮宗（にちれんしゅう）</td></tr>
+        <tr><th>宗祖</th><td>日蓮大聖人（にちれんだいしょうにん）</td></tr>
+        <tr><th>開宗</th><td>建長５年４月２８日（西暦１２５３年・鎌倉時代）</td></tr>
+        <tr><th>本尊</th><td>久遠の本師釈迦牟尼佛（くおんのほんししゃかむにぶつ）</td></tr>
+        <tr><th>題目</th><td>南無妙法蓮華経（なむみょうほうれんげきょう）</td></tr>
+    </table>
+    <h4 class="greeting-title" style="margin-top:30px;">教義</h4>
+    <p>日蓮宗はお釈迦さまの説かれた最高の教えである法華経をよりどころとする宗団です。この法華経を身をもって読まれ布教をせられた日蓮大聖人を宗祖と仰いでおります。本宗の教義は法華経の魂をお題目にこめられた宗祖の教えに導かれて私たちが信行に励みこの教えを弘めることによってやがて世界平和と人類の幸福ひいては個人のしあわせにつながる事を確信できる教えであります。</p>
     <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
 </section>
 
@@ -399,41 +439,129 @@
 <section id="grounds" class="detail-section">
     <div class="section-label">GROUNDS</div>
     <h3>境内案内</h3>
-    <img src="temple.jpg" alt="境内" class="detail-img">
-    <p>感応山妙傳寺の境内には、荘厳な本堂をはじめ、各守護神をお祀りする諸堂が立ち並びます。四季折々に異なる表情を見せる境内は、日々のお参りの場としてはもちろん、心を落ち着かせる静かな空間としてご利用いただけます。</p>
-    <p>ご参拝の際はどうぞ境内をゆっくりとご散策ください。</p>
+    <p>室蘭の自然に抱かれた妙傳寺の境内には、心安らぐ祈りのスポットが点在しています。どなたでも、どうぞご自由にお参りください。</p>
+    <img src="temple.jpg" alt="妙傳寺境内" class="detail-img">
+
+    <div class="grounds-list">
+        <div class="grounds-item">
+            <div class="grounds-num">1</div>
+            <div class="grounds-body">
+                <h4>本堂（ほんどう）</h4>
+                <p class="grounds-subtitle">お題目と日蓮大聖人が見守る、祈りの中心</p>
+                <p>当山の中心となる荘厳な空間です。御宝前には宗祖・日蓮大聖人が御安置され、皆さまが唱えるお題目の声を優しく受け止めてくださいます。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">2</div>
+            <div class="grounds-body">
+                <h4>祈祷殿（きとうでん）</h4>
+                <p class="grounds-subtitle">力強い守護神へ願いを届ける場所</p>
+                <p>妙傳寺をお守りする諸尊（守護神）が祀られています。日蓮宗伝統の「修法」をもって、厄除けや心願成就などのご祈祷を執り行う神聖な堂宇です。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">3</div>
+            <div class="grounds-body">
+                <h4>永代位牌堂（えいたいいはいどう）</h4>
+                <p class="grounds-subtitle">永劫の感謝を捧げる、魂の拠り所</p>
+                <p>永代供養を申し込まれた方々の位牌を大切にお祀りしています。日々の読経を通じて、故人様への感謝と祈りを永遠に繋ぎます。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">4</div>
+            <div class="grounds-body">
+                <h4>納骨堂（のうこつどう）</h4>
+                <p class="grounds-subtitle">天候を問わず、いつでも寄り添える安らぎの地</p>
+                <p>清潔に保たれた屋内型の供養施設です。季節や天候を気にすることなく、いつでも故人様との対話のひとときをお過ごしいただけます。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">5</div>
+            <div class="grounds-body">
+                <h4>大広間（おおひろま）</h4>
+                <p class="grounds-subtitle">お参り後のひとときや、地域の交流の場として</p>
+                <p>法要後の会食や、休憩・お集まりなど、多目的にご利用いただけます。皆さまが和やかに集い、心を休められる開放的な空間です。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">6</div>
+            <div class="grounds-body">
+                <h4>開山廟（かいさんびょう）</h4>
+                <p class="grounds-subtitle">当山の歴史を紡いだ上人と、廣瀬家への報恩</p>
+                <p>妙傳寺の礎を築いた開山・而實院日憲上人と、代々お寺を支えてきた廣瀬家の墓所です。今日の妙傳寺があることへの感謝を捧げる大切な場所です。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">7</div>
+            <div class="grounds-body">
+                <h4>750遠忌日蓮大聖人像</h4>
+                <p class="grounds-subtitle">未来を指し示す、日蓮聖人の威徳を偲ぶ像</p>
+                <p>日蓮大聖人の「立教開宗750年」を記念して建立されました。力強くも慈しみ深いお姿は、今を生きる私たちに勇気と希望を与えてくれます。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">8</div>
+            <div class="grounds-body">
+                <h4>撥塚（ばちづか）</h4>
+                <p class="grounds-subtitle">芸道への想いを供養する、杵屋会ゆかりの塚</p>
+                <p>杵屋会による三味線の「撥（ばち）」など、芸に使用された道具を長年の労を労い供養した塚です。道具への感謝を忘れない、日本独自の美しい心を表しています。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">9</div>
+            <div class="grounds-body">
+                <h4>弁天堂（べんてんどう）</h4>
+                <p class="grounds-subtitle">才能の開花と財運を司る、妙蘭弁才天</p>
+                <p>美しき女神、妙蘭弁才天が祀られています。芸事の上達や学問の成就、金運向上を願う多くの方々から親しまれています。</p>
+            </div>
+        </div>
+        <div class="grounds-item">
+            <div class="grounds-num">10</div>
+            <div class="grounds-body">
+                <h4>駐車場（ちゅうしゃじょう）</h4>
+                <p class="grounds-subtitle">お車でも安心。約50台収容の広々とした駐車スペース</p>
+                <p>境内には約50台まで駐車可能なスペースをご用意しております。法要やお墓参りなど、大人数でお集まりの際も安心してお越しいただけます。</p>
+            </div>
+        </div>
+    </div>
     <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
 </section>
 
 <!-- 御守護神 -->
 <section id="deities" class="detail-section">
     <div class="section-label">DEITIES</div>
-    <h3>御守護神</h3>
-    <p>当山には、様々なご利益をもたらす守護神様方がお祀りされています。</p>
+    <h3>境内の御守護神</h3>
+    <p>皆さまを優しく守る神仏が、当山にお祀りされています。</p>
     <div class="deity-detail">
         <div class="deity-card">
-            <h4>鬼子母神</h4>
-            <p>子育て・安産・家内安全のご利益で知られる女神。子を守る慈悲深い守護神として広く信仰されています。</p>
+            <h4>鬼子母神（きしもじん）</h4>
+            <p class="grounds-subtitle">お子さまの成長と、ご家族の平穏を願う慈愛の神</p>
+            <p>法華経の守護神として、古くから厚く信仰されている神様です。子宝・安産のご利益はもちろん、お子さまが健やかに成長し、ご家族が日々を穏やかに過ごせるよう、母のような温かい心で見守ってくださいます。</p>
         </div>
         <div class="deity-card">
-            <h4>大黒天</h4>
-            <p>商売繁盛・五穀豊穣・福徳のご利益をもたらす神様。笑顔と打ち出の小槌が象徴です。</p>
+            <h4>大黒天（だいこくてん）</h4>
+            <p class="grounds-subtitle">暮らしを豊かに彩り、福徳と笑顔を運ぶ開運の神</p>
+            <p>打ち出の小槌と大きな袋を手に、皆さまの商売繁盛や開運、そして日々の暮らしに豊かな実りをもたらしてくださいます。お参りする人の心を明るく照らす福の神です。</p>
         </div>
         <div class="deity-card">
-            <h4>八大龍王</h4>
-            <p>雨や水を司る龍神の王。海上安全・雨乞い・諸願成就のご利益があるとされます。</p>
+            <h4>八大龍王（はちだいりゅうおう）</h4>
+            <p class="grounds-subtitle">命の源である「水」を司り、大いなる願いを成就させる守護神</p>
+            <p>水の守護神であり、法華経を説くお釈迦さまを雨から守ったとされる力強い神様です。困難を洗い流し、皆さまが抱く尊い願いが成就するよう、大いなる力をもって後押ししてくださいます。</p>
         </div>
         <div class="deity-card">
-            <h4>慈母観音菩薩</h4>
-            <p>母の慈愛のように人々を救う観音菩薩。水子供養・子授け・縁結びのご利益で信仰されます。</p>
+            <h4>慈母観音菩薩（じぼかんのんぼさつ）</h4>
+            <p class="grounds-subtitle">深い慈しみで包み込み、心の平穏を取り戻す救済の菩薩</p>
+            <p>母が子を慈しむような無償の愛をもって、すべての人々に寄り添ってくださる菩薩さまです。悩みや不安を抱えるとき、その御手は優しく差し伸べられ、私たちの乾いた心に安らぎと潤いを与えてくださいます。</p>
         </div>
         <div class="deity-card">
-            <h4>妙蘭弁才天</h4>
-            <p>音楽・芸術・知恵・財運を司る女神。学業成就・芸能上達・金運向上のご利益があります。</p>
+            <h4>妙蘭弁才天（みょうらんべんざいてん）</h4>
+            <p class="grounds-subtitle">才能を花開かせ、知恵と豊穣をもたらす美しき女神</p>
+            <p>芸事の上達や学問の成就、そして財運の向上を司る女神さまです。妙傳寺に縁ある神様として、皆さまが持つ本来の才能が美しく花開き、人生がより豊かになるよう導いてくださいます。</p>
         </div>
         <div class="deity-card">
-            <h4>三宝荒神</h4>
-            <p>仏・法・僧の三宝を守護し、火と竈の神としても知られます。家内安全・厄除けのご利益があります。</p>
+            <h4>三宝荒神（さんぽうこうじん）</h4>
+            <p class="grounds-subtitle">不浄を清め、火の災いから大切な住まいを守る守護神</p>
+            <p>私たちの暮らしに欠かせない「火」を司り、台所の神様としても親しまれています。不浄や災いを焼き尽くして清浄な空間を保ち、皆さまの住まいが火災や災難に見舞われぬよう、厳格かつ力強く守護してくださいます。</p>
         </div>
     </div>
     <a href="index.html#about" class="back-btn" style="margin-top:40px; display:inline-block;">← 知るトップへ戻る</a>
@@ -471,14 +599,14 @@
     <h3>年中行事</h3>
     <p>妙傳寺では、年間を通じてさまざまな仏教行事を執り行っております。</p>
     <table class="events-table">
-        <tr><th>1月</th><td>初詣・修正会（しゅしょうえ）</td></tr>
-        <tr><th>2月</th><td>節分会・星まつり</td></tr>
-        <tr><th>3月</th><td>春彼岸会</td></tr>
-        <tr><th>4月</th><td>花まつり（釈尊降誕会）</td></tr>
-        <tr><th>7月</th><td>盂蘭盆会（うらぼんえ）・施餓鬼会</td></tr>
-        <tr><th>9月</th><td>秋彼岸会</td></tr>
-        <tr><th>10月</th><td>お会式（宗祖日蓮聖人御忌）</td></tr>
-        <tr><th>12月</th><td>成道会・除夜の鐘</td></tr>
+        <tr><th>2月 3日</th><td>節分会</td></tr>
+        <tr><th>3月</th><td>春季彼岸会</td></tr>
+        <tr><th>4月 8日</th><td>釈尊降誕会（花まつり）</td></tr>
+        <tr><th>6月 8日</th><td>鬼子母神祭</td></tr>
+        <tr><th>7〜8月</th><td>新盆・塔婆供養 盂蘭盆会</td></tr>
+        <tr><th>8月</th><td>施餓鬼会</td></tr>
+        <tr><th>9月</th><td>秋季彼岸会</td></tr>
+        <tr><th>10月12日 17時<br>10月13日 8時</th><td>日蓮大聖人御入滅御報恩会式（お会式）</td></tr>
     </table>
     <p style="margin-top:20px; font-size:0.9rem; color:var(--text-gray);">※ 日程は年により変わる場合があります。詳細はお問い合わせください。</p>
     <a href="index.html#about" class="back-btn">← 知るトップへ戻る</a>
