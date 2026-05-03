@@ -44,7 +44,9 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
+            position: relative;
         }
+        .header-crest { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 48px; width: auto; pointer-events: none; opacity: 0.9; }
 
         .logo a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
         .logo-mark { width: 52px; height: 52px; object-fit: contain; flex-shrink: 0; }
@@ -354,6 +356,7 @@
         @media (max-width: 768px) {
             .main-nav { display: none; }
             .hamburger { display: flex; }
+            .header-crest { display: none; }
             .detail-section { padding: 50px 20px; }
             .detail-section h3 { font-size: 1.4rem; }
         }
@@ -385,6 +388,7 @@
         <button class="hamburger" id="hamburger" aria-label="メニュー">
             <span></span><span></span><span></span>
         </button>
+        <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋（桜陰陽）" class="header-crest">
     </div>
     <nav class="mobile-nav" id="mobileNav">
         <ul>
