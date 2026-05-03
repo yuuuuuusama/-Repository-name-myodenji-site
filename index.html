@@ -173,11 +173,19 @@
 
         .hero-title {
             background: rgba(255, 250, 240, 0.85);
-            padding: 40px 50px;
+            padding: 30px 50px 40px;
             border: 1px solid var(--gold-yellow);
             display: inline-flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 18px;
+        }
+
+        .temple-crest {
+            width: 90px;
+            height: auto;
+            opacity: 0.95;
         }
 
         .hero-title h2 {
@@ -422,6 +430,7 @@
 <main>
     <section id="home" class="hero">
         <div class="hero-title">
+            <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋（桜陰陽）" class="temple-crest">
             <h2>あなたの心に、<br>安らぎの法雨を。</h2>
         </div>
         <ul class="hero-subnav">
