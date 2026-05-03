@@ -287,6 +287,25 @@
             margin-bottom: 8px;
         }
 
+        /* 写真スペース */
+        .photo-slot {
+            width: 100%;
+            height: 200px;
+            background: var(--soft-yellow);
+            border: 1px dashed var(--gold-yellow);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            gap: 8px;
+        }
+        .photo-slot-icon { font-size: 1.8rem; opacity: 0.5; }
+        .deity-card .photo-slot { height: 160px; }
+
         /* 戻るボタン */
         .back-btn {
             display: inline-block;
@@ -448,6 +467,7 @@
             <div class="grounds-body">
                 <h4>本堂（ほんどう）</h4>
                 <p class="grounds-subtitle">お題目と日蓮大聖人が見守る、祈りの中心</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（本堂）</div>
                 <p>当山の中心となる荘厳な空間です。御宝前には宗祖・日蓮大聖人が御安置され、皆さまが唱えるお題目の声を優しく受け止めてくださいます。</p>
             </div>
         </div>
@@ -456,6 +476,7 @@
             <div class="grounds-body">
                 <h4>祈祷殿（きとうでん）</h4>
                 <p class="grounds-subtitle">力強い守護神へ願いを届ける場所</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（祈祷殿）</div>
                 <p>妙傳寺をお守りする諸尊（守護神）が祀られています。日蓮宗伝統の「修法」をもって、厄除けや心願成就などのご祈祷を執り行う神聖な堂宇です。</p>
             </div>
         </div>
@@ -464,6 +485,7 @@
             <div class="grounds-body">
                 <h4>永代位牌堂（えいたいいはいどう）</h4>
                 <p class="grounds-subtitle">永劫の感謝を捧げる、魂の拠り所</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（永代位牌堂）</div>
                 <p>永代供養を申し込まれた方々の位牌を大切にお祀りしています。日々の読経を通じて、故人様への感謝と祈りを永遠に繋ぎます。</p>
             </div>
         </div>
@@ -472,6 +494,7 @@
             <div class="grounds-body">
                 <h4>納骨堂（のうこつどう）</h4>
                 <p class="grounds-subtitle">天候を問わず、いつでも寄り添える安らぎの地</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（納骨堂）</div>
                 <p>清潔に保たれた屋内型の供養施設です。季節や天候を気にすることなく、いつでも故人様との対話のひとときをお過ごしいただけます。</p>
             </div>
         </div>
@@ -480,6 +503,7 @@
             <div class="grounds-body">
                 <h4>大広間（おおひろま）</h4>
                 <p class="grounds-subtitle">お参り後のひとときや、地域の交流の場として</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（大広間）</div>
                 <p>法要後の会食や、休憩・お集まりなど、多目的にご利用いただけます。皆さまが和やかに集い、心を休められる開放的な空間です。</p>
             </div>
         </div>
@@ -488,6 +512,7 @@
             <div class="grounds-body">
                 <h4>開山廟（かいさんびょう）</h4>
                 <p class="grounds-subtitle">当山の歴史を紡いだ上人と、廣瀬家への報恩</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（開山廟）</div>
                 <p>妙傳寺の礎を築いた開山・而實院日憲上人と、代々お寺を支えてきた廣瀬家の墓所です。今日の妙傳寺があることへの感謝を捧げる大切な場所です。</p>
             </div>
         </div>
@@ -496,6 +521,7 @@
             <div class="grounds-body">
                 <h4>750遠忌日蓮大聖人像</h4>
                 <p class="grounds-subtitle">未来を指し示す、日蓮聖人の威徳を偲ぶ像</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（日蓮大聖人像）</div>
                 <p>日蓮大聖人の「立教開宗750年」を記念して建立されました。力強くも慈しみ深いお姿は、今を生きる私たちに勇気と希望を与えてくれます。</p>
             </div>
         </div>
@@ -504,6 +530,7 @@
             <div class="grounds-body">
                 <h4>撥塚（ばちづか）</h4>
                 <p class="grounds-subtitle">芸道への想いを供養する、杵屋会ゆかりの塚</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（撥塚）</div>
                 <p>杵屋会による三味線の「撥（ばち）」など、芸に使用された道具を長年の労を労い供養した塚です。道具への感謝を忘れない、日本独自の美しい心を表しています。</p>
             </div>
         </div>
@@ -512,6 +539,7 @@
             <div class="grounds-body">
                 <h4>弁天堂（べんてんどう）</h4>
                 <p class="grounds-subtitle">才能の開花と財運を司る、妙蘭弁才天</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（弁天堂）</div>
                 <p>美しき女神、妙蘭弁才天が祀られています。芸事の上達や学問の成就、金運向上を願う多くの方々から親しまれています。</p>
             </div>
         </div>
@@ -520,6 +548,7 @@
             <div class="grounds-body">
                 <h4>駐車場（ちゅうしゃじょう）</h4>
                 <p class="grounds-subtitle">お車でも安心。約50台収容の広々とした駐車スペース</p>
+                <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（駐車場）</div>
                 <p>境内には約50台まで駐車可能なスペースをご用意しております。法要やお墓参りなど、大人数でお集まりの際も安心してお越しいただけます。</p>
             </div>
         </div>
@@ -534,31 +563,37 @@
     <p>皆さまを優しく守る神仏が、当山にお祀りされています。</p>
     <div class="deity-detail">
         <div class="deity-card">
+            <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（鬼子母神）</div>
             <h4>鬼子母神（きしもじん）</h4>
             <p class="grounds-subtitle">お子さまの成長と、ご家族の平穏を願う慈愛の神</p>
             <p>法華経の守護神として、古くから厚く信仰されている神様です。子宝・安産のご利益はもちろん、お子さまが健やかに成長し、ご家族が日々を穏やかに過ごせるよう、母のような温かい心で見守ってくださいます。</p>
         </div>
         <div class="deity-card">
+            <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（大黒天）</div>
             <h4>大黒天（だいこくてん）</h4>
             <p class="grounds-subtitle">暮らしを豊かに彩り、福徳と笑顔を運ぶ開運の神</p>
             <p>打ち出の小槌と大きな袋を手に、皆さまの商売繁盛や開運、そして日々の暮らしに豊かな実りをもたらしてくださいます。お参りする人の心を明るく照らす福の神です。</p>
         </div>
         <div class="deity-card">
+            <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（八大龍王）</div>
             <h4>八大龍王（はちだいりゅうおう）</h4>
             <p class="grounds-subtitle">命の源である「水」を司り、大いなる願いを成就させる守護神</p>
             <p>水の守護神であり、法華経を説くお釈迦さまを雨から守ったとされる力強い神様です。困難を洗い流し、皆さまが抱く尊い願いが成就するよう、大いなる力をもって後押ししてくださいます。</p>
         </div>
         <div class="deity-card">
+            <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（慈母観音菩薩）</div>
             <h4>慈母観音菩薩（じぼかんのんぼさつ）</h4>
             <p class="grounds-subtitle">深い慈しみで包み込み、心の平穏を取り戻す救済の菩薩</p>
             <p>母が子を慈しむような無償の愛をもって、すべての人々に寄り添ってくださる菩薩さまです。悩みや不安を抱えるとき、その御手は優しく差し伸べられ、私たちの乾いた心に安らぎと潤いを与えてくださいます。</p>
         </div>
         <div class="deity-card">
+            <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（妙蘭弁才天）</div>
             <h4>妙蘭弁才天（みょうらんべんざいてん）</h4>
             <p class="grounds-subtitle">才能を花開かせ、知恵と豊穣をもたらす美しき女神</p>
             <p>芸事の上達や学問の成就、そして財運の向上を司る女神さまです。妙傳寺に縁ある神様として、皆さまが持つ本来の才能が美しく花開き、人生がより豊かになるよう導いてくださいます。</p>
         </div>
         <div class="deity-card">
+            <div class="photo-slot"><span class="photo-slot-icon">🖼</span>写真を追加（三宝荒神）</div>
             <h4>三宝荒神（さんぽうこうじん）</h4>
             <p class="grounds-subtitle">不浄を清め、火の災いから大切な住まいを守る守護神</p>
             <p>私たちの暮らしに欠かせない「火」を司り、台所の神様としても親しまれています。不浄や災いを焼き尽くして清浄な空間を保ち、皆さまの住まいが火災や災難に見舞われぬよう、厳格かつ力強く守護してくださいます。</p>
