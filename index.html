@@ -408,8 +408,14 @@
         /* --- Mobile Optimization --- */
         @media (max-width: 768px) {
             .main-nav { display: none; }
-            .hamburger { display: flex; }
-            .header-crest { display: none; }
+            .hamburger { display: flex; margin-left: auto; order: 3; }
+            .header-crest {
+                position: static;
+                transform: none;
+                height: 36px;
+                margin-left: 10px;
+                order: 2;
+            }
             .hero-title h2 { font-size: 1.8rem; }
             .hero-subnav {
                 flex-wrap: wrap;
