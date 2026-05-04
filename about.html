@@ -41,12 +41,12 @@
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 15px 20px;
             position: relative;
         }
-        .header-crest { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 48px; width: auto; pointer-events: none; opacity: 0.9; }
+        .logo-crest { height: 48px; width: auto; flex-shrink: 0; opacity: 0.9; }
 
         .logo a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
         .logo-mark { width: 52px; height: 52px; object-fit: contain; flex-shrink: 0; }
@@ -75,6 +75,10 @@
             background: none;
             border: none;
             padding: 5px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .hamburger span { display: block; width: 25px; height: 2px; background: var(--charcoal); }
 
@@ -361,8 +365,10 @@
 
         @media (max-width: 768px) {
             .nav-bar { display: none; }
-            .hamburger { display: flex; margin-left: auto; order: 3; }
-            .header-crest { position: static; transform: none; height: 36px; margin-left: 10px; order: 2; }
+            .hamburger { display: flex; }
+            .logo-mark { width: 42px; height: 42px; }
+            .logo-crest { height: 38px; }
+            .logo h1 { font-size: 1.1rem; }
             .detail-section { padding: 50px 20px; }
             .detail-section h3 { font-size: 1.4rem; }
         }
@@ -379,12 +385,12 @@
                     <span>日蓮宗</span>
                     <h1>感応山 妙傳寺</h1>
                 </span>
+                <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋（桜陰陽）" class="logo-crest">
             </a>
         </div>
         <button class="hamburger" id="hamburger" aria-label="メニュー">
             <span></span><span></span><span></span>
         </button>
-        <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋（桜陰陽）" class="header-crest">
     </div>
     <div class="nav-bar">
         <nav class="main-nav">
