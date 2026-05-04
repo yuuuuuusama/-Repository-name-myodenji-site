@@ -220,6 +220,10 @@
         .event-item {
             padding: 25px 0;
             border-bottom: 1px solid var(--cherry-pink);
+            position: relative;
+        }
+        .event-item:has(.event-photo) {
+            padding-right: 160px;
         }
         .event-item:last-child { border-bottom: none; }
         .event-date {
@@ -246,13 +250,15 @@
             font-size: 0.95rem;
         }
         .event-photo {
-            display: block;
-            max-width: 100%;
-            width: 320px;
-            height: auto;
-            margin: 16px 0 0;
+            position: absolute;
+            top: 25px;
+            right: 0;
+            width: 140px;
+            height: calc(100% - 50px);
+            object-fit: cover;
             border-radius: 4px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 0;
         }
 
         /* 法雨バックナンバー */
