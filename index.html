@@ -390,6 +390,29 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
+        /* ご祈祷セクション 背景画像 */
+        #prayer {
+            background-image:
+                linear-gradient(rgba(250, 218, 221, 0.78), rgba(250, 218, 221, 0.78)),
+                url('prayer-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        #prayer .section-header h2 {
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
+        }
+        #prayer .section-header p {
+            color: var(--charcoal);
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
+        }
+        #prayer .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(2px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
         .ritual-list {
             list-style: none;
             display: grid;
@@ -662,7 +685,7 @@
         </div>
     </section>
 
-    <section id="prayer" style="background-color: var(--cherry-pink);">
+    <section id="prayer">
         <div class="container">
             <div class="section-header">
                 <h2>ご祈祷</h2>
