@@ -236,6 +236,29 @@
             height: 30rem;
         }
 
+        /* --- Toast --- */
+        .toast {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-20px);
+            background: var(--charcoal);
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 2000;
+            pointer-events: none;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
         /* --- Sections Style --- */
         .card-grid {
             display: grid;
@@ -652,12 +675,34 @@
 </footer>
 
 <script>
+    // 準備中トースト
+    function showToast(msg) {
+        const el = document.createElement('div');
+        el.className = 'toast';
+        el.textContent = msg;
+        document.body.appendChild(el);
+        requestAnimationFrame(() => el.classList.add('show'));
+        setTimeout(() => {
+            el.classList.remove('show');
+            setTimeout(() => el.remove(), 300);
+        }, 1800);
+    }
+
+    document.querySelectorAll('a[href$="#learn"]').forEach(a => {
+        a.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            showToast('準備中です');
+            document.getElementById('mobileNav').classList.remove('open');
+        });
+    });
+
     // スムーススクロール
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
+            if (targetId === '#' || targetId === '#learn') return;
+            e.preventDefault();
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: 'smooth' });
