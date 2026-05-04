@@ -367,6 +367,29 @@
             padding-bottom: 10px;
         }
 
+        /* 弔うセクション 背景画像 */
+        #rituals {
+            background-image:
+                linear-gradient(rgba(255, 250, 240, 0.78), rgba(255, 250, 240, 0.78)),
+                url('rituals-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        #rituals .section-header h2 {
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+        }
+        #rituals .section-header p {
+            color: var(--charcoal);
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+        }
+        #rituals .ritual-list li {
+            background: rgba(255, 250, 240, 0.95);
+            backdrop-filter: blur(2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
         .ritual-list {
             list-style: none;
             display: grid;
@@ -621,7 +644,7 @@
         </div>
     </section>
 
-    <section id="rituals" style="background-color: var(--soft-yellow);">
+    <section id="rituals">
         <div class="container">
             <div class="section-header">
                 <h2>弔う</h2>
