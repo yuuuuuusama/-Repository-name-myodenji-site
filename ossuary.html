@@ -81,6 +81,8 @@
         .footer-logo { font-size: 1.8rem; margin-bottom: 20px; }
         .copyright { margin-top: 40px; font-size: 0.8rem; color: #999; }
 
+        section[id] { scroll-margin-top: 120px; }
+
         .toast { position: fixed; top: 100px; left: 50%; transform: translateX(-50%) translateY(-20px); background: var(--charcoal); color: #fff; padding: 14px 30px; border-radius: 30px; font-weight: bold; font-size: 0.95rem; box-shadow: 0 4px 15px rgba(0,0,0,0.2); opacity: 0; transition: opacity 0.3s, transform 0.3s; z-index: 2000; pointer-events: none; }
         .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
@@ -94,6 +96,7 @@
             .detail-section h3 { font-size: 1.4rem; }
             .info-table th, .info-table td { display: block; width: 100%; }
             .info-table th { border-bottom: none; padding-bottom: 0; }
+            section[id] { scroll-margin-top: 80px; }
         }
     </style>
 </head>
