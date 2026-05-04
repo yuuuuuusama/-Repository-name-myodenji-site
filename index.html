@@ -257,6 +257,66 @@
         /* スクロール時にヘッダーで見出しが隠れないようマージンを確保 */
         section[id] { scroll-margin-top: 120px; }
 
+        /* タイムライン */
+        .timeline {
+            max-width: 760px;
+            margin: 0 auto;
+            padding-left: 30px;
+            border-left: 2px solid var(--gold-yellow);
+            position: relative;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 35px;
+            padding-left: 15px;
+        }
+        .timeline-item:last-child { margin-bottom: 0; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -42px;
+            top: 6px;
+            width: 14px;
+            height: 14px;
+            background: var(--gold-yellow);
+            border-radius: 50%;
+            border: 3px solid var(--floral-white);
+            box-shadow: 0 0 0 1px var(--gold-yellow);
+        }
+        .timeline-meta {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+        .timeline-date {
+            font-size: 0.9rem;
+            color: var(--deep-pink);
+            font-weight: bold;
+        }
+        .timeline-tag {
+            display: inline-block;
+            background: var(--soft-yellow);
+            border: 1px solid var(--gold-yellow);
+            color: var(--charcoal);
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: bold;
+        }
+        .timeline-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 4px 0;
+            color: var(--charcoal);
+        }
+        .timeline-body {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
         /* --- Toast --- */
         .toast {
             position: fixed;
@@ -483,6 +543,7 @@
                 <li><a href="#prayer">願う</a></li>
                 <li><a href="#learn">学ぶ</a></li>
                 <li><a href="#efforts">試みる</a></li>
+                <li><a href="#news">お知らせ</a></li>
                 <li><a href="#contact">お問い合わせ</a></li>
             </ul>
         </nav>
@@ -495,6 +556,7 @@
             <li><a href="#prayer">願う</a></li>
             <li><a href="#learn">学ぶ</a></li>
             <li><a href="#efforts">試みる</a></li>
+            <li><a href="#news">お知らせ</a></li>
             <li><a href="#contact">お問い合わせ</a></li>
         </ul>
     </nav>
@@ -610,6 +672,41 @@
         <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
             <h3>生前法号</h3>
             <p>ご存命のうちに仏弟子としての名前を授かり、人生をより豊かに、心穏やかに過ごすための取り組みです。</p>
+        </div>
+    </section>
+
+    <section id="news" style="background-color: var(--soft-yellow);">
+        <div class="container">
+            <div class="section-header">
+                <h2>お知らせ</h2>
+                <p>記事やページの更新情報をお伝えします</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2026年5月4日</span>
+                        <span class="timeline-tag">サイト更新</span>
+                    </div>
+                    <h3 class="timeline-title">公式サイトをリニューアル公開</h3>
+                    <p class="timeline-body">「知る」「弔う」「願う」の各詳細ページを新設し、サイト全体のデザインを一新しました。寺紋・ロゴも追加しています。</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2026年5月4日</span>
+                        <span class="timeline-tag">法雨</span>
+                    </div>
+                    <h3 class="timeline-title">妙傳寺だより「法雨」 2026年 春号 公開</h3>
+                    <p class="timeline-body">最新号のPDFを「知る」ページの法雨セクションよりご覧いただけます。</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2026年5月4日</span>
+                        <span class="timeline-tag">法雨</span>
+                    </div>
+                    <h3 class="timeline-title">法雨バックナンバー(2025年冬号)を公開</h3>
+                    <p class="timeline-body">過去のおたよりがバックナンバーよりお読みいただけるようになりました。</p>
+                </div>
+            </div>
         </div>
     </section>
 
