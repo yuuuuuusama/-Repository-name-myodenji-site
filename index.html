@@ -127,17 +127,30 @@
             font-weight: bold;
         }
 
+        .nav-bar {
+            border-top: 1px solid var(--gold-yellow);
+            background: rgba(255, 250, 240, 0.95);
+        }
+
+        .main-nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 8px 20px;
+        }
+
         .main-nav ul {
             display: flex;
             list-style: none;
-            gap: 20px;
+            gap: 28px;
+            justify-content: center;
         }
 
         .main-nav a {
             text-decoration: none;
             color: var(--charcoal);
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
             transition: color 0.3s;
         }
 
@@ -388,7 +401,7 @@
 
         /* --- Mobile Optimization --- */
         @media (max-width: 768px) {
-            .main-nav { display: none; }
+            .nav-bar { display: none; }
             .hamburger { display: flex; margin-left: auto; order: 3; }
             .header-crest {
                 position: static;
@@ -414,28 +427,32 @@
                 </span>
             </a>
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#home">ホーム</a></li>
-                <li><a href="#about">知る</a></li>
-                <li><a href="#rituals">仏事・弔い</a></li>
-                <li><a href="#ossuary">納骨堂・墓</a></li>
-                <li><a href="#prayer">ご祈祷</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
         <button class="hamburger" id="hamburger" aria-label="メニュー">
             <span></span><span></span><span></span>
         </button>
         <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋（桜陰陽）" class="header-crest">
     </div>
+    <div class="nav-bar">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">知る</a></li>
+                <li><a href="#rituals">弔う</a></li>
+                <li><a href="#prayer">願う</a></li>
+                <li><a href="#learn">学ぶ</a></li>
+                <li><a href="#efforts">試みる</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
     <nav class="mobile-nav" id="mobileNav">
         <ul>
             <li><a href="#home">ホーム</a></li>
             <li><a href="#about">知る</a></li>
-            <li><a href="#rituals">仏事・弔い</a></li>
-            <li><a href="#ossuary">納骨堂・墓</a></li>
-            <li><a href="#prayer">ご祈祷</a></li>
+            <li><a href="#rituals">弔う</a></li>
+            <li><a href="#prayer">願う</a></li>
+            <li><a href="#learn">学ぶ</a></li>
+            <li><a href="#efforts">試みる</a></li>
             <li><a href="#contact">お問い合わせ</a></li>
         </ul>
     </nav>
