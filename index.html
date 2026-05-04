@@ -228,12 +228,16 @@
 
         .hero-title h2 {
             font-size: 2.5rem;
-            writing-mode: vertical-rl;
-            text-orientation: upright;
+            letter-spacing: 0.2em;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .hero-title h2 .top-line {
+            display: block;
+            font-size: 1.6rem;
+            color: var(--text-gray);
             letter-spacing: 0.3em;
-            margin: 0 auto;
-            line-height: 2;
-            height: 30rem;
+            margin-bottom: 8px;
         }
 
         /* --- Toast --- */
@@ -484,7 +488,7 @@
 <main>
     <section id="home" class="hero">
         <div class="hero-title">
-            <h2>あなたの心に、<br>安らぎの法雨を。</h2>
+            <h2><span class="top-line">あなたの心に</span>安らぎの法雨を</h2>
         </div>
     </section>
 
