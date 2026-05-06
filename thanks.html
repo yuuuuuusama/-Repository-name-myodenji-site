@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせありがとうございました | 感応山 妙傳寺</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --floral-white: #FFFAF0;
+            --cherry-pink: #FADADD;
+            --deep-pink: #D48A94;
+            --gold-yellow: #E6B422;
+            --soft-yellow: #FFF9E5;
+            --charcoal: #333333;
+            --text-gray: #555555;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Shippori Mincho', serif;
+            background-color: var(--floral-white);
+            color: var(--charcoal);
+            line-height: 1.8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(255, 250, 240, 0.95);
+            border-bottom: 2px solid var(--gold-yellow);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .logo-mark { width: 52px; height: 52px; object-fit: contain; }
+        .logo-crest { height: 48px; width: auto; opacity: 0.9; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo h1 { font-size: 1.4rem; letter-spacing: 0.1em; margin: 0; }
+        .logo span { font-size: 0.8rem; color: var(--gold-yellow); font-weight: bold; }
+
+        .thanks-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        .thanks-card {
+            background: #fff;
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 40px;
+            border-radius: 8px;
+            border-top: 4px solid var(--gold-yellow);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        .thanks-card h2 {
+            font-size: 1.8rem;
+            color: var(--charcoal);
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .thanks-card .lead {
+            color: var(--text-gray);
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+        }
+        .urgent-box {
+            background: var(--soft-yellow);
+            border: 1px solid var(--gold-yellow);
+            padding: 25px 20px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+        }
+        .urgent-box .label {
+            font-size: 0.95rem;
+            color: var(--charcoal);
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .urgent-box .tel {
+            font-size: 1.6rem;
+            color: var(--gold-yellow);
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 0;
+        }
+        .urgent-box .note {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            margin-top: 6px;
+        }
+        .home-btn {
+            display: inline-block;
+            padding: 14px 40px;
+            background: var(--gold-yellow);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .home-btn:hover { background: #cfa11d; }
+
+        footer {
+            background: var(--charcoal);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-logo { font-size: 1.5rem; margin-bottom: 10px; }
+        .copyright { margin-top: 20px; font-size: 0.8rem; color: #999; }
+
+        @media (max-width: 600px) {
+            .logo h1 { font-size: 1.1rem; }
+            .logo-mark { width: 42px; height: 42px; }
+            .logo-crest { height: 38px; }
+            .thanks-card { padding: 40px 25px; }
+            .thanks-card h2 { font-size: 1.4rem; }
+            .urgent-box .tel { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="temple-logo.jpg" alt="感応山 妙傳寺 ロゴ" class="logo-mark">
+                <span class="logo-text">
+                    <span>日蓮宗</span>
+                    <h1>感応山 妙傳寺</h1>
+                </span>
+                <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋（桜陰陽）" class="logo-crest">
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="thanks-wrapper">
+    <div class="thanks-card">
+        <h2>お問い合わせありがとうございました</h2>
+        <p class="lead">内容を確認の上、お返事いたします。<br>今しばらくお待ちくださいませ。</p>
+        <div class="urgent-box">
+            <p class="label">お急ぎの場合はお電話にてご連絡ください</p>
+            <a href="tel:0143-22-4284" class="tel">☎ 0143-22-4284</a>
+            <p class="note">急を要するご葬儀・ご相談は24時間承っております</p>
+        </div>
+        <a href="index.html" class="home-btn">トップへ戻る</a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-logo">感応山 妙傳寺</div>
+    <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+</footer>
+
+</body>
+</html>
