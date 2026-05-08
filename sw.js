@@ -1,4 +1,4 @@
-const CACHE_NAME = 'myodenji-v1';
+const CACHE_NAME = 'myodenji-v2';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
@@ -8,6 +8,9 @@ const PRECACHE_URLS = [
   '/news.html',
   '/faq.html',
   '/newsletter.html',
+  '/houji-form.html',
+  '/kitou-form.html',
+  '/mizuko-form.html',
   '/thanks.html',
   '/manifest.json',
   '/icons/icon-192.png',

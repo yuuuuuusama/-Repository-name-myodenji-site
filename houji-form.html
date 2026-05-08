@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法事のお申込み | 感応山 妙傳寺</title>
+    <meta name="description" content="感応山 妙傳寺 法事のお申込みフォーム。四十九日・百ヶ日・一周忌・三回忌などの年回法要のお申込みを承ります。">
+    <link rel="canonical" href="https://myodenji7676.online/houji-form.html">
+    <meta name="theme-color" content="#E6B422">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --floral-white: #FFFAF0; --cherry-pink: #FADADD; --deep-pink: #D48A94; --gold-yellow: #E6B422; --soft-yellow: #FFF9E5; --charcoal: #333333; --text-gray: #555555; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Shippori Mincho', serif; background-color: var(--floral-white); color: var(--charcoal); line-height: 1.8; }
+
+        header { background-color: rgba(255, 250, 240, 0.95); border-bottom: 2px solid var(--gold-yellow); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 15px 20px; position: relative; }
+        .logo a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+        .logo-mark { width: 52px; height: 52px; object-fit: contain; flex-shrink: 0; }
+        .logo-crest { height: 48px; width: auto; flex-shrink: 0; opacity: 0.9; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo h1 { font-size: 1.4rem; letter-spacing: 0.1em; margin: 0; }
+        .logo span { font-size: 0.8rem; color: var(--gold-yellow); font-weight: bold; }
+
+        .page-hero { background: var(--soft-yellow); border-bottom: 3px solid var(--gold-yellow); padding: 50px 20px; text-align: center; }
+        .page-hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
+        .page-hero p { color: var(--text-gray); }
+
+        .form-wrapper { max-width: 760px; margin: 0 auto; padding: 60px 20px; }
+        .form-intro { background: var(--soft-yellow); border-left: 4px solid var(--gold-yellow); padding: 20px 25px; margin-bottom: 40px; }
+        .form-intro p { color: var(--text-gray); font-size: 0.95rem; margin: 0; }
+        .form-intro p + p { margin-top: 8px; }
+
+        .form-section { background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 30px; margin-bottom: 25px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); }
+        .form-section h3 { font-size: 1.1rem; color: var(--deep-pink); padding-left: 10px; border-left: 3px solid var(--gold-yellow); margin-bottom: 20px; }
+
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: bold; font-size: 0.95rem; }
+        .form-group .required { color: var(--deep-pink); margin-left: 5px; font-size: 0.85rem; }
+        .form-group .hint { display: block; font-size: 0.8rem; color: var(--text-gray); margin-top: 4px; font-weight: normal; }
+        .form-group input[type=text], .form-group input[type=email], .form-group input[type=tel], .form-group input[type=date], .form-group input[type=number], .form-group select, .form-group textarea {
+            width: 100%; padding: 10px 14px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; font-size: 1rem; background: #fff;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--gold-yellow); box-shadow: 0 0 0 2px rgba(230,180,34,0.15); }
+        .form-group textarea { min-height: 100px; resize: vertical; }
+
+        .radio-group, .checkbox-group { display: flex; flex-wrap: wrap; gap: 10px 15px; margin-top: 4px; }
+        .radio-group label, .checkbox-group label { font-weight: normal; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; padding: 8px 14px; border: 1px solid #ddd; border-radius: 20px; transition: all 0.15s; font-size: 0.9rem; }
+        .radio-group input, .checkbox-group input { cursor: pointer; }
+        .radio-group label:has(input:checked), .checkbox-group label:has(input:checked) { background: var(--soft-yellow); border-color: var(--gold-yellow); }
+
+        .submit-btn { width: 100%; padding: 16px; background: var(--gold-yellow); color: #fff; border: none; border-radius: 4px; font-family: inherit; font-size: 1.05rem; font-weight: bold; cursor: pointer; margin-top: 10px; transition: background 0.3s; }
+        .submit-btn:hover { background: #cfa11d; }
+
+        .back-link { display: inline-block; margin-top: 20px; color: var(--deep-pink); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .back-link:hover { text-decoration: underline; }
+
+        footer { background: var(--charcoal); color: #fff; padding: 60px 20px 20px; text-align: center; }
+        .footer-logo { font-size: 1.8rem; margin-bottom: 20px; }
+        .copyright { margin-top: 40px; font-size: 0.8rem; color: #999; }
+
+        @media (max-width: 768px) {
+            .logo-mark { width: 42px; height: 42px; }
+            .logo-crest { height: 38px; }
+            .logo h1 { font-size: 1.1rem; }
+            .form-section { padding: 20px; }
+            .page-hero h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="temple-logo.jpg" alt="感応山 妙傳寺 ロゴ" class="logo-mark">
+                <span class="logo-text">
+                    <span>日蓮宗</span>
+                    <h1>感応山 妙傳寺</h1>
+                </span>
+                <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋" class="logo-crest">
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="page-hero">
+    <h2>法事のお申込み</h2>
+    <p>四十九日・年回法要などのお申込みを承ります</p>
+</div>
+
+<main class="form-wrapper">
+    <div class="form-intro">
+        <p>必要事項をご入力の上、送信してください。送信後、内容を確認の上、当寺よりご連絡いたします。</p>
+        <p>※ お急ぎの場合はお電話(0143-22-4284)でも承っております。</p>
+    </div>
+
+    <form action="https://formsubmit.co/myodenji7676@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="【法事のお申込み】妙傳寺サイト">
+        <input type="hidden" name="_next" value="https://myodenji7676.online/thanks.html">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_autoresponse" value="この度は感応山 妙傳寺へ法事のお申込みをいただき、誠にありがとうございます。
+
+ご入力いただいた内容を確認の上、ご希望の日時等について当寺よりご連絡を差し上げます。
+今しばらくお待ちくださいますよう、お願い申し上げます。
+
+なお、お急ぎの場合はお電話にて承っております。
+☎ 0143-22-4284(受付 9:00-17:00)
+
+―――――――――――――――――――
+感応山 妙傳寺
+〒051-0021 北海道室蘭市常盤町5-7
+☎ 0143-22-4284
+https://myodenji7676.online/
+―――――――――――――――――――
+※このメールは自動送信です。">
+
+        <section class="form-section">
+            <h3>お申込者様の情報</h3>
+            <div class="form-group">
+                <label>お名前<span class="required">必須</span></label>
+                <input type="text" name="申込者氏名" required placeholder="山田 太郎">
+            </div>
+            <div class="form-group">
+                <label>故人様とのご関係<span class="required">必須</span></label>
+                <input type="text" name="故人との関係" required placeholder="例: 長男、孫、配偶者">
+            </div>
+            <div class="form-group">
+                <label>電話番号<span class="required">必須</span></label>
+                <input type="tel" name="電話番号" required placeholder="000-0000-0000">
+            </div>
+            <div class="form-group">
+                <label>メールアドレス<span class="required">必須</span></label>
+                <input type="email" name="メールアドレス" required placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+                <label>ご住所</label>
+                <input type="text" name="住所" placeholder="ご住所をご入力ください">
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h3>故人様の情報</h3>
+            <div class="form-group">
+                <label>故人様 氏名<span class="required">必須</span></label>
+                <input type="text" name="故人氏名" required>
+            </div>
+            <div class="form-group">
+                <label>戒名(法号)</label>
+                <input type="text" name="戒名" placeholder="お持ちの場合のみご記入ください">
+            </div>
+            <div class="form-group">
+                <label>ご命日<span class="required">必須</span></label>
+                <input type="date" name="命日" required>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h3>法要の内容</h3>
+            <div class="form-group">
+                <label>年回忌<span class="required">必須</span></label>
+                <select name="年回忌" required>
+                    <option value="">選択してください</option>
+                    <option>初七日</option>
+                    <option>四十九日</option>
+                    <option>百ヶ日</option>
+                    <option>新盆</option>
+                    <option>一周忌</option>
+                    <option>三回忌</option>
+                    <option>七回忌</option>
+                    <option>十三回忌</option>
+                    <option>十七回忌</option>
+                    <option>二十三回忌</option>
+                    <option>二十七回忌</option>
+                    <option>三十三回忌</option>
+                    <option>五十回忌</option>
+                    <option>その他(備考欄に記載)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>ご希望日時(第1希望)<span class="required">必須</span></label>
+                <input type="text" name="希望日時_第1" required placeholder="例: 2026年8月15日 午前10時">
+            </div>
+            <div class="form-group">
+                <label>ご希望日時(第2希望)</label>
+                <input type="text" name="希望日時_第2" placeholder="例: 2026年8月22日 午後2時">
+            </div>
+            <div class="form-group">
+                <label>会場のご希望</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="会場" value="お寺(妙傳寺)" checked>お寺(妙傳寺)</label>
+                    <label><input type="radio" name="会場" value="ご自宅">ご自宅</label>
+                    <label><input type="radio" name="会場" value="その他">その他</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>ご参列予定人数</label>
+                <input type="number" name="参列人数" min="1" placeholder="例: 8" style="max-width: 200px;">
+                <span class="hint">およその人数で結構です</span>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h3>お塔婆・お斎(おとき)</h3>
+            <div class="form-group">
+                <label>お塔婆の本数</label>
+                <input type="number" name="お塔婆本数" min="0" placeholder="例: 3" style="max-width: 200px;">
+                <span class="hint">不要の場合は0、又は空欄でかまいません</span>
+            </div>
+            <div class="form-group">
+                <label>お斎(食事)の手配</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="お斎" value="不要" checked>不要</label>
+                    <label><input type="radio" name="お斎" value="希望(別途相談)">希望する(別途相談)</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h3>その他のご要望・ご質問</h3>
+            <div class="form-group">
+                <textarea name="備考" placeholder="ご要望やご不明点などをご自由にご記入ください"></textarea>
+            </div>
+        </section>
+
+        <button type="submit" class="submit-btn">内容を確認して送信する</button>
+        <a href="rituals.html#memorial" class="back-link">← 法事ページへ戻る</a>
+    </form>
+</main>
+
+<footer>
+    <div class="footer-logo">感応山 妙傳寺</div>
+    <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+</footer>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+    }
+</script>
+
+</body>
+</html>
