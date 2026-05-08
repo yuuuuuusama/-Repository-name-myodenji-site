@@ -1,4 +1,4 @@
-const CACHE_NAME = 'myodenji-v3';
+const CACHE_NAME = 'myodenji-v4';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
@@ -15,6 +15,8 @@ const PRECACHE_URLS = [
   '/manifest.json',
   '/animations.css',
   '/animations.js',
+  '/chatbot.css',
+  '/chatbot.js',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
   '/icons/apple-touch-icon.png',
