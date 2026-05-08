@@ -1,4 +1,4 @@
-const CACHE_NAME = 'myodenji-v4';
+const CACHE_NAME = 'myodenji-v5';
 const PRECACHE_URLS = [
   '/',
   '/index.html',

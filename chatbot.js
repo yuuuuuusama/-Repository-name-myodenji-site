@@ -6,7 +6,7 @@
 
   // ========== 設定 ==========
   // ⚠️ Cloudflare Worker をデプロイ後、このURLを更新してください
-  const WORKER_ENDPOINT = 'https://myodenji-chatbot.YOUR-CF-SUBDOMAIN.workers.dev';
+  const WORKER_ENDPOINT = 'https://myodenji-chatbot.myodenji7676.workers.dev';
 
   const WELCOME_MSG = '南無妙法蓮華経。妙傳寺へようこそ。\nご質問にお答えいたします。何でもお気軽にどうぞ。';
   const SUGGESTIONS = [
