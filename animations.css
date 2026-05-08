@@ -1,0 +1,343 @@
+/* =====================================================
+   妙傳寺サイト 共通アニメーション
+   ===================================================== */
+
+/* === 動きを減らす設定をしているユーザーへの配慮 === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .sakura-container, .snow-container, .leaves-container { display: none !important; }
+}
+
+html { scroll-behavior: smooth; }
+
+/* ==================================
+   1-A. スクロール連動フェードイン
+   ================================== */
+body.has-fade-in .fade-target {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  will-change: opacity, transform;
+}
+body.has-fade-in .fade-target.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==================================
+   1-B. ヒーロー Ken Burns
+   ================================== */
+section.hero {
+  position: relative;
+  overflow: hidden;
+}
+section.hero::before {
+  content: "";
+  position: absolute;
+  inset: -8%;
+  background-image: url('temple.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+  animation: kenBurns 32s ease-in-out infinite alternate;
+  will-change: transform;
+}
+section.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05));
+  z-index: 1;
+  pointer-events: none;
+}
+section.hero > * { position: relative; z-index: 2; }
+@keyframes kenBurns {
+  0%   { transform: scale(1.0) translate(0, 0); }
+  100% { transform: scale(1.12) translate(-2%, -2%); }
+}
+
+/* ==================================
+   3-B. ヘッダー追従(下スクロールで隠れる)
+   ================================== */
+header {
+  transition: transform 0.35s ease, box-shadow 0.3s ease;
+}
+header.is-hidden {
+  transform: translateY(-100%);
+}
+header.is-scrolled {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+/* ==================================
+   3-C. スクロール進行バー
+   ================================== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #E6B422 0%, #D48A94 100%);
+  z-index: 2000;
+  pointer-events: none;
+  transition: width 0.08s linear;
+}
+
+/* ==================================
+   3-D. トップへ戻るボタン
+   ================================== */
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 50px;
+  height: 50px;
+  background: #E6B422;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  opacity: 0;
+  transform: translateY(20px) scale(0.85);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+  z-index: 998;
+  font-family: inherit;
+}
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+.back-to-top:hover { background: #cfa11d; }
+.back-to-top:active { transform: translateY(0) scale(0.95); }
+@media (max-width: 768px) {
+  .back-to-top { right: 16px; bottom: 16px; width: 44px; height: 44px; font-size: 1.2rem; }
+}
+
+/* ==================================
+   3-A. カードホバー演出強化
+   ================================== */
+.deity-card,
+.feature-card,
+.prayer-card,
+.amulet-card,
+.issue-card,
+.news-item,
+.timeline-item,
+.card,
+.faq-item,
+.event-item,
+.grounds-item {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+}
+.deity-card:hover,
+.feature-card:hover,
+.prayer-card:hover,
+.amulet-card:hover,
+.issue-card:hover,
+.news-item:hover,
+.timeline-item:hover,
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+.deity-card,
+.event-item,
+.grounds-item {
+  overflow: hidden;
+}
+.deity-card .deity-photo,
+.event-item .event-photo,
+.grounds-item .grounds-photo,
+.feature-card img {
+  transition: transform 0.7s ease;
+}
+.deity-card:hover .deity-photo,
+.event-item:hover .event-photo,
+.grounds-item:hover .grounds-photo,
+.feature-card:hover img {
+  transform: scale(1.045);
+}
+
+/* ==================================
+   3-E. ボタン リップル(波紋)効果
+   ================================== */
+button,
+.submit-btn,
+.back-btn,
+.home-btn,
+.download-btn,
+.card-link,
+.toc-grid a,
+nav.main-nav a {
+  position: relative;
+  overflow: hidden;
+}
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background: rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+  animation: rippleAnim 0.7s ease-out forwards;
+  z-index: 1;
+}
+@keyframes rippleAnim {
+  to { transform: scale(2.4); opacity: 0; }
+}
+
+/* ==================================
+   1-C. 桜の花びら
+   ================================== */
+.sakura-container,
+.snow-container,
+.leaves-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 90;
+  overflow: hidden;
+}
+.sakura {
+  position: absolute;
+  top: -20px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle at 30% 30%, #FFE3EB 0%, #FBC1CD 50%, #F297AC 100%);
+  border-radius: 50% 0 50% 50%;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.05));
+  animation-name: sakuraFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+.sakura.s2 {
+  width: 11px;
+  height: 11px;
+  animation-name: sakuraFallSway;
+}
+.sakura.s3 {
+  width: 16px;
+  height: 16px;
+  animation-name: sakuraFallSlow;
+}
+@keyframes sakuraFall {
+  0%   { transform: translate3d(0, -10vh, 0) rotate(0deg); }
+  100% { transform: translate3d(40px, 110vh, 0) rotate(720deg); }
+}
+@keyframes sakuraFallSway {
+  0%   { transform: translate3d(0, -10vh, 0) rotate(0deg); }
+  50%  { transform: translate3d(-50px, 50vh, 0) rotate(360deg); }
+  100% { transform: translate3d(20px, 110vh, 0) rotate(720deg); }
+}
+@keyframes sakuraFallSlow {
+  0%   { transform: translate3d(0, -10vh, 0) rotate(0deg); }
+  100% { transform: translate3d(-30px, 110vh, 0) rotate(540deg); }
+}
+
+/* ==================================
+   2-A. 季節のパーティクル
+   ================================== */
+
+/* ❄ 冬の雪 */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(255,255,255,0.7);
+  animation-name: snowFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+.snowflake.f2 { width: 5px; height: 5px; }
+.snowflake.f3 { width: 11px; height: 11px; opacity: 0.8; }
+@keyframes snowFall {
+  0%   { transform: translate3d(0, -10vh, 0); }
+  100% { transform: translate3d(40px, 110vh, 0); }
+}
+
+/* 🍁 秋の紅葉 */
+.leaf {
+  position: absolute;
+  top: -20px;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, #C75B12 0%, #E89B3F 50%, #CF7B33 100%);
+  clip-path: polygon(50% 0%, 70% 30%, 100% 30%, 75% 50%, 100% 75%, 60% 70%, 50% 100%, 40% 70%, 0% 75%, 25% 50%, 0% 30%, 30% 30%);
+  animation-name: leafFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+.leaf.l2 { background: linear-gradient(135deg, #B33A1F 0%, #D9603A 100%); }
+.leaf.l3 { background: linear-gradient(135deg, #DDA147 0%, #E5C168 100%); width: 12px; height: 12px; }
+@keyframes leafFall {
+  0%   { transform: translate3d(0, -10vh, 0) rotate(0deg); }
+  50%  { transform: translate3d(40px, 50vh, 0) rotate(360deg); }
+  100% { transform: translate3d(-20px, 110vh, 0) rotate(720deg); }
+}
+
+/* 季節のアクセント色(背景の微小な変化) */
+body.season-summer { /* 夏は涼やかなまま */ }
+body.season-winter { /* 冬: 既存のクリーム色をやや冷たく */ }
+
+/* ==================================
+   4-C. 御守護神カードのモバイル横スワイプ
+   ================================== */
+@media (max-width: 768px) {
+  .deity-detail {
+    grid-template-columns: none !important;
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 4px 4px 24px 4px;
+    margin-left: -10px;
+    margin-right: -10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .deity-detail::-webkit-scrollbar { display: none; }
+  .deity-detail > .deity-card {
+    flex: 0 0 86%;
+    scroll-snap-align: center;
+  }
+  /* スワイプ可能を視覚で示すヒント */
+  .deity-detail::after {
+    content: "← スワイプできます →";
+    position: absolute;
+    margin-top: -16px;
+    font-size: 0.75rem;
+    color: var(--text-gray, #888);
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+  }
+  #deities { position: relative; }
+}
+
+/* スマホで back-to-top と被らないよう微調整 */
+@media (max-width: 480px) {
+  .scroll-progress { height: 2px; }
+}
