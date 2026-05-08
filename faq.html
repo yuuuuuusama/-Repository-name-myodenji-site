@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 | 感応山 妙傳寺</title>
+    <meta name="description" content="妙傳寺へのお問い合わせ前にご確認ください。お布施・服装・法事・水子供養・ペット供養・お焚き上げなどのよくある質問">
+    <link rel="canonical" href="https://myodenji7676.online/faq.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="よくある質問 | 感応山 妙傳寺">
+    <meta property="og:description" content="妙傳寺へのお問い合わせ前にご確認ください。お布施・服装・法事・各種供養についてのよくある質問">
+    <meta property="og:image" content="https://myodenji7676.online/temple-logo.jpg">
+    <meta property="og:url" content="https://myodenji7676.online/faq.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#E6B422">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --floral-white: #FFFAF0;
+            --cherry-pink: #FADADD;
+            --deep-pink: #D48A94;
+            --gold-yellow: #E6B422;
+            --soft-yellow: #FFF9E5;
+            --charcoal: #333333;
+            --text-gray: #555555;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Shippori Mincho', serif; background-color: var(--floral-white); color: var(--charcoal); line-height: 1.8; }
+
+        header { background-color: rgba(255, 250, 240, 0.95); border-bottom: 2px solid var(--gold-yellow); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 15px 20px; position: relative; }
+        .logo-crest { height: 48px; width: auto; flex-shrink: 0; opacity: 0.9; }
+        .logo a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+        .logo-mark { width: 52px; height: 52px; object-fit: contain; flex-shrink: 0; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo h1 { font-size: 1.4rem; letter-spacing: 0.1em; margin: 0; }
+        .logo span { font-size: 0.8rem; display: block; color: var(--gold-yellow); font-weight: bold; }
+        .nav-bar { border-top: 1px solid var(--gold-yellow); background: rgba(255, 250, 240, 0.95); }
+        .main-nav { max-width: 1200px; margin: 0 auto; padding: 8px 20px; }
+        .main-nav ul { display: flex; list-style: none; gap: 28px; justify-content: center; }
+        .main-nav a { text-decoration: none; color: var(--charcoal); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em; transition: color 0.3s; }
+        .main-nav a:hover { color: var(--deep-pink); }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 5px; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); }
+        .hamburger span { display: block; width: 25px; height: 2px; background: var(--charcoal); }
+        .mobile-nav { display: none; background: var(--floral-white); border-top: 1px solid var(--gold-yellow); }
+        .mobile-nav ul { list-style: none; padding: 10px 20px; }
+        .mobile-nav li { border-bottom: 1px solid #eee; }
+        .mobile-nav a { display: block; padding: 12px 0; text-decoration: none; color: var(--charcoal); font-weight: 700; }
+        .mobile-nav.open { display: block; }
+
+        .page-hero { background: var(--soft-yellow); border-bottom: 3px solid var(--gold-yellow); padding: 50px 20px; text-align: center; }
+        .page-hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
+        .page-hero p { color: var(--text-gray); }
+
+        .faq-wrapper { max-width: 850px; margin: 0 auto; padding: 60px 20px; }
+        .faq-intro { color: var(--text-gray); margin-bottom: 40px; max-width: 700px; }
+        .faq-category { margin-bottom: 40px; }
+        .faq-category-title { font-size: 1.3rem; color: var(--deep-pink); padding-left: 12px; border-left: 3px solid var(--gold-yellow); margin-bottom: 20px; }
+
+        details.faq-item { background: #fff; border: 1px solid #eee; border-radius: 6px; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.03); overflow: hidden; }
+        details.faq-item[open] { border-color: var(--gold-yellow); }
+        details.faq-item summary { list-style: none; padding: 18px 24px; cursor: pointer; font-weight: bold; color: var(--charcoal); position: relative; padding-right: 50px; transition: background 0.2s; }
+        details.faq-item summary:hover { background: var(--soft-yellow); }
+        details.faq-item summary::-webkit-details-marker { display: none; }
+        details.faq-item summary::before { content: "Q."; color: var(--gold-yellow); font-weight: bold; margin-right: 10px; }
+        details.faq-item summary::after { content: "+"; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); font-size: 1.4rem; color: var(--gold-yellow); transition: transform 0.2s; }
+        details.faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+        details.faq-item .answer { padding: 0 24px 24px; color: var(--text-gray); border-top: 1px dashed #eee; padding-top: 20px; margin: 0 24px; }
+        details.faq-item .answer::before { content: "A."; color: var(--deep-pink); font-weight: bold; margin-right: 10px; }
+
+        .contact-cta { background: var(--soft-yellow); border: 1px solid var(--gold-yellow); padding: 30px; border-radius: 6px; margin-top: 50px; text-align: center; }
+        .contact-cta h3 { color: var(--charcoal); margin-bottom: 12px; }
+        .contact-cta .tel { font-size: 1.5rem; color: var(--gold-yellow); font-weight: bold; text-decoration: none; display: inline-block; margin: 8px 0; }
+        .contact-cta p { color: var(--text-gray); font-size: 0.95rem; margin-bottom: 8px; }
+
+        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 25px; background: var(--gold-yellow); color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px; transition: background 0.3s; }
+        .back-btn:hover { background: #cfa11d; }
+
+        footer { background: var(--charcoal); color: #fff; padding: 60px 20px 20px; text-align: center; }
+        .footer-logo { font-size: 1.8rem; margin-bottom: 20px; }
+        .copyright { margin-top: 40px; font-size: 0.8rem; color: #999; }
+
+        @media (max-width: 768px) {
+            .nav-bar { display: none; }
+            .hamburger { display: flex; }
+            .logo-mark { width: 42px; height: 42px; }
+            .logo-crest { height: 38px; }
+            .logo h1 { font-size: 1.1rem; }
+            details.faq-item summary { padding: 16px 20px; padding-right: 45px; }
+            details.faq-item .answer { margin: 0 20px; padding: 16px 0 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="temple-logo.jpg" alt="感応山 妙傳寺 ロゴ" class="logo-mark">
+                <span class="logo-text">
+                    <span>日蓮宗</span>
+                    <h1>感応山 妙傳寺</h1>
+                </span>
+                <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋" class="logo-crest">
+            </a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="メニュー">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="nav-bar">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#home">ホーム</a></li>
+                <li><a href="index.html#about">知る</a></li>
+                <li><a href="index.html#rituals">弔う</a></li>
+                <li><a href="index.html#prayer">願う</a></li>
+                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html#home">ホーム</a></li>
+            <li><a href="index.html#about">知る</a></li>
+            <li><a href="index.html#rituals">弔う</a></li>
+            <li><a href="index.html#prayer">願う</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="faq.html">よくある質問</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="page-hero">
+    <h2>よくある質問</h2>
+    <p>お問い合わせの多いご質問とご回答をまとめております</p>
+</div>
+
+<main class="faq-wrapper">
+    <p class="faq-intro">皆さまから多くお寄せいただくご質問をまとめました。下記で解決しないご質問は、お気軽にお寺までお問い合わせください。</p>
+
+    <section class="faq-category">
+        <h3 class="faq-category-title">参拝・お参りについて</h3>
+
+        <details class="faq-item">
+            <summary>参拝に予約は必要ですか?</summary>
+            <p class="answer">通常のお参り(本堂・境内へのお参り)は予約不要です。どなたさまもお気軽にお越しください。法要・ご祈祷・水子供養など僧侶が読経するご供養は予約が必要です。お電話(0143-22-4284)またはお問い合わせフォームよりお申し込みください。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>参拝時の服装に決まりはありますか?</summary>
+            <p class="answer">普段のお参りは平服で結構です。法事や法要にご参列の際は、男性は黒・紺・グレーのスーツ、女性はワンピースや黒いスーツなど、落ち着いた服装が一般的です。ご不安な場合は事前にご相談ください。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>駐車場はありますか?</summary>
+            <p class="answer">境内に駐車場をご用意しております。法要などで混み合う場合がございますので、お時間に余裕を持ってお越しください。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>車椅子でも参拝できますか?</summary>
+            <p class="answer">本堂等への段差がございますが、お申し付けいただければお手伝いいたします。事前にお電話でご相談いただけますと、よりスムーズにご案内できます。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>檀家でなくても参拝・ご祈祷を受けられますか?</summary>
+            <p class="answer">はい、檀家・宗派を問わずどなたさまでもお参り・ご祈祷をお受けいただけます。お気軽にご相談ください。</p>
+        </details>
+    </section>
+
+    <section class="faq-category">
+        <h3 class="faq-category-title">お布施・費用について</h3>
+
+        <details class="faq-item">
+            <summary>お布施の金額の目安はありますか?</summary>
+            <p class="answer">お布施はあくまで「お気持ち」をお包みいただくものですので、決まった金額はございません。法要の規模や内容により目安はございますので、お気軽にお問い合わせください。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>納骨堂・永代供養の費用を教えてください</summary>
+            <p class="answer"><a href="rituals.html#hall">納骨堂</a>と<a href="rituals.html#eternal">永代供養</a>の各ページに料金体系を掲載しております。区画タイプやプランによって金額が異なりますので、ご見学・ご相談を承っております。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>支払い方法は現金のみですか?</summary>
+            <p class="answer">原則、現金でのお支払いをお願いしております。事情がある場合はお振込みも可能ですので、ご相談ください。</p>
+        </details>
+    </section>
+
+    <section class="faq-category">
+        <h3 class="faq-category-title">法事・お葬式について</h3>
+
+        <details class="faq-item">
+            <summary>法事の準備は何をすればいいですか?</summary>
+            <p class="answer">日時のご相談、お塔婆のお申込、ご親族へのご連絡などをご準備いただきます。お申込時に詳しくご案内いたしますので、初めての方もご安心ください。お塔婆代やお斎(おとき)の手配についてもご相談に応じます。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>急なご葬儀にも対応していただけますか?</summary>
+            <p class="answer">急を要するご葬儀のご相談は、24時間お電話(0143-22-4284)にて承っております。葬儀社がお決まりでない場合のご相談にも応じます。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>遠方に住んでいて法事に行けません。どうすればいいですか?</summary>
+            <p class="answer">ご遠方の方向けに郵送でのお札のお届けや、ご相談に応じてオンラインでの読経などのご対応も検討いたします。お気軽にご相談ください。</p>
+        </details>
+    </section>
+
+    <section class="faq-category">
+        <h3 class="faq-category-title">水子供養・ペット供養・お焚き上げ</h3>
+
+        <details class="faq-item">
+            <summary>水子供養はいつでも受け付けていますか?</summary>
+            <p class="answer">水子供養のお申込は年中承っております。<a href="rituals.html#mizuko">水子供養のページ</a>から申込書(PDF)をダウンロードいただくか、まずはお電話でご相談ください。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>ペットの供養はどのような形でできますか?</summary>
+            <p class="answer">合祀による納骨、個別の納骨壇(納骨墓「安穏」)、合同供養祭への参列を承っております。詳細は<a href="rituals.html#pet">ペット供養のページ</a>をご覧ください。</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>お焚き上げに出せるものを教えてください</summary>
+            <p class="answer">ご本尊・掛け軸・お位牌・お守り・お札・過去帳・人形などをお焚き上げできます。ガラス・金属・陶器などの不燃物、仏像、故人の遺品はお受けできません。詳細は<a href="rituals.html#otakiage">お焚き上げ供養のページ</a>をご覧ください。</p>
+        </details>
+    </section>
+
+    <div class="contact-cta">
+        <h3>解決しない疑問は、お気軽にご相談ください</h3>
+        <p>受付時間: 9:00 〜 17:00(急ぎのご葬儀は24時間対応)</p>
+        <a href="tel:0143-22-4284" class="tel">☎ 0143-22-4284</a>
+        <p style="margin-top: 12px;">または <a href="index.html#contact" style="color: var(--deep-pink); font-weight: bold;">お問い合わせフォーム</a> よりどうぞ</p>
+    </div>
+
+    <a href="index.html" class="back-btn">← トップへ戻る</a>
+</main>
+
+<footer>
+    <div class="footer-logo">感応山 妙傳寺</div>
+    <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+</footer>
+
+<script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+        document.getElementById('mobileNav').classList.toggle('open');
+    });
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+    }
+</script>
+
+</body>
+</html>

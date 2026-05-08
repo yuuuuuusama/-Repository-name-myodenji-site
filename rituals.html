@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>仏事・弔い | 感応山 妙傳寺</title>
+    <meta name="description" content="感応山 妙傳寺の仏事・弔いのご案内。月参り・法事・お葬式・納骨堂・永代供養・水子供養・ペット供養・お焚き上げ供養を承ります。">
+    <link rel="canonical" href="https://myodenji7676.online/rituals.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="仏事・弔い | 感応山 妙傳寺">
+    <meta property="og:description" content="月参り・法事・お葬式・納骨堂・永代供養・水子供養・ペット供養・お焚き上げ供養のご案内。">
+    <meta property="og:image" content="https://myodenji7676.online/temple-logo.jpg">
+    <meta property="og:url" content="https://myodenji7676.online/rituals.html">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#E6B422">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
@@ -426,6 +440,10 @@
     document.getElementById('hamburger').addEventListener('click', function () {
         document.getElementById('mobileNav').classList.toggle('open');
     });
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+    }
 </script>
 
 </body>

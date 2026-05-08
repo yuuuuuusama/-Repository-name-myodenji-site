@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>感応山 妙傳寺 | 北海道室蘭市の日蓮宗寺院</title>
+    <meta name="description" content="北海道室蘭市常盤町の日蓮宗寺院 感応山 妙傳寺の公式サイト。法事・お葬式・水子供養・ペット供養・ご祈祷・年中行事のご案内。">
+    <link rel="canonical" href="https://myodenji7676.online/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="感応山 妙傳寺 | 北海道室蘭市の日蓮宗寺院">
+    <meta property="og:description" content="北海道室蘭市常盤町の日蓮宗寺院 感応山 妙傳寺の公式サイト。法事・お葬式・水子供養・ペット供養・ご祈祷・年中行事のご案内。">
+    <meta property="og:image" content="https://myodenji7676.online/temple-logo.jpg">
+    <meta property="og:url" content="https://myodenji7676.online/">
+    <meta property="og:site_name" content="感応山 妙傳寺">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#E6B422">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
@@ -661,7 +676,7 @@
                 </div>
                 <span class="card-more">詳しく見る →</span>
             </a>
-            <a href="about.html#newsletter" class="card card-link">
+            <a href="newsletter.html" class="card card-link">
                 <h3>妙傳寺だより「法雨」</h3>
                 <p>定期的にお届けしているおたよりのバックナンバーや最新号をご覧いただけます。</p>
                 <span class="card-more">詳しく見る →</span>
@@ -761,6 +776,13 @@
                     <p class="timeline-body">過去のおたよりがバックナンバーよりお読みいただけるようになりました。</p>
                 </div>
             </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="news.html" style="display: inline-block; padding: 12px 30px; background: var(--gold-yellow); color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px;">すべてのお知らせを見る →</a>
+                <p style="margin-top: 20px; font-size: 0.9rem;">
+                    <a href="faq.html" style="color: var(--deep-pink); margin: 0 10px;">よくある質問</a> ・
+                    <a href="newsletter.html" style="color: var(--deep-pink); margin: 0 10px;">法雨バックナンバー</a>
+                </p>
+            </div>
         </div>
     </section>
 
@@ -803,6 +825,24 @@
                     <form action="https://formsubmit.co/myodenji7676@gmail.com" method="POST">
                         <input type="hidden" name="_subject" value="妙傳寺サイトからのお問い合わせ">
                         <input type="hidden" name="_next" value="https://myodenji7676.online/thanks.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_autoresponse" value="この度は感応山 妙傳寺へお問い合わせをいただき、誠にありがとうございます。
+
+以下の内容にてお問い合わせを承りました。
+
+内容を確認の上、担当者よりご連絡を差し上げます。
+今しばらくお待ちくださいますよう、お願い申し上げます。
+
+なお、お急ぎのご葬儀・ご相談につきましては、お電話にて24時間承っております。
+☎ 0143-22-4284
+
+―――――――――――――――――――
+感応山 妙傳寺
+〒051-0021 北海道室蘭市常盤町5-7
+☎ 0143-22-4284
+https://myodenji7676.online/
+―――――――――――――――――――
+※このメールは自動送信です。">
                         <div class="form-group">
                             <label>氏名</label>
                             <input type="text" name="name" placeholder="お名前をご入力ください" required>
@@ -885,6 +925,11 @@
     document.getElementById('hamburger').addEventListener('click', function () {
         document.getElementById('mobileNav').classList.toggle('open');
     });
+
+    // Service Worker 登録 (PWA)
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+    }
 </script>
 
 </body>

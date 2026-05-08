@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせありがとうございました | 感応山 妙傳寺</title>
+    <meta name="description" content="お問い合わせを受け付けました。内容を確認の上、お返事いたします。">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#E6B422">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
@@ -174,6 +181,12 @@
     <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
     <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
 </footer>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+    }
+</script>
 
 </body>
 </html>

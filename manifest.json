@@ -1,0 +1,25 @@
+{
+  "name": "感応山 妙傳寺",
+  "short_name": "妙傳寺",
+  "description": "北海道室蘭市の日蓮宗寺院 感応山 妙傳寺の公式サイト",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFAF0",
+  "theme_color": "#E6B422",
+  "lang": "ja",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

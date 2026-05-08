@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /sw.js
+
+Sitemap: https://myodenji7676.online/sitemap.xml
