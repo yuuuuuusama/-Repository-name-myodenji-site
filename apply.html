@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各種お申込み | 感応山 妙傳寺</title>
+    <meta name="description" content="感応山 妙傳寺 各種お申込み。法事・ご祈祷・水子供養・納骨堂・永代供養など、お申込みやご相談はこちらから。">
+    <link rel="canonical" href="https://myodenji7676.online/apply.html">
+    <meta name="theme-color" content="#E6B422">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB8CLNYL1V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HB8CLNYL1V');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --floral-white: #FFFAF0; --cherry-pink: #FADADD; --deep-pink: #D48A94; --gold-yellow: #E6B422; --soft-yellow: #FFF9E5; --charcoal: #333333; --text-gray: #555555; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Shippori Mincho', serif; background-color: var(--floral-white); color: var(--charcoal); line-height: 1.8; }
+
+        header { background-color: rgba(255, 250, 240, 0.95); border-bottom: 2px solid var(--gold-yellow); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 15px 20px; position: relative; }
+        .logo a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+        .logo-mark { width: 52px; height: 52px; object-fit: contain; flex-shrink: 0; }
+        .logo-crest { height: 48px; width: auto; flex-shrink: 0; opacity: 0.9; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo h1 { font-size: 1.4rem; letter-spacing: 0.1em; margin: 0; }
+        .logo span { font-size: 0.8rem; color: var(--gold-yellow); font-weight: bold; }
+
+        .page-hero { background: var(--soft-yellow); border-bottom: 3px solid var(--gold-yellow); padding: 50px 20px; text-align: center; }
+        .page-hero h2 { font-size: 2.2rem; margin-bottom: 10px; }
+        .page-hero p { color: var(--text-gray); }
+
+        .apply-wrapper { max-width: 980px; margin: 0 auto; padding: 60px 20px; }
+        .apply-intro { background: var(--soft-yellow); border-left: 4px solid var(--gold-yellow); padding: 20px 25px; margin-bottom: 40px; }
+        .apply-intro p { color: var(--text-gray); font-size: 0.95rem; margin: 0; }
+        .apply-intro p + p { margin-top: 8px; }
+
+        .card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .apply-card {
+            display: flex; flex-direction: column;
+            background: #fff; border: 1px solid #eee; border-radius: 8px;
+            padding: 32px 28px; text-decoration: none; color: inherit;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            position: relative; overflow: hidden;
+        }
+        .apply-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); border-color: var(--gold-yellow); }
+        .apply-card::before {
+            content: ""; position: absolute; top: 0; left: 0;
+            width: 100%; height: 4px; background: var(--gold-yellow);
+        }
+        .card-icon { font-size: 2.4rem; color: var(--deep-pink); margin-bottom: 12px; line-height: 1; }
+        .card-title { font-size: 1.3rem; margin-bottom: 10px; color: var(--charcoal); }
+        .card-desc { color: var(--text-gray); font-size: 0.92rem; flex-grow: 1; margin-bottom: 18px; }
+        .card-action {
+            display: inline-flex; align-items: center; gap: 6px;
+            color: var(--deep-pink); font-weight: bold; font-size: 0.92rem;
+            margin-top: auto;
+        }
+        .card-action::after { content: "→"; transition: transform 0.2s; }
+        .apply-card:hover .card-action::after { transform: translateX(4px); }
+
+        .card-badge {
+            display: inline-block; font-size: 0.75rem; font-weight: bold;
+            background: var(--cherry-pink); color: #8a4a55;
+            padding: 3px 10px; border-radius: 12px; margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .contact-banner {
+            margin-top: 50px; background: #fff; border: 1px solid #eee;
+            border-top: 3px solid var(--deep-pink); border-radius: 6px;
+            padding: 30px; text-align: center;
+        }
+        .contact-banner h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--deep-pink); }
+        .contact-banner p { color: var(--text-gray); font-size: 0.95rem; margin-bottom: 14px; }
+        .contact-banner .tel {
+            font-size: 1.6rem; color: var(--gold-yellow); font-weight: bold;
+            text-decoration: none; display: inline-block; margin-top: 6px;
+        }
+        .contact-banner .hours { font-size: 0.85rem; color: var(--text-gray); margin-top: 6px; }
+
+        .back-link { display: inline-block; margin-top: 30px; color: var(--deep-pink); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .back-link:hover { text-decoration: underline; }
+
+        footer { background: var(--charcoal); color: #fff; padding: 60px 20px 20px; text-align: center; }
+        .footer-logo { font-size: 1.8rem; margin-bottom: 20px; }
+        .copyright { margin-top: 40px; font-size: 0.8rem; color: #999; }
+
+        @media (max-width: 768px) {
+            .logo-mark { width: 42px; height: 42px; }
+            .logo-crest { height: 38px; }
+            .logo h1 { font-size: 1.1rem; }
+            .page-hero h2 { font-size: 1.6rem; }
+            .card-grid { grid-template-columns: 1fr; gap: 18px; }
+            .apply-card { padding: 24px 22px; }
+        }
+    </style>
+    <link rel="stylesheet" href="/animations.css">
+    <link rel="stylesheet" href="/chatbot.css">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="temple-logo.jpg" alt="感応山 妙傳寺 ロゴ" class="logo-mark">
+                <span class="logo-text">
+                    <span>日蓮宗</span>
+                    <h1>感応山 妙傳寺</h1>
+                </span>
+                <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋" class="logo-crest">
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="page-hero">
+    <h2>各種お申込み</h2>
+    <p>法事・ご祈祷・水子供養・納骨堂など、ご希望の項目をお選びください</p>
+</div>
+
+<main class="apply-wrapper">
+    <div class="apply-intro">
+        <p>各申込フォームより必要事項をご入力の上、ご送信ください。送信後、内容を確認の上、当寺よりご連絡いたします。</p>
+        <p>※ お急ぎの場合・ご葬儀のご依頼はお電話(0143-22-4284)にて24時間承っております。</p>
+    </div>
+
+    <div class="card-grid">
+
+        <a href="houji-form.html" class="apply-card">
+            <div class="card-icon">✦</div>
+            <div class="card-title">法事のお申込み</div>
+            <p class="card-desc">四十九日・百ヶ日・一周忌・三回忌などの年回法要のお申込みを承ります。</p>
+            <span class="card-action">お申込みフォームへ</span>
+        </a>
+
+        <a href="kitou-form.html" class="apply-card">
+            <div class="card-icon">✦</div>
+            <div class="card-title">ご祈祷のお申込み</div>
+            <p class="card-desc">家内安全・厄除け・交通安全・商売繁盛など、各種ご祈祷を承ります。</p>
+            <span class="card-action">お申込みフォームへ</span>
+        </a>
+
+        <a href="mizuko-form.html" class="apply-card">
+            <div class="card-icon">✦</div>
+            <div class="card-title">水子供養のお申込み</div>
+            <p class="card-desc">流産・死産・中絶等によりお別れされたお子様の供養を承ります。</p>
+            <span class="card-action">お申込みフォームへ</span>
+        </a>
+
+        <a href="rituals.html#hall" class="apply-card">
+            <div class="card-icon">✦</div>
+            <div class="card-title">納骨堂・永代供養のご相談<span class="card-badge">要相談</span></div>
+            <p class="card-desc">納骨堂のご利用、永代供養、生前法号についてのご相談を承ります。詳細は下記お電話またはお問い合わせフォームよりご連絡ください。</p>
+            <span class="card-action">納骨堂・永代供養のご案内へ</span>
+        </a>
+
+        <a href="rituals.html#pet" class="apply-card">
+            <div class="card-icon">✦</div>
+            <div class="card-title">ペット供養のご相談<span class="card-badge">要相談</span></div>
+            <p class="card-desc">大切な家族であるペットの供養についてご相談を承ります。</p>
+            <span class="card-action">ペット供養のご案内へ</span>
+        </a>
+
+        <a href="rituals.html#otakiage" class="apply-card">
+            <div class="card-icon">✦</div>
+            <div class="card-title">お焚き上げのご相談<span class="card-badge">要相談</span></div>
+            <p class="card-desc">お札・お守り・お写真などのお焚き上げを承ります。</p>
+            <span class="card-action">お焚き上げのご案内へ</span>
+        </a>
+
+    </div>
+
+    <div class="contact-banner">
+        <h3>その他のご相談・お申込みはこちら</h3>
+        <p>上記以外のご相談、お問い合わせはお電話または<a href="index.html#contact" style="color: var(--deep-pink);">お問い合わせフォーム</a>よりお気軽にどうぞ。</p>
+        <a href="tel:0143-22-4284" class="tel">☎ 0143-22-4284</a>
+        <p class="hours">受付時間 9:00〜17:00 / 急を要するご葬儀・ご相談は24時間対応</p>
+    </div>
+
+    <a href="index.html" class="back-link">← トップページへ戻る</a>
+</main>
+
+<footer>
+    <div class="footer-logo">感応山 妙傳寺</div>
+    <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+</footer>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+    }
+</script>
+
+<script src="/animations.js" defer></script>
+<script src="/chatbot.js" defer></script>
+</body>
+</html>
