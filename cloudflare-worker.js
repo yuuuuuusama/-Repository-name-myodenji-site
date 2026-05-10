@@ -1,24 +1,32 @@
 /**
  * 妙傳寺サポート AI チャットボット - Cloudflare Worker
  *
- * このファイルは Cloudflare Workers にデプロイするためのコードです。
- * リポジトリには配置していますが、自動でデプロイはされません。
+ * 2つのエンドポイントを提供:
+ *   POST /              … Webチャットウィジェット (chatbot.js から呼ばれる)
+ *   POST /line/webhook  … LINE Messaging API Webhook
  *
  * デプロイ手順:
  * 1. https://dash.cloudflare.com/ にログイン
- * 2. 左メニュー Workers & Pages → Create → Worker
- * 3. 名前: myodenji-chatbot 等で作成
- * 4. Quick edit でこのファイルの内容を貼り付け → Deploy
- * 5. Settings → Variables and Secrets → Add → Type: Secret
- *    Name: GEMINI_API_KEY
- *    Value: (Google AI Studio で取得した API キー)
- * 6. デプロイされた Worker の URL を chatbot.js の WORKER_ENDPOINT に設定
+ * 2. 左メニュー Workers & Pages → 既存の myodenji-chatbot を選択
+ *    (新規作成の場合: Create → Worker → 名前: myodenji-chatbot)
+ * 3. Quick edit でこのファイルの内容を貼り付け → Deploy
+ * 4. Settings → Variables and Secrets で以下を Secret として追加:
+ *    - GEMINI_API_KEY              (Google AI Studio で取得)
+ *    - LINE_CHANNEL_ACCESS_TOKEN  (LINE Developers → Messaging API設定)
+ *    - LINE_CHANNEL_SECRET         (LINE Developers → チャネル基本設定)
+ * 5. LINE Developers Console:
+ *    - 該当チャネル → Messaging API設定 → Webhook URL に
+ *      https://<your-worker>.workers.dev/line/webhook を設定
+ *    - 「Webhookの利用」を ON
+ *    - 「応答メッセージ」を OFF (Webhookと競合するため)
+ *    - 「あいさつメッセージ」は ON のまま
+ *    - 「Webhook URL検証」ボタンで疎通確認
  */
 
 const ALLOWED_ORIGINS = [
   'https://myodenji7676.online',
   'https://www.myodenji7676.online',
-  'https://yuuuuuusama.github.io'  // GitHub Pages デフォルトURLでもアクセス可
+  'https://yuuuuuusama.github.io'
 ];
 
 const SYSTEM_PROMPT = `あなたは北海道室蘭市にある日蓮宗寺院「感応山 妙傳寺(かんのうざん みょうでんじ)」のサポートアシスタントです。
@@ -82,87 +90,222 @@ const SYSTEM_PROMPT = `あなたは北海道室蘭市にある日蓮宗寺院「
 - 宗派や教義を否定しない、批判的内容は扱わない
 - 寺院に関係ない話題(ニュース・芸能・政治など)は丁寧にお断りし、お寺に関する話題に戻す`;
 
+// ============================================================
+// エントリポイント (パスベースのルーティング)
+// ============================================================
 export default {
-  async fetch(request, env) {
-    const origin = request.headers.get('Origin') || '';
-    const allowed = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
 
-    // CORS preflight
-    if (request.method === 'OPTIONS') {
-      return new Response(null, {
-        headers: {
-          'Access-Control-Allow-Origin': allowed,
-          'Access-Control-Allow-Methods': 'POST, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type',
-          'Access-Control-Max-Age': '86400',
-        }
-      });
+    if (url.pathname === '/line/webhook') {
+      return handleLineWebhook(request, env, ctx);
     }
 
-    if (request.method !== 'POST') {
-      return new Response('Method not allowed', { status: 405 });
-    }
-
-    try {
-      const body = await request.json();
-      const message = (body.message || '').toString().slice(0, 1000); // 入力長制限
-      const history = Array.isArray(body.history) ? body.history.slice(-10) : [];
-
-      if (!message.trim()) {
-        return jsonResp({ error: 'message required' }, 400, allowed);
-      }
-
-      const apiKey = env.GEMINI_API_KEY;
-      if (!apiKey) {
-        return jsonResp({ error: 'API key not configured' }, 500, allowed);
-      }
-
-      // Gemini 形式に変換
-      const contents = history.map(m => ({
-        role: m.role === 'user' ? 'user' : 'model',
-        parts: [{ text: m.text }]
-      }));
-      contents.push({ role: 'user', parts: [{ text: message }] });
-
-      const geminiResp = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            contents,
-            systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-            generationConfig: {
-              temperature: 0.6,
-              maxOutputTokens: 600,
-              topP: 0.9,
-            },
-            safetySettings: [
-              { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_ONLY_HIGH' },
-              { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_ONLY_HIGH' },
-              { category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT', threshold: 'BLOCK_ONLY_HIGH' },
-              { category: 'HARM_CATEGORY_DANGEROUS_CONTENT', threshold: 'BLOCK_ONLY_HIGH' },
-            ],
-          })
-        }
-      );
-
-      if (!geminiResp.ok) {
-        const errText = await geminiResp.text();
-        return jsonResp({ error: 'Gemini API error', detail: errText.slice(0, 200) }, 500, allowed);
-      }
-
-      const data = await geminiResp.json();
-      const reply = data.candidates?.[0]?.content?.parts?.[0]?.text
-        || 'すみません、お答えを生成できませんでした。お電話 0143-22-4284 までお気軽にお問い合わせください。';
-
-      return jsonResp({ reply }, 200, allowed);
-    } catch (e) {
-      return jsonResp({ error: 'Internal error', detail: String(e).slice(0, 200) }, 500, allowed);
-    }
+    return handleWebChat(request, env);
   }
 };
 
+// ============================================================
+// Web チャット (既存のチャットウィジェット用)
+// ============================================================
+async function handleWebChat(request, env) {
+  const origin = request.headers.get('Origin') || '';
+  const allowed = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+
+  if (request.method === 'OPTIONS') {
+    return new Response(null, {
+      headers: {
+        'Access-Control-Allow-Origin': allowed,
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Max-Age': '86400',
+      }
+    });
+  }
+
+  if (request.method !== 'POST') {
+    return new Response('Method not allowed', { status: 405 });
+  }
+
+  try {
+    const body = await request.json();
+    const message = (body.message || '').toString().slice(0, 1000);
+    const history = Array.isArray(body.history) ? body.history.slice(-10) : [];
+
+    if (!message.trim()) {
+      return jsonResp({ error: 'message required' }, 400, allowed);
+    }
+
+    const reply = await callGemini(message, history, env.GEMINI_API_KEY);
+    return jsonResp({ reply }, 200, allowed);
+  } catch (e) {
+    return jsonResp({ error: 'Internal error', detail: String(e).slice(0, 200) }, 500, allowed);
+  }
+}
+
+// ============================================================
+// LINE Messaging API Webhook
+// ============================================================
+async function handleLineWebhook(request, env, ctx) {
+  if (request.method !== 'POST') {
+    return new Response('Method not allowed', { status: 405 });
+  }
+
+  // 署名検証は raw body 必須なので先にテキストで読む
+  const bodyText = await request.text();
+  const signature = request.headers.get('x-line-signature') || '';
+
+  const valid = await verifyLineSignature(bodyText, signature, env.LINE_CHANNEL_SECRET);
+  if (!valid) {
+    return new Response('Invalid signature', { status: 403 });
+  }
+
+  let body;
+  try {
+    body = JSON.parse(bodyText);
+  } catch {
+    return new Response('Invalid JSON', { status: 400 });
+  }
+
+  const events = Array.isArray(body.events) ? body.events : [];
+
+  // LINEは10秒以内のレスポンスを期待。重い処理は waitUntil で非同期化
+  for (const event of events) {
+    ctx.waitUntil(handleLineEvent(event, env));
+  }
+
+  return new Response('OK', { status: 200 });
+}
+
+async function handleLineEvent(event, env) {
+  const replyToken = event.replyToken;
+  if (!replyToken) return;
+
+  // テキストメッセージのみAIで応答
+  if (event.type === 'message' && event.message?.type === 'text') {
+    const userText = (event.message.text || '').slice(0, 1000);
+    if (!userText.trim()) return;
+
+    try {
+      const reply = await callGemini(userText, [], env.GEMINI_API_KEY);
+      await lineReply(replyToken, reply, env.LINE_CHANNEL_ACCESS_TOKEN);
+    } catch {
+      await lineReply(
+        replyToken,
+        'すみません、ただいまお答えできませんでした。\nお電話 0143-22-4284 までお気軽にお問い合わせください。',
+        env.LINE_CHANNEL_ACCESS_TOKEN
+      ).catch(() => {});
+    }
+    return;
+  }
+
+  // スタンプ・画像など非テキストメッセージへの定型応答
+  if (event.type === 'message') {
+    await lineReply(
+      replyToken,
+      'お問い合わせありがとうございます。\n恐れ入りますが、文字でメッセージをお送りいただけますとご対応しやすくなります。\n\nお急ぎのご相談は ☎ 0143-22-4284 までどうぞ。',
+      env.LINE_CHANNEL_ACCESS_TOKEN
+    ).catch(() => {});
+  }
+  // follow / unfollow / postback などはLINE側のあいさつメッセージ等で対応するため何もしない
+}
+
+// ============================================================
+// Gemini API 呼び出し (Web/LINE共通)
+// ============================================================
+async function callGemini(message, history, apiKey) {
+  if (!apiKey) throw new Error('GEMINI_API_KEY not configured');
+
+  const contents = history.map(m => ({
+    role: m.role === 'user' ? 'user' : 'model',
+    parts: [{ text: m.text }]
+  }));
+  contents.push({ role: 'user', parts: [{ text: message }] });
+
+  const resp = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents,
+        systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+        generationConfig: {
+          temperature: 0.6,
+          maxOutputTokens: 600,
+          topP: 0.9,
+        },
+        safetySettings: [
+          { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_ONLY_HIGH' },
+          { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_ONLY_HIGH' },
+          { category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT', threshold: 'BLOCK_ONLY_HIGH' },
+          { category: 'HARM_CATEGORY_DANGEROUS_CONTENT', threshold: 'BLOCK_ONLY_HIGH' },
+        ],
+      })
+    }
+  );
+
+  if (!resp.ok) {
+    const errText = await resp.text();
+    throw new Error('Gemini API error: ' + errText.slice(0, 200));
+  }
+
+  const data = await resp.json();
+  return data.candidates?.[0]?.content?.parts?.[0]?.text
+    || 'すみません、お答えを生成できませんでした。お電話 0143-22-4284 までお気軽にお問い合わせください。';
+}
+
+// ============================================================
+// LINE 署名検証 (HMAC-SHA256)
+// ============================================================
+async function verifyLineSignature(bodyText, signature, secret) {
+  if (!secret || !signature) return false;
+  const key = await crypto.subtle.importKey(
+    'raw',
+    new TextEncoder().encode(secret),
+    { name: 'HMAC', hash: 'SHA-256' },
+    false,
+    ['sign']
+  );
+  const sigBytes = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(bodyText));
+  const computed = btoa(String.fromCharCode(...new Uint8Array(sigBytes)));
+  return timingSafeEqual(computed, signature);
+}
+
+function timingSafeEqual(a, b) {
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) {
+    diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return diff === 0;
+}
+
+// ============================================================
+// LINE Reply API
+// ============================================================
+async function lineReply(replyToken, text, accessToken) {
+  if (!accessToken) throw new Error('LINE_CHANNEL_ACCESS_TOKEN not configured');
+  const resp = await fetch('https://api.line.me/v2/bot/message/reply', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${accessToken}`
+    },
+    body: JSON.stringify({
+      replyToken,
+      messages: [{ type: 'text', text: text.slice(0, 4900) }]
+    })
+  });
+  if (!resp.ok) {
+    const errText = await resp.text();
+    throw new Error('LINE Reply API error: ' + errText.slice(0, 200));
+  }
+}
+
+// ============================================================
+// レスポンスヘルパ
+// ============================================================
 function jsonResp(payload, status, origin) {
   return new Response(JSON.stringify(payload), {
     status,
