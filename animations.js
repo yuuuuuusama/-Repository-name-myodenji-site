@@ -20,7 +20,7 @@
     if (reducedMotion) return;
     if (!('IntersectionObserver' in window)) return;
     const targets = document.querySelectorAll(
-      'section, .deity-card, .news-item, .grounds-item, .event-item, .feature-card, .prayer-card, .amulet-card, .issue-card, .timeline-item, .card, .faq-item, .form-section'
+      '.deity-card, .news-item, .grounds-item, .event-item, .feature-card, .prayer-card, .amulet-card, .issue-card, .timeline-item, .card, .faq-item, .form-section'
     );
     if (!targets.length) return;
     document.body.classList.add('has-fade-in');
