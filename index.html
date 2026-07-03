@@ -51,7 +51,9 @@
             font-family: 'Shippori Mincho', serif;
             background-color: var(--floral-white);
             color: var(--charcoal);
-            line-height: 1.8;
+            line-height: 1.9;
+            letter-spacing: 0.02em;
+            font-feature-settings: "palt" 1;
             overflow-x: hidden;
         }
 
@@ -59,47 +61,73 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding: 100px 24px;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 72px;
         }
 
         .section-header h2 {
             font-size: 2rem;
+            font-weight: 700;
             display: inline-block;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 28px;
             color: var(--charcoal);
+            letter-spacing: 0.22em;
+            text-indent: 0.22em;
         }
 
+        /* 金の極細ヘアライン + 中央の菱形飾り */
         .section-header h2::after {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 25%;
-            width: 50%;
-            height: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 130px;
+            height: 1px;
+            background: linear-gradient(90deg,
+                rgba(230, 180, 34, 0) 0%,
+                var(--gold-yellow) 28%,
+                var(--gold-yellow) 72%,
+                rgba(230, 180, 34, 0) 100%);
+        }
+
+        .section-header h2::before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            width: 7px;
+            height: 7px;
             background: var(--gold-yellow);
+            transform: translateX(-50%) rotate(45deg);
         }
 
         .section-header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--text-gray);
-            margin-top: 18px;
-            letter-spacing: 0.05em;
+            margin-top: 22px;
+            letter-spacing: 0.14em;
         }
 
         /* --- Header & Navigation --- */
         header {
-            background-color: rgba(255, 250, 240, 0.95);
-            border-bottom: 2px solid var(--gold-yellow);
+            background-color: rgba(255, 250, 240, 0.96);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-bottom: 1px solid var(--gold-yellow);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow:
+                0 1px 0 rgba(230, 180, 34, 0.25),
+                0 1px 2px rgba(0, 0, 0, 0.02),
+                0 4px 12px rgba(0, 0, 0, 0.04),
+                0 12px 32px rgba(0, 0, 0, 0.03);
         }
 
         .header-inner {
@@ -142,7 +170,7 @@
 
         .logo h1 {
             font-size: 1.4rem;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.14em;
             margin: 0;
         }
 
@@ -151,23 +179,24 @@
             display: block;
             color: var(--gold-yellow);
             font-weight: bold;
+            letter-spacing: 0.2em;
         }
 
         .nav-bar {
-            border-top: 1px solid var(--gold-yellow);
+            border-top: 1px solid rgba(230, 180, 34, 0.45);
             background: rgba(255, 250, 240, 0.95);
         }
 
         .main-nav {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 8px 20px;
+            padding: 10px 20px;
         }
 
         .main-nav ul {
             display: flex;
             list-style: none;
-            gap: 28px;
+            gap: 34px;
             justify-content: center;
         }
 
@@ -176,12 +205,31 @@
             color: var(--charcoal);
             font-weight: 700;
             font-size: 0.85rem;
-            letter-spacing: 0.05em;
-            transition: color 0.3s;
+            letter-spacing: 0.12em;
+            transition: color 0.35s ease;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background: var(--gold-yellow);
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.35s ease;
         }
 
         .main-nav a:hover {
             color: var(--deep-pink);
+        }
+
+        .main-nav a:hover::after {
+            transform: scaleX(1);
         }
 
         /* ハンバーガーメニュー */
@@ -244,16 +292,31 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            border-bottom: 8px solid var(--cherry-pink);
+            border-bottom: 6px solid var(--cherry-pink);
+            box-shadow: inset 0 -1px 0 rgba(230, 180, 34, 0.55);
         }
 
         .hero-title {
-            background: rgba(255, 250, 240, 0.85);
-            padding: 40px 50px;
+            background: rgba(255, 250, 240, 0.92);
+            padding: 48px 56px;
             border: 1px solid var(--gold-yellow);
             display: inline-flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            box-shadow:
+                0 1px 3px rgba(0, 0, 0, 0.04),
+                0 8px 24px rgba(0, 0, 0, 0.07),
+                0 24px 56px rgba(0, 0, 0, 0.06);
+        }
+
+        /* 掛軸のような内側の二重飾り枠 */
+        .hero-title::before {
+            content: '';
+            position: absolute;
+            inset: 7px;
+            border: 1px solid rgba(230, 180, 34, 0.4);
+            pointer-events: none;
         }
 
         .hero-title h2 {
@@ -285,26 +348,28 @@
             max-width: 760px;
             margin: 0 auto;
             padding-left: 30px;
-            border-left: 2px solid var(--gold-yellow);
+            border-left: 1px solid rgba(230, 180, 34, 0.55);
             position: relative;
         }
         .timeline-item {
             position: relative;
-            margin-bottom: 35px;
+            margin-bottom: 44px;
             padding-left: 15px;
         }
         .timeline-item:last-child { margin-bottom: 0; }
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -42px;
-            top: 6px;
-            width: 14px;
-            height: 14px;
+            left: -37px;
+            top: 8px;
+            width: 9px;
+            height: 9px;
             background: var(--gold-yellow);
             border-radius: 50%;
-            border: 3px solid var(--floral-white);
-            box-shadow: 0 0 0 1px var(--gold-yellow);
+            border: 2px solid var(--floral-white);
+            box-shadow:
+                0 0 0 1px var(--gold-yellow),
+                0 0 0 5px rgba(230, 180, 34, 0.1);
         }
         .timeline-meta {
             display: flex;
@@ -321,18 +386,20 @@
         .timeline-tag {
             display: inline-block;
             background: var(--soft-yellow);
-            border: 1px solid var(--gold-yellow);
+            border: 1px solid rgba(230, 180, 34, 0.6);
             color: var(--charcoal);
-            padding: 2px 12px;
+            padding: 2px 14px;
             border-radius: 20px;
             font-size: 0.78rem;
             font-weight: bold;
+            letter-spacing: 0.08em;
         }
         .timeline-title {
             font-size: 1.1rem;
             font-weight: bold;
             margin: 4px 0;
             color: var(--charcoal);
+            letter-spacing: 0.06em;
         }
         .timeline-body {
             color: var(--text-gray);
@@ -367,27 +434,60 @@
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            gap: 36px;
         }
 
         .card {
             background: #fff;
-            padding: 30px;
+            padding: 36px 32px;
             border: 1px solid var(--cherry-pink);
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 2px;
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        border-color 0.4s ease;
             position: relative;
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.02),
+                0 4px 12px rgba(0, 0, 0, 0.03),
+                0 12px 32px rgba(212, 138, 148, 0.05);
+        }
+
+        /* 金箔のような上端の繊細なアクセント */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 56px;
+            height: 2px;
+            background: linear-gradient(90deg,
+                rgba(230, 180, 34, 0) 0%,
+                var(--gold-yellow) 50%,
+                rgba(230, 180, 34, 0) 100%);
+            transition: width 0.4s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(232, 167, 176, 0.2);
+            transform: translateY(-4px);
+            border-color: rgba(230, 180, 34, 0.55);
+            box-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.02),
+                0 8px 20px rgba(212, 138, 148, 0.1),
+                0 24px 48px rgba(212, 138, 148, 0.09);
+        }
+
+        .card:hover::before {
+            width: 120px;
         }
 
         .card h3 {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             color: var(--deep-pink);
-            border-bottom: 1px solid var(--soft-yellow);
-            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(230, 180, 34, 0.25);
+            padding-bottom: 12px;
+            letter-spacing: 0.1em;
+            font-weight: 700;
         }
 
         /* 弔うセクション 背景画像 */
@@ -410,7 +510,10 @@
         #rituals .ritual-list li {
             background: rgba(255, 250, 240, 0.95);
             backdrop-filter: blur(2px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.04),
+                0 4px 12px rgba(0, 0, 0, 0.05),
+                0 10px 24px rgba(0, 0, 0, 0.04);
         }
 
         /* ご祈祷セクション 背景画像 */
@@ -431,37 +534,47 @@
             text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
         }
         #prayer .card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.96);
             backdrop-filter: blur(2px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.04),
+                0 6px 16px rgba(0, 0, 0, 0.06),
+                0 16px 36px rgba(0, 0, 0, 0.05);
         }
 
         .ritual-list {
             list-style: none;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
+            gap: 18px;
         }
 
         .ritual-list li {
             background: var(--soft-yellow);
             padding: 0;
             text-align: center;
-            border-radius: 4px;
+            border-radius: 2px;
             border: 1px solid var(--gold-yellow);
             font-weight: bold;
-            transition: background 0.2s, color 0.2s, transform 0.2s;
+            letter-spacing: 0.08em;
+            transition: background 0.35s ease, color 0.35s ease,
+                        transform 0.35s ease, box-shadow 0.35s ease;
         }
         .ritual-list li a {
             display: block;
-            padding: 15px;
+            padding: 16px 15px;
             text-decoration: none;
             color: inherit;
         }
         .ritual-list li:hover {
-            background: var(--gold-yellow);
+            background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.16) 0%,
+                rgba(0, 0, 0, 0.05) 100%), var(--gold-yellow);
             color: #fff;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.04),
+                0 8px 20px rgba(230, 180, 34, 0.28);
         }
 
         .deity-grid {
@@ -472,10 +585,12 @@
         }
 
         .deity-item {
-            background: var(--cherry-pink);
-            padding: 5px 15px;
+            background: rgba(250, 218, 221, 0.6);
+            border: 1px solid rgba(212, 138, 148, 0.35);
+            padding: 4px 16px;
             border-radius: 20px;
             font-size: 0.85rem;
+            letter-spacing: 0.06em;
         }
 
         /* --- Form --- */
@@ -494,60 +609,116 @@
             flex: 2;
             min-width: 300px;
             background: #fff;
-            padding: 30px;
+            padding: 40px 36px;
             border: 1px solid var(--gold-yellow);
+            border-radius: 2px;
+            box-shadow:
+                inset 0 0 0 1px rgba(255, 255, 255, 0.6),
+                0 1px 2px rgba(0, 0, 0, 0.02),
+                0 6px 16px rgba(0, 0, 0, 0.03),
+                0 16px 40px rgba(230, 180, 34, 0.06);
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 7px;
             font-weight: bold;
+            letter-spacing: 0.08em;
+            font-size: 0.95rem;
         }
 
         .form-group input, .form-group textarea {
             width: 100%;
-            padding: 12px;
+            padding: 13px 14px;
             border: 1px solid #ddd;
+            border-radius: 2px;
+            background: #fff;
             font-family: inherit;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold-yellow);
+            box-shadow: 0 0 0 3px rgba(230, 180, 34, 0.12);
         }
 
         .submit-btn {
-            background: var(--gold-yellow);
+            background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.16) 0%,
+                rgba(0, 0, 0, 0.04) 100%), var(--gold-yellow);
             color: #fff;
-            padding: 15px 40px;
+            padding: 17px 40px;
             border: none;
+            border-radius: 2px;
             cursor: pointer;
+            font-family: inherit;
             font-weight: bold;
             font-size: 1rem;
+            letter-spacing: 0.14em;
             width: 100%;
-            transition: background 0.3s;
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.25),
+                0 1px 2px rgba(0, 0, 0, 0.06),
+                0 4px 12px rgba(230, 180, 34, 0.2);
+            transition: box-shadow 0.35s ease, transform 0.35s ease, background 0.35s ease;
         }
 
         .submit-btn:hover {
-            background: #cfa11d;
+            background: linear-gradient(180deg,
+                rgba(0, 0, 0, 0.06) 0%,
+                rgba(0, 0, 0, 0.12) 100%), var(--gold-yellow);
+            transform: translateY(-1px);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.06),
+                0 8px 20px rgba(230, 180, 34, 0.3);
         }
 
         /* --- Footer --- */
         footer {
             background: var(--charcoal);
             color: #fff;
-            padding: 60px 20px 20px;
+            padding: 72px 20px 28px;
             text-align: center;
+            border-top: 1px solid rgba(230, 180, 34, 0.6);
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 1px;
+            background: linear-gradient(90deg,
+                rgba(230, 180, 34, 0) 0%,
+                rgba(230, 180, 34, 0.5) 50%,
+                rgba(230, 180, 34, 0) 100%);
         }
 
         .footer-logo {
             font-size: 1.8rem;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
+            letter-spacing: 0.18em;
+        }
+
+        footer p {
+            letter-spacing: 0.08em;
+            color: rgba(255, 255, 255, 0.85);
         }
 
         .copyright {
-            margin-top: 40px;
+            margin-top: 48px;
             font-size: 0.8rem;
             color: #999;
+            letter-spacing: 0.1em;
         }
 
         /* --- Card Link --- */
@@ -559,17 +730,25 @@
             cursor: pointer;
         }
         .card-link:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(232, 167, 176, 0.3);
-            border-color: var(--gold-yellow);
+            transform: translateY(-4px);
+            border-color: rgba(230, 180, 34, 0.55);
+            box-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.02),
+                0 8px 20px rgba(212, 138, 148, 0.1),
+                0 24px 48px rgba(212, 138, 148, 0.09);
         }
         .card-more {
             display: block;
             margin-top: auto;
-            padding-top: 15px;
+            padding-top: 18px;
             font-size: 0.85rem;
             color: var(--gold-yellow);
             font-weight: bold;
+            letter-spacing: 0.1em;
+            transition: letter-spacing 0.35s ease;
+        }
+        .card-link:hover .card-more {
+            letter-spacing: 0.16em;
         }
 
         /* --- Mobile Optimization --- */
@@ -579,8 +758,16 @@
             .logo-mark { width: 42px; height: 42px; }
             .logo-crest { height: 38px; }
             .logo h1 { font-size: 1.1rem; }
+            .container { padding: 68px 20px; }
+            .section-header { margin-bottom: 48px; }
+            .section-header h2 { font-size: 1.65rem; letter-spacing: 0.16em; text-indent: 0.16em; padding-bottom: 24px; }
+            .section-header p { font-size: 1rem; letter-spacing: 0.1em; }
+            .hero-title { padding: 34px 30px; }
             .hero-title h2 { font-size: 1.8rem; }
-            .ritual-list { grid-template-columns: repeat(2, 1fr); }
+            .card { padding: 30px 24px; }
+            .card-grid { gap: 26px; }
+            .contact-form { padding: 30px 24px; }
+            .ritual-list { grid-template-columns: repeat(2, 1fr); gap: 14px; }
             section[id] { scroll-margin-top: 80px; }
             #prayer {
                 background-position: 65% center;
@@ -794,7 +981,7 @@
                 </div>
             </div>
             <div style="text-align: center; margin-top: 40px;">
-                <a href="news.html" style="display: inline-block; padding: 12px 30px; background: var(--gold-yellow); color: #fff; text-decoration: none; font-weight: bold; border-radius: 4px;">すべてのお知らせを見る →</a>
+                <a href="news.html" style="display: inline-block; padding: 14px 38px; background: linear-gradient(180deg, rgba(255,255,255,0.16) 0%, rgba(0,0,0,0.04) 100%), var(--gold-yellow); color: #fff; text-decoration: none; font-weight: bold; letter-spacing: 0.1em; border-radius: 2px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 1px 2px rgba(0,0,0,0.06), 0 4px 12px rgba(230,180,34,0.2); transition: box-shadow 0.35s ease;">すべてのお知らせを見る →</a>
                 <p style="margin-top: 20px; font-size: 0.9rem;">
                     <a href="faq.html" style="color: var(--deep-pink); margin: 0 10px;">よくある質問</a> ・
                     <a href="newsletter.html" style="color: var(--deep-pink); margin: 0 10px;">法雨バックナンバー</a>

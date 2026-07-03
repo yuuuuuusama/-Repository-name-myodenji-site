@@ -46,17 +46,25 @@
             font-family: 'Shippori Mincho', serif;
             background-color: var(--floral-white);
             color: var(--charcoal);
-            line-height: 1.8;
+            line-height: 1.9;
+            letter-spacing: 0.02em;
+            font-feature-settings: "palt" 1;
         }
 
         /* --- Header --- */
         header {
-            background-color: rgba(255, 250, 240, 0.95);
-            border-bottom: 2px solid var(--gold-yellow);
+            background-color: rgba(255, 250, 240, 0.96);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-bottom: 1px solid var(--gold-yellow);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow:
+                0 1px 0 rgba(230, 180, 34, 0.25),
+                0 1px 2px rgba(0, 0, 0, 0.02),
+                0 4px 12px rgba(0, 0, 0, 0.04),
+                0 12px 32px rgba(0, 0, 0, 0.03);
         }
 
         .header-inner {
@@ -73,21 +81,36 @@
         .logo a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
         .logo-mark { width: 52px; height: 52px; object-fit: contain; flex-shrink: 0; }
         .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-        .logo h1 { font-size: 1.4rem; letter-spacing: 0.1em; margin: 0; }
-        .logo span { font-size: 0.8rem; display: block; color: var(--gold-yellow); font-weight: bold; }
+        .logo h1 { font-size: 1.4rem; letter-spacing: 0.14em; margin: 0; }
+        .logo span { font-size: 0.8rem; display: block; color: var(--gold-yellow); font-weight: bold; letter-spacing: 0.2em; }
 
-        .nav-bar { border-top: 1px solid var(--gold-yellow); background: rgba(255, 250, 240, 0.95); }
-        .main-nav { max-width: 1200px; margin: 0 auto; padding: 8px 20px; }
-        .main-nav ul { display: flex; list-style: none; gap: 28px; justify-content: center; }
+        .nav-bar { border-top: 1px solid rgba(230, 180, 34, 0.45); background: rgba(255, 250, 240, 0.95); }
+        .main-nav { max-width: 1200px; margin: 0 auto; padding: 10px 20px; }
+        .main-nav ul { display: flex; list-style: none; gap: 34px; justify-content: center; }
         .main-nav a {
             text-decoration: none;
             color: var(--charcoal);
             font-weight: 700;
             font-size: 0.85rem;
-            letter-spacing: 0.05em;
-            transition: color 0.3s;
+            letter-spacing: 0.12em;
+            transition: color 0.35s ease;
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background: var(--gold-yellow);
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.35s ease;
         }
         .main-nav a:hover { color: var(--deep-pink); }
+        .main-nav a:hover::after { transform: scaleX(1); }
 
         .hamburger {
             display: none;
@@ -112,17 +135,51 @@
 
         /* --- Page Hero --- */
         .page-hero {
-            background: var(--soft-yellow);
-            border-bottom: 3px solid var(--gold-yellow);
-            padding: 50px 20px;
+            background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.35) 0%,
+                rgba(255, 255, 255, 0) 100%), var(--soft-yellow);
+            border-bottom: 1px solid var(--gold-yellow);
+            box-shadow: inset 0 -4px 12px rgba(230, 180, 34, 0.05);
+            padding: 64px 20px 52px;
             text-align: center;
         }
         .page-hero h2 {
             font-size: 2.2rem;
+            font-weight: 700;
             color: var(--charcoal);
-            margin-bottom: 10px;
+            letter-spacing: 0.24em;
+            text-indent: 0.24em;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 26px;
+            margin-bottom: 14px;
         }
-        .page-hero p { color: var(--text-gray); font-size: 1rem; }
+        /* 金の極細ヘアライン + 菱形飾り */
+        .page-hero h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 1px;
+            background: linear-gradient(90deg,
+                rgba(230, 180, 34, 0) 0%,
+                var(--gold-yellow) 28%,
+                var(--gold-yellow) 72%,
+                rgba(230, 180, 34, 0) 100%);
+        }
+        .page-hero h2::before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            width: 7px;
+            height: 7px;
+            background: var(--gold-yellow);
+            transform: translateX(-50%) rotate(45deg);
+        }
+        .page-hero p { color: var(--text-gray); font-size: 1rem; letter-spacing: 0.12em; }
 
         /* --- 目次 --- */
         .toc {
@@ -138,26 +195,37 @@
         }
         .toc-grid a {
             background: #fff;
-            border: 1px solid var(--gold-yellow);
+            border: 1px solid rgba(230, 180, 34, 0.6);
             color: var(--charcoal);
             text-decoration: none;
-            padding: 8px 20px;
+            padding: 8px 22px;
             border-radius: 30px;
             font-size: 0.9rem;
             font-weight: bold;
-            transition: background 0.2s, color 0.2s;
+            letter-spacing: 0.08em;
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.02),
+                0 3px 8px rgba(0, 0, 0, 0.03);
+            transition: background 0.35s ease, color 0.35s ease,
+                        box-shadow 0.35s ease, transform 0.35s ease;
         }
         .toc-grid a:hover {
-            background: var(--gold-yellow);
+            background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.16) 0%,
+                rgba(0, 0, 0, 0.05) 100%), var(--gold-yellow);
             color: #fff;
+            transform: translateY(-2px);
+            box-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.04),
+                0 6px 16px rgba(230, 180, 34, 0.25);
         }
 
         /* --- Sections --- */
         .detail-section {
             max-width: 900px;
             margin: 0 auto;
-            padding: 80px 20px;
-            border-bottom: 1px solid var(--cherry-pink);
+            padding: 96px 20px;
+            border-bottom: 1px solid rgba(212, 138, 148, 0.25);
         }
         .detail-section:last-of-type { border-bottom: none; }
 
@@ -165,22 +233,35 @@
             font-size: 0.8rem;
             color: var(--gold-yellow);
             font-weight: bold;
-            letter-spacing: 0.2em;
-            margin-bottom: 10px;
+            letter-spacing: 0.34em;
+            margin-bottom: 12px;
         }
 
         .detail-section h3 {
             font-size: 1.8rem;
+            font-weight: 700;
             color: var(--charcoal);
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-            border-bottom: 2px solid var(--gold-yellow);
+            letter-spacing: 0.14em;
+            padding-bottom: 18px;
+            margin-bottom: 36px;
+            border-bottom: 1px solid rgba(230, 180, 34, 0.4);
+            position: relative;
+        }
+        /* 見出し下の金の短い飾り線（二重罫） */
+        .detail-section h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 72px;
+            height: 2px;
+            background: var(--gold-yellow);
         }
 
         .detail-section p {
             color: var(--text-gray);
             font-size: 1rem;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
             max-width: 700px;
         }
 
@@ -188,35 +269,58 @@
             width: 100%;
             max-height: 400px;
             object-fit: cover;
-            margin-bottom: 30px;
+            margin-bottom: 32px;
             border: 1px solid var(--cherry-pink);
+            border-radius: 2px;
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.03),
+                0 6px 16px rgba(0, 0, 0, 0.05),
+                0 16px 40px rgba(0, 0, 0, 0.04);
         }
 
         /* 御守護神タグ */
         .deity-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
         .deity-item {
-            background: var(--cherry-pink);
-            padding: 8px 20px;
+            background: rgba(250, 218, 221, 0.6);
+            border: 1px solid rgba(212, 138, 148, 0.35);
+            padding: 7px 20px;
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: bold;
+            letter-spacing: 0.06em;
         }
         .deity-detail {
-            margin-top: 30px;
+            margin-top: 36px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 24px;
         }
         .deity-card {
             background: #fff;
             border: 1px solid var(--cherry-pink);
-            padding: 20px;
-            border-radius: 4px;
+            padding: 24px 22px;
+            border-radius: 2px;
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.02),
+                0 4px 12px rgba(0, 0, 0, 0.03),
+                0 12px 32px rgba(212, 138, 148, 0.05);
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                        border-color 0.4s ease;
+        }
+        .deity-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(230, 180, 34, 0.55);
+            box-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.02),
+                0 8px 20px rgba(212, 138, 148, 0.1),
+                0 24px 48px rgba(212, 138, 148, 0.09);
         }
         .deity-card h4 {
             color: var(--deep-pink);
             margin-bottom: 10px;
             font-size: 1.1rem;
+            letter-spacing: 0.08em;
         }
 
         /* 年中行事テーブル */
@@ -226,7 +330,7 @@
             margin-top: 20px;
         }
         .events-table th, .events-table td {
-            padding: 12px 15px;
+            padding: 14px 18px;
             border-bottom: 1px solid #eee;
             text-align: left;
             font-size: 0.95rem;
@@ -236,6 +340,12 @@
             color: var(--charcoal);
             font-weight: bold;
             width: 120px;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid rgba(230, 180, 34, 0.3);
+        }
+        .events-table tr:first-child th,
+        .events-table tr:first-child td {
+            border-top: 1px solid rgba(230, 180, 34, 0.4);
         }
         /* 行事リスト(詳細) */
         .event-list { margin: 30px 0; max-width: 700px; }
@@ -278,35 +388,55 @@
             width: 140px;
             height: calc(100% - 50px);
             object-fit: cover;
-            border-radius: 4px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 2px;
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.04),
+                0 4px 12px rgba(0, 0, 0, 0.07),
+                0 10px 24px rgba(0, 0, 0, 0.05);
             margin: 0;
         }
 
         /* 法雨バックナンバー */
         .newsletter-list {
             list-style: none;
-            margin-top: 20px;
+            margin-top: 24px;
         }
         .newsletter-list li {
             background: #fff;
             border: 1px solid var(--cherry-pink);
-            padding: 15px 20px;
-            margin-bottom: 10px;
+            border-radius: 2px;
+            padding: 17px 22px;
+            margin-bottom: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.02),
+                0 3px 10px rgba(0, 0, 0, 0.03);
+            transition: border-color 0.35s ease, box-shadow 0.35s ease;
         }
-        .newsletter-list li span { font-size: 0.85rem; color: var(--text-gray); }
+        .newsletter-list li:hover {
+            border-color: rgba(230, 180, 34, 0.55);
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.02),
+                0 6px 16px rgba(212, 138, 148, 0.08);
+        }
+        .newsletter-list li span { font-size: 0.85rem; color: var(--text-gray); letter-spacing: 0.06em; }
+        .newsletter-list li a {
+            color: var(--deep-pink);
+            font-weight: bold;
+            letter-spacing: 0.06em;
+        }
 
         /* ご挨拶 */
-        .greeting-block { margin-bottom: 40px; }
+        .greeting-block { margin-bottom: 48px; }
         .greeting-title {
             font-size: 1.3rem;
             color: var(--deep-pink);
-            margin-bottom: 15px;
-            padding-left: 12px;
-            border-left: 3px solid var(--gold-yellow);
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+            padding-left: 14px;
+            border-left: 2px solid var(--gold-yellow);
         }
         .greeting-subtitle {
             font-size: 1.05rem;
@@ -337,9 +467,13 @@
             height: 400px;
             object-fit: cover;
             object-position: center top;
-            border-radius: 4px;
-            margin-bottom: 20px;
+            border-radius: 2px;
+            margin-bottom: 24px;
             border: 1px solid var(--cherry-pink);
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.03),
+                0 6px 16px rgba(0, 0, 0, 0.05),
+                0 16px 40px rgba(0, 0, 0, 0.04);
         }
         .greeting-photo-portrait {
             display: block;
@@ -347,14 +481,20 @@
             max-width: 100%;
             max-height: 640px;
             object-fit: contain;
-            border-radius: 4px;
-            margin: 0 auto 20px;
+            border-radius: 2px;
+            margin: 0 auto 24px;
             border: 1px solid var(--cherry-pink);
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.03),
+                0 6px 16px rgba(0, 0, 0, 0.05),
+                0 16px 40px rgba(0, 0, 0, 0.04);
         }
         .greeting-divider {
             border: none;
-            border-top: 1px solid var(--cherry-pink);
-            margin: 40px 0;
+            border-top: 1px solid rgba(212, 138, 148, 0.35);
+            margin: 56px 0;
+            position: relative;
+            overflow: visible;
         }
 
         /* 境内案内リスト */
@@ -411,42 +551,81 @@
             height: 420px;
             object-fit: cover;
             object-position: center;
-            margin: 0 auto 15px;
-            border-radius: 4px;
+            margin: 0 auto 18px;
+            border-radius: 2px;
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.03),
+                0 6px 16px rgba(0, 0, 0, 0.05),
+                0 16px 40px rgba(0, 0, 0, 0.04);
         }
         .deity-photo {
             width: 100%;
             aspect-ratio: 3 / 4;
             object-fit: cover;
             object-position: center top;
-            border-radius: 4px;
-            margin-bottom: 15px;
+            border-radius: 2px;
+            margin-bottom: 16px;
             border: 1px solid var(--cherry-pink);
+            box-shadow:
+                0 1px 2px rgba(0, 0, 0, 0.03),
+                0 4px 12px rgba(0, 0, 0, 0.04);
         }
 
         /* 戻るボタン */
         .back-btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            background: var(--gold-yellow);
+            margin-top: 28px;
+            padding: 12px 30px;
+            background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.16) 0%,
+                rgba(0, 0, 0, 0.04) 100%), var(--gold-yellow);
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 4px;
-            transition: background 0.3s;
+            letter-spacing: 0.1em;
+            border-radius: 2px;
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.25),
+                0 1px 2px rgba(0, 0, 0, 0.06),
+                0 4px 12px rgba(230, 180, 34, 0.2);
+            transition: box-shadow 0.35s ease, transform 0.35s ease, background 0.35s ease;
         }
-        .back-btn:hover { background: #cfa11d; }
+        .back-btn:hover {
+            background: linear-gradient(180deg,
+                rgba(0, 0, 0, 0.06) 0%,
+                rgba(0, 0, 0, 0.12) 100%), var(--gold-yellow);
+            transform: translateY(-1px);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                0 2px 4px rgba(0, 0, 0, 0.06),
+                0 8px 20px rgba(230, 180, 34, 0.3);
+        }
 
         /* --- Footer --- */
         footer {
             background: var(--charcoal);
             color: #fff;
-            padding: 60px 20px 20px;
+            padding: 72px 20px 28px;
             text-align: center;
+            border-top: 1px solid rgba(230, 180, 34, 0.6);
+            position: relative;
         }
-        .footer-logo { font-size: 1.8rem; margin-bottom: 20px; }
-        .copyright { margin-top: 40px; font-size: 0.8rem; color: #999; }
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 1px;
+            background: linear-gradient(90deg,
+                rgba(230, 180, 34, 0) 0%,
+                rgba(230, 180, 34, 0.5) 50%,
+                rgba(230, 180, 34, 0) 100%);
+        }
+        .footer-logo { font-size: 1.8rem; margin-bottom: 22px; letter-spacing: 0.18em; }
+        footer p { letter-spacing: 0.08em; color: rgba(255, 255, 255, 0.85); }
+        .copyright { margin-top: 48px; font-size: 0.8rem; color: #999; letter-spacing: 0.1em; }
 
         section[id] { scroll-margin-top: 120px; }
 
@@ -459,8 +638,10 @@
             .logo-mark { width: 42px; height: 42px; }
             .logo-crest { height: 38px; }
             .logo h1 { font-size: 1.1rem; }
-            .detail-section { padding: 50px 20px; }
-            .detail-section h3 { font-size: 1.4rem; }
+            .page-hero { padding: 44px 20px 38px; }
+            .page-hero h2 { font-size: 1.7rem; letter-spacing: 0.18em; text-indent: 0.18em; padding-bottom: 22px; }
+            .detail-section { padding: 56px 20px; }
+            .detail-section h3 { font-size: 1.4rem; letter-spacing: 0.1em; }
             section[id] { scroll-margin-top: 80px; }
             .reading { display: block; font-size: 0.88em; color: var(--text-gray); margin-top: 2px; }
         }
