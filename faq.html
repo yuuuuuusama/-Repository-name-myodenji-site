@@ -65,9 +65,9 @@
         .mobile-nav.open { display: block; }
 
         .page-hero { background: linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 100%), var(--soft-yellow); border-bottom: 1px solid var(--gold-yellow); box-shadow: inset 0 -4px 12px rgba(230,180,34,0.05); padding: 64px 20px 52px; text-align: center; }
-        .page-hero h2 { font-size: 2.2rem; font-weight: 700; color: var(--charcoal); letter-spacing: 0.24em; text-indent: 0.24em; display: inline-block; position: relative; padding-bottom: 26px; margin-bottom: 14px; }
-        .page-hero h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 1px; background: linear-gradient(90deg, rgba(230,180,34,0) 0%, var(--gold-yellow) 28%, var(--gold-yellow) 72%, rgba(230,180,34,0) 100%); }
-        .page-hero h2::before { content: ''; position: absolute; bottom: -3px; left: 50%; width: 7px; height: 7px; background: var(--gold-yellow); transform: translateX(-50%) rotate(45deg); }
+        .page-hero h2 { font-size: 2.3rem; font-weight: 700; color: var(--charcoal); letter-spacing: 0.26em; text-indent: 0.26em; display: inline-block; position: relative; padding-bottom: 34px; margin-bottom: 16px; text-shadow: 0 1px 0 rgba(255,255,255,0.6); }
+        .page-hero h2::after { content: ''; position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); width: 240px; height: 3px; background: linear-gradient(90deg, rgba(230,180,34,0) 0%, var(--gold-yellow) 18%, var(--gold-yellow) 82%, rgba(230,180,34,0) 100%) top/100% 1px no-repeat, linear-gradient(90deg, rgba(230,180,34,0) 0%, var(--gold-yellow) 30%, var(--gold-yellow) 70%, rgba(230,180,34,0) 100%) bottom/100% 1px no-repeat; }
+        .page-hero h2::before { content: ''; position: absolute; bottom: 2px; left: 50%; width: 12px; height: 12px; background: var(--gold-yellow); transform: translateX(-50%) rotate(45deg); box-shadow: 0 0 0 4px var(--floral-white), 0 0 0 5px rgba(230,180,34,0.45), 0 2px 4px rgba(0,0,0,0.15); }
         .page-hero p { color: var(--text-gray); letter-spacing: 0.12em; }
 
         .faq-wrapper { max-width: 850px; margin: 0 auto; padding: 60px 20px; }
@@ -75,8 +75,9 @@
         .faq-category { margin-bottom: 40px; }
         .faq-category-title { font-size: 1.3rem; color: var(--deep-pink); letter-spacing: 0.08em; padding-left: 14px; border-left: 2px solid var(--gold-yellow); margin-bottom: 22px; }
 
-        details.faq-item { background: #fff; border: 1px solid #eee; border-radius: 2px; margin-bottom: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.02), 0 3px 10px rgba(0,0,0,0.03); overflow: hidden; transition: border-color 0.35s ease, box-shadow 0.35s ease; }
-        details.faq-item[open] { border-color: rgba(230,180,34,0.6); box-shadow: 0 1px 2px rgba(0,0,0,0.02), 0 6px 16px rgba(230,180,34,0.1); }
+        details.faq-item { background: #fff; border: 1px solid rgba(230,180,34,0.35); border-radius: 3px; margin-bottom: 16px; box-shadow: inset 0 1px 0 #fff, 0 2px 4px rgba(0,0,0,0.04), 0 6px 16px rgba(0,0,0,0.06); overflow: hidden; transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.3s ease; }
+        details.faq-item:hover { transform: translateY(-2px); box-shadow: inset 0 1px 0 #fff, 0 4px 8px rgba(0,0,0,0.06), 0 12px 26px rgba(0,0,0,0.1); }
+        details.faq-item[open] { border-color: var(--gold-yellow); box-shadow: inset 0 1px 0 #fff, 0 4px 10px rgba(0,0,0,0.06), 0 14px 30px rgba(230,180,34,0.16); }
         details.faq-item summary { list-style: none; padding: 19px 26px; cursor: pointer; font-weight: bold; color: var(--charcoal); letter-spacing: 0.04em; position: relative; padding-right: 50px; transition: background 0.3s ease; }
         details.faq-item summary:hover { background: var(--soft-yellow); }
         details.faq-item summary::-webkit-details-marker { display: none; }
@@ -91,8 +92,9 @@
         .contact-cta .tel { font-size: 1.5rem; color: var(--gold-yellow); font-weight: bold; letter-spacing: 0.06em; text-decoration: none; display: inline-block; margin: 8px 0; }
         .contact-cta p { color: var(--text-gray); font-size: 0.95rem; margin-bottom: 8px; }
 
-        .back-btn { display: inline-block; margin-top: 30px; padding: 12px 30px; background: linear-gradient(180deg, rgba(255,255,255,0.16) 0%, rgba(0,0,0,0.04) 100%), var(--gold-yellow); color: #fff; text-decoration: none; font-weight: bold; letter-spacing: 0.1em; border-radius: 2px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 1px 2px rgba(0,0,0,0.06), 0 4px 12px rgba(230,180,34,0.2); transition: box-shadow 0.35s ease, transform 0.35s ease, background 0.35s ease; }
-        .back-btn:hover { background: linear-gradient(180deg, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0.12) 100%), var(--gold-yellow); transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 4px rgba(0,0,0,0.06), 0 8px 20px rgba(230,180,34,0.3); }
+        .back-btn { display: inline-block; margin-top: 30px; padding: 14px 34px; border: 1px solid rgba(0,0,0,0.1); background: linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 45%, rgba(0,0,0,0.12) 100%), var(--gold-yellow); color: #fff; text-decoration: none; font-weight: bold; letter-spacing: 0.14em; border-radius: 3px; text-shadow: 0 1px 2px rgba(0,0,0,0.25); box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -2px 4px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.12), 0 8px 18px rgba(230,180,34,0.35); transition: box-shadow 0.3s ease, transform 0.15s ease, background 0.3s ease; }
+        .back-btn:hover { background: linear-gradient(180deg, rgba(255,255,255,0.28) 0%, rgba(255,255,255,0) 45%, rgba(0,0,0,0.16) 100%), var(--gold-yellow); transform: translateY(-2px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -2px 4px rgba(0,0,0,0.15), 0 6px 12px rgba(0,0,0,0.14), 0 14px 30px rgba(230,180,34,0.45); }
+        .back-btn:active { transform: translateY(1px); box-shadow: inset 0 2px 5px rgba(0,0,0,0.28), 0 1px 2px rgba(0,0,0,0.1); }
 
         footer { background: var(--charcoal); color: #fff; padding: 72px 20px 28px; text-align: center; border-top: 1px solid rgba(230,180,34,0.6); position: relative; }
         footer::before { content: ''; position: absolute; top: 4px; left: 50%; transform: translateX(-50%); width: 160px; height: 1px; background: linear-gradient(90deg, rgba(230,180,34,0) 0%, rgba(230,180,34,0.5) 50%, rgba(230,180,34,0) 100%); }
