@@ -302,40 +302,7 @@ nav.main-nav a {
 body.season-summer { /* 夏は涼やかなまま */ }
 body.season-winter { /* 冬: 既存のクリーム色をやや冷たく */ }
 
-/* ==================================
-   4-C. 御守護神カードのモバイル横スワイプ
-   ================================== */
-@media (max-width: 768px) {
-  .deity-detail {
-    grid-template-columns: none !important;
-    display: flex !important;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    padding: 4px 4px 24px 4px;
-    margin-left: -10px;
-    margin-right: -10px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-  .deity-detail::-webkit-scrollbar { display: none; }
-  .deity-detail > .deity-card {
-    flex: 0 0 86%;
-    scroll-snap-align: center;
-  }
-  /* スワイプ可能を視覚で示すヒント */
-  .deity-detail::after {
-    content: "← スワイプできます →";
-    position: absolute;
-    margin-top: -16px;
-    font-size: 0.75rem;
-    color: var(--text-gray, #888);
-    text-align: center;
-    width: 100%;
-    pointer-events: none;
-  }
-  #deities { position: relative; }
-}
+/* 4-C. 御守護神のモバイル横スワイプは廃止（境内案内と同じ縦並びに統一） */
 
 /* スマホで back-to-top と被らないよう微調整 */
 @media (max-width: 480px) {
