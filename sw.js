@@ -1,4 +1,4 @@
-const CACHE_NAME = 'myodenji-v5';
+const CACHE_NAME = 'myodenji-v6';
 const PRECACHE_URLS = [
   '/',
   '/index.html',
@@ -44,6 +44,21 @@ self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET') return;
   if (!req.url.startsWith(self.location.origin)) return;
+
+  // ページ(HTML)は、まず新しいものを取りに行く(法輪で直した文面をすぐ出すため)。つながらないときだけ控えを出す
+  const isPage = req.mode === 'navigate' || (req.headers.get('accept') || '').includes('text/html');
+  if (isPage) {
+    event.respondWith(
+      fetch(req).then(response => {
+        if (response && response.status === 200 && response.type === 'basic') {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(req, clone));
+        }
+        return response;
+      }).catch(() => caches.match(req))
+    );
+    return;
+  }
 
   event.respondWith(
     caches.match(req).then(cached => {

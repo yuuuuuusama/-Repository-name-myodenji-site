@@ -83,6 +83,7 @@
     </style>
     <link rel="stylesheet" href="/animations.css">
     <link rel="stylesheet" href="/chatbot.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -92,8 +93,8 @@
             <a href="index.html">
                 <img src="temple-logo.jpg" alt="感応山 妙傳寺 ロゴ" class="logo-mark">
                 <span class="logo-text">
-                    <span>日蓮宗</span>
-                    <h1>感応山 妙傳寺</h1>
+                    <span data-edit="houji-form:1">日蓮宗</span>
+                    <h1 data-edit="houji-form:2">感応山 妙傳寺</h1>
                 </span>
                 <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋" class="logo-crest">
             </a>
@@ -102,80 +103,64 @@
 </header>
 
 <div class="page-hero">
-    <h2>法事のお申込み</h2>
-    <p>四十九日・年回法要などのお申込みを承ります</p>
+    <h2 data-edit="houji-form:3">法事のお申込み</h2>
+    <p data-edit="houji-form:4">四十九日・年回法要などのお申込みを承ります</p>
 </div>
 
 <main class="form-wrapper">
     <div class="form-intro">
-        <p>必要事項をご入力の上、送信してください。送信後、内容を確認の上、当寺よりご連絡いたします。</p>
-        <p>※ お急ぎの場合はお電話(0143-22-4284)でも承っております。</p>
+        <p data-edit="houji-form:5">必要事項をご入力の上、送信してください。送信後、内容を確認の上、当寺よりご連絡いたします。</p>
+        <p data-edit="houji-form:6">※ お急ぎの場合はお電話(0143-22-4284)でも承っております。</p>
     </div>
 
-    <form action="https://formsubmit.co/myodenji7676@gmail.com" method="POST">
+    <form action="https://myodenji-hp.myodenji7676.workers.dev/__form/houji" method="POST">
         <input type="hidden" name="_subject" value="【法事のお申込み】妙傳寺サイト">
         <input type="hidden" name="_next" value="https://myodenji7676.online/thanks.html">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_autoresponse" value="この度は感応山 妙傳寺へ法事のお申込みをいただき、誠にありがとうございます。
-
-ご入力いただいた内容を確認の上、ご希望の日時等について当寺よりご連絡を差し上げます。
-今しばらくお待ちくださいますよう、お願い申し上げます。
-
-なお、お急ぎの場合はお電話にて承っております。
-☎ 0143-22-4284(受付 9:00-17:00)
-
-―――――――――――――――――――
-感応山 妙傳寺
-〒051-0021 北海道室蘭市常盤町5-7
-☎ 0143-22-4284
-https://myodenji7676.online/
-―――――――――――――――――――
-※このメールは自動送信です。">
 
         <section class="form-section">
-            <h3>お申込者様の情報</h3>
+            <h3 data-edit="houji-form:7">お申込者様の情報</h3>
             <div class="form-group">
-                <label>お名前<span class="required">必須</span></label>
+                <label>お名前<span class="required" data-edit="houji-form:8">必須</span></label>
                 <input type="text" name="申込者氏名" required placeholder="山田 太郎">
             </div>
             <div class="form-group">
-                <label>故人様とのご関係<span class="required">必須</span></label>
+                <label>故人様とのご関係<span class="required" data-edit="houji-form:9">必須</span></label>
                 <input type="text" name="故人との関係" required placeholder="例: 長男、孫、配偶者">
             </div>
             <div class="form-group">
-                <label>電話番号<span class="required">必須</span></label>
+                <label>電話番号<span class="required" data-edit="houji-form:10">必須</span></label>
                 <input type="tel" name="電話番号" required placeholder="000-0000-0000">
             </div>
             <div class="form-group">
-                <label>メールアドレス<span class="required">必須</span></label>
+                <label>メールアドレス<span class="required" data-edit="houji-form:11">必須</span></label>
                 <input type="email" name="メールアドレス" required placeholder="example@mail.com">
             </div>
             <div class="form-group">
-                <label>ご住所</label>
+                <label data-edit="houji-form:12">ご住所</label>
                 <input type="text" name="住所" placeholder="ご住所をご入力ください">
             </div>
         </section>
 
         <section class="form-section">
-            <h3>故人様の情報</h3>
+            <h3 data-edit="houji-form:13">故人様の情報</h3>
             <div class="form-group">
-                <label>故人様 氏名<span class="required">必須</span></label>
+                <label>故人様 氏名<span class="required" data-edit="houji-form:14">必須</span></label>
                 <input type="text" name="故人氏名" required>
             </div>
             <div class="form-group">
-                <label>戒名(法号)</label>
+                <label data-edit="houji-form:15">戒名(法号)</label>
                 <input type="text" name="戒名" placeholder="お持ちの場合のみご記入ください">
             </div>
             <div class="form-group">
-                <label>ご命日<span class="required">必須</span></label>
+                <label>ご命日<span class="required" data-edit="houji-form:16">必須</span></label>
                 <input type="date" name="命日" required>
             </div>
         </section>
 
         <section class="form-section">
-            <h3>法要の内容</h3>
+            <h3 data-edit="houji-form:17">法要の内容</h3>
             <div class="form-group">
-                <label>年回忌<span class="required">必須</span></label>
+                <label>年回忌<span class="required" data-edit="houji-form:18">必須</span></label>
                 <select name="年回忌" required>
                     <option value="">選択してください</option>
                     <option>初七日</option>
@@ -195,15 +180,15 @@ https://myodenji7676.online/
                 </select>
             </div>
             <div class="form-group">
-                <label>ご希望日時(第1希望)<span class="required">必須</span></label>
+                <label>ご希望日時(第1希望)<span class="required" data-edit="houji-form:19">必須</span></label>
                 <input type="text" name="希望日時_第1" required placeholder="例: 2026年8月15日 午前10時">
             </div>
             <div class="form-group">
-                <label>ご希望日時(第2希望)</label>
+                <label data-edit="houji-form:20">ご希望日時(第2希望)</label>
                 <input type="text" name="希望日時_第2" placeholder="例: 2026年8月22日 午後2時">
             </div>
             <div class="form-group">
-                <label>会場のご希望</label>
+                <label data-edit="houji-form:21">会場のご希望</label>
                 <div class="radio-group">
                     <label><input type="radio" name="会場" value="お寺(妙傳寺)" checked>お寺(妙傳寺)</label>
                     <label><input type="radio" name="会場" value="ご自宅">ご自宅</label>
@@ -211,21 +196,21 @@ https://myodenji7676.online/
                 </div>
             </div>
             <div class="form-group">
-                <label>ご参列予定人数</label>
+                <label data-edit="houji-form:22">ご参列予定人数</label>
                 <input type="number" name="参列人数" min="1" placeholder="例: 8" style="max-width: 200px;">
-                <span class="hint">およその人数で結構です</span>
+                <span class="hint" data-edit="houji-form:23">およその人数で結構です</span>
             </div>
         </section>
 
         <section class="form-section">
-            <h3>お塔婆・お斎(おとき)</h3>
+            <h3 data-edit="houji-form:24">お塔婆・お斎(おとき)</h3>
             <div class="form-group">
-                <label>お塔婆の本数</label>
+                <label data-edit="houji-form:25">お塔婆の本数</label>
                 <input type="number" name="お塔婆本数" min="0" placeholder="例: 3" style="max-width: 200px;">
-                <span class="hint">不要の場合は0、又は空欄でかまいません</span>
+                <span class="hint" data-edit="houji-form:26">不要の場合は0、又は空欄でかまいません</span>
             </div>
             <div class="form-group">
-                <label>お斎(食事)の手配</label>
+                <label data-edit="houji-form:27">お斎(食事)の手配</label>
                 <div class="radio-group">
                     <label><input type="radio" name="お斎" value="不要" checked>不要</label>
                     <label><input type="radio" name="お斎" value="希望(別途相談)">希望する(別途相談)</label>
@@ -234,21 +219,22 @@ https://myodenji7676.online/
         </section>
 
         <section class="form-section">
-            <h3>その他のご要望・ご質問</h3>
+            <h3 data-edit="houji-form:28">その他のご要望・ご質問</h3>
             <div class="form-group">
                 <textarea name="備考" placeholder="ご要望やご不明点などをご自由にご記入ください"></textarea>
             </div>
         </section>
 
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAFJr9IUFvEgeZePc" data-language="ja" style="margin: 12px 0;"></div>
         <button type="submit" class="submit-btn">内容を確認して送信する</button>
         <a href="rituals.html#memorial" class="back-link">← 法事ページへ戻る</a>
     </form>
 </main>
 
 <footer>
-    <div class="footer-logo">感応山 妙傳寺</div>
-    <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
-    <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+    <div class="footer-logo" data-edit="houji-form:29">感応山 妙傳寺</div>
+    <p data-edit="houji-form:30">日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <div class="copyright" data-edit="houji-form:31">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
 </footer>
 
 <script>

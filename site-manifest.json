@@ -1,0 +1,4900 @@
+{
+ "version": 1,
+ "generated_at": "2026-09-30T01:35:31.598Z",
+ "pages": [
+  {
+   "file": "about.html",
+   "title": "知る | 感応山 妙傳寺"
+  },
+  {
+   "file": "apply.html",
+   "title": "各種お申込み | 感応山 妙傳寺"
+  },
+  {
+   "file": "faq.html",
+   "title": "よくある質問 | 感応山 妙傳寺"
+  },
+  {
+   "file": "houji-form.html",
+   "title": "法事のお申込み | 感応山 妙傳寺"
+  },
+  {
+   "file": "index.html",
+   "title": "感応山 妙傳寺 | 北海道室蘭市の日蓮宗寺院"
+  },
+  {
+   "file": "kitou-form.html",
+   "title": "ご祈祷のお申込み | 感応山 妙傳寺"
+  },
+  {
+   "file": "mizuko-form.html",
+   "title": "水子供養のお申込み | 感応山 妙傳寺"
+  },
+  {
+   "file": "news.html",
+   "title": "お知らせ・新着情報 | 感応山 妙傳寺"
+  },
+  {
+   "file": "newsletter.html",
+   "title": "妙傳寺だより「法雨」バックナンバー | 感応山 妙傳寺"
+  },
+  {
+   "file": "prayer.html",
+   "title": "ご祈祷 | 感応山 妙傳寺"
+  },
+  {
+   "file": "rituals.html",
+   "title": "仏事・弔い | 感応山 妙傳寺"
+  },
+  {
+   "file": "thanks.html",
+   "title": "お問い合わせありがとうございました | 感応山 妙傳寺"
+  }
+ ],
+ "texts": [
+  {
+   "key": "about:1",
+   "file": "about.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "about:2",
+   "file": "about.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "about:3",
+   "file": "about.html",
+   "tag": "h2",
+   "text": "知る"
+  },
+  {
+   "key": "about:4",
+   "file": "about.html",
+   "tag": "p",
+   "text": "妙傳寺の歴史と歩み"
+  },
+  {
+   "key": "about:5",
+   "file": "about.html",
+   "tag": "div",
+   "text": "ABOUT"
+  },
+  {
+   "key": "about:6",
+   "file": "about.html",
+   "tag": "h3",
+   "text": "妙傳寺について"
+  },
+  {
+   "key": "about:7",
+   "file": "about.html",
+   "tag": "p",
+   "text": "感応山妙傳寺は、北海道室蘭市常盤町に所在する日蓮宗の寺院です。"
+  },
+  {
+   "key": "about:8",
+   "file": "about.html",
+   "tag": "p",
+   "text": "当山は室蘭の地において、長きにわたり地域の皆様の信仰の拠り所として歩んでまいりました。法華経の教えのもと、先祖供養・各種祈祷・仏事全般を承り、皆様の心に寄り添い続けております。"
+  },
+  {
+   "key": "about:9",
+   "file": "about.html",
+   "tag": "p",
+   "text": "どうぞお気軽にご参拝ください。"
+  },
+  {
+   "key": "about:10",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "縁起"
+  },
+  {
+   "key": "about:11",
+   "file": "about.html",
+   "tag": "p",
+   "text": "当山は明治２３年に佐渡の本山：妙照寺の貫首であった天野日順上人（当山第１世）が渡道し、当山開基檀越：小杉久兵衛氏の外護を得て、明治２４年に函館：実行寺の室蘭説教所を建立されたのが始まりである。"
+  },
+  {
+   "key": "about:12",
+   "file": "about.html",
+   "tag": "p",
+   "text": "後に日順上人は、札幌市経王寺の第２世として入寺した為、菊池日解上人が第二世として法燈を継承した。"
+  },
+  {
+   "key": "about:13",
+   "file": "about.html",
+   "tag": "p",
+   "text": "日解上人は数年で上磯の妙隆寺に転出した為、廣瀨日憲上人が第３世として着任した。２０代という若さで猛宣布され、明治３８年に感応山妙傳寺の寺号を公称された。"
+  },
+  {
+   "key": "about:14",
+   "file": "about.html",
+   "tag": "div",
+   "text": "GREETING"
+  },
+  {
+   "key": "about:15",
+   "file": "about.html",
+   "tag": "h3",
+   "text": "ご挨拶"
+  },
+  {
+   "key": "about:16",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "敷居のない、開かれたお寺を目指して"
+  },
+  {
+   "key": "about:17",
+   "file": "about.html",
+   "tag": "p",
+   "text": "「お寺は決して特別な場所ではありません。悩みがある時、あるいは何気ない日常の中で、ふと立ち寄りたくなる『心の休憩所』でありたいと願っています。」"
+  },
+  {
+   "key": "about:18",
+   "file": "about.html",
+   "tag": "p",
+   "text": "感応山 妙傳寺 住職"
+  },
+  {
+   "key": "about:19",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "時代に寄り添い、あなたの「今」を支える仏教を。"
+  },
+  {
+   "key": "about:20",
+   "file": "about.html",
+   "tag": "p",
+   "text": "「お寺は、今をより良く生きるための場所です」"
+  },
+  {
+   "key": "about:21",
+   "file": "about.html",
+   "tag": "p",
+   "text": "こんにちは、感応山 妙傳寺の副住職です。"
+  },
+  {
+   "key": "about:22",
+   "file": "about.html",
+   "tag": "p",
+   "text": "お寺と聞くと『敷居が高い』『お葬式の時だけ行く場所』というイメージを持たれるかもしれません。しかし、日蓮宗の教えは、今を生きる私たちが困難を乗り越え、自分らしく輝くための知恵に満ちています。"
+  },
+  {
+   "key": "about:23",
+   "file": "about.html",
+   "tag": "p",
+   "text": "私自身、皆さまと同じ時代を生きる一人として、伝統を大切に守りながらも、現代の悩みやライフスタイルに寄り添った形でお題目をお伝えしていきたいと考えています。"
+  },
+  {
+   "key": "about:24",
+   "file": "about.html",
+   "tag": "p",
+   "text": "どんなに些細な悩み事でも、あるいはちょっとした嬉しい報告でも構いません。散歩の途中にふらりと立ち寄るような気軽さで、妙傳寺の門を叩いてみてください。"
+  },
+  {
+   "key": "about:25",
+   "file": "about.html",
+   "tag": "p",
+   "text": "乾いた心に、そっとお題目の雨（法雨）が潤いを与えてくれる。そんな安らぎのひとときを、皆さまと共に分かち合えれば幸いです。"
+  },
+  {
+   "key": "about:26",
+   "file": "about.html",
+   "tag": "p",
+   "text": "感応山 妙傳寺 副住職"
+  },
+  {
+   "key": "about:27",
+   "file": "about.html",
+   "tag": "div",
+   "text": "NICHIREN SHU"
+  },
+  {
+   "key": "about:28",
+   "file": "about.html",
+   "tag": "h3",
+   "text": "日蓮宗について"
+  },
+  {
+   "key": "about:29",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "『南無妙法蓮華経』お題目の心"
+  },
+  {
+   "key": "about:30",
+   "file": "about.html",
+   "tag": "p",
+   "text": "日蓮宗は、お釈迦さまが説かれた最高の教えである『法華経（ほけきょう）』をよりどころとする宗団です。この法華経を身をもって実証し、布教された日蓮大聖人（にちれんだいしょうにん）を宗祖とお仰ぎしています。"
+  },
+  {
+   "key": "about:31",
+   "file": "about.html",
+   "tag": "p",
+   "text": "法華経の教えを信じ、その魂が込められた『南無妙法蓮華経』のお題目をお唱えすることで、私たち自身の内にある「仏の心」を呼び覚まします。私たちがこの信行に励み、教えを弘めていくことは、個人のしあわせにとどまらず、人類の幸福、ひいては世界平和へとつながっていくものであると確信しています。"
+  },
+  {
+   "key": "about:32",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "宗旨"
+  },
+  {
+   "key": "about:33",
+   "file": "about.html",
+   "tag": "th",
+   "text": "名称"
+  },
+  {
+   "key": "about:34",
+   "file": "about.html",
+   "tag": "span",
+   "text": "（にちれんしゅう）"
+  },
+  {
+   "key": "about:35",
+   "file": "about.html",
+   "tag": "th",
+   "text": "宗祖"
+  },
+  {
+   "key": "about:36",
+   "file": "about.html",
+   "tag": "span",
+   "text": "（にちれんだいしょうにん）"
+  },
+  {
+   "key": "about:37",
+   "file": "about.html",
+   "tag": "th",
+   "text": "開宗"
+  },
+  {
+   "key": "about:38",
+   "file": "about.html",
+   "tag": "span",
+   "text": "（西暦１２５３年・鎌倉時代）"
+  },
+  {
+   "key": "about:39",
+   "file": "about.html",
+   "tag": "th",
+   "text": "本尊"
+  },
+  {
+   "key": "about:40",
+   "file": "about.html",
+   "tag": "span",
+   "text": "（くおんのほんししゃかむにぶつ）"
+  },
+  {
+   "key": "about:41",
+   "file": "about.html",
+   "tag": "th",
+   "text": "題目"
+  },
+  {
+   "key": "about:42",
+   "file": "about.html",
+   "tag": "span",
+   "text": "（なむみょうほうれんげきょう）"
+  },
+  {
+   "key": "about:43",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "教義"
+  },
+  {
+   "key": "about:44",
+   "file": "about.html",
+   "tag": "p",
+   "text": "日蓮宗はお釈迦さまの説かれた最高の教えである法華経をよりどころとする宗団です。この法華経を身をもって読まれ布教をせられた日蓮大聖人を宗祖と仰いでおります。本宗の教義は法華経の魂をお題目にこめられた宗祖の教えに導かれて私たちが信行に励みこの教えを弘めることによってやがて世界平和と人類の幸福ひいては個人のしあわせにつながる事を確信できる教えであります。"
+  },
+  {
+   "key": "about:45",
+   "file": "about.html",
+   "tag": "div",
+   "text": "GROUNDS"
+  },
+  {
+   "key": "about:46",
+   "file": "about.html",
+   "tag": "h3",
+   "text": "境内案内"
+  },
+  {
+   "key": "about:47",
+   "file": "about.html",
+   "tag": "p",
+   "text": "室蘭の自然に抱かれた妙傳寺の境内には、心安らぐ祈りのスポットが点在しています。どなたでも、どうぞご自由にお参りください。"
+  },
+  {
+   "key": "about:48",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "本堂（ほんどう）"
+  },
+  {
+   "key": "about:49",
+   "file": "about.html",
+   "tag": "p",
+   "text": "お題目と日蓮大聖人が見守る、祈りの中心"
+  },
+  {
+   "key": "about:50",
+   "file": "about.html",
+   "tag": "p",
+   "text": "当山の中心となる荘厳な空間です。御宝前には宗祖・日蓮大聖人が御安置され、皆さまが唱えるお題目の声を優しく受け止めてくださいます。"
+  },
+  {
+   "key": "about:51",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "祈祷殿（きとうでん）"
+  },
+  {
+   "key": "about:52",
+   "file": "about.html",
+   "tag": "p",
+   "text": "力強い守護神へ願いを届ける場所"
+  },
+  {
+   "key": "about:53",
+   "file": "about.html",
+   "tag": "p",
+   "text": "妙傳寺をお守りする諸尊（守護神）が祀られています。日蓮宗伝統の「修法」をもって、厄除けや心願成就などのご祈祷を執り行う神聖な堂宇です。"
+  },
+  {
+   "key": "about:54",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "永代位牌堂（えいたいいはいどう）"
+  },
+  {
+   "key": "about:55",
+   "file": "about.html",
+   "tag": "p",
+   "text": "永劫の感謝を捧げる、魂の拠り所"
+  },
+  {
+   "key": "about:56",
+   "file": "about.html",
+   "tag": "p",
+   "text": "永代供養を申し込まれた方々の位牌を大切にお祀りしています。日々の読経を通じて、故人様への感謝と祈りを永遠に繋ぎます。"
+  },
+  {
+   "key": "about:57",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "納骨堂（のうこつどう）"
+  },
+  {
+   "key": "about:58",
+   "file": "about.html",
+   "tag": "p",
+   "text": "天候を問わず、いつでも寄り添える安らぎの地"
+  },
+  {
+   "key": "about:59",
+   "file": "about.html",
+   "tag": "p",
+   "text": "清潔に保たれた屋内型の供養施設です。季節や天候を気にすることなく、いつでも故人様との対話のひとときをお過ごしいただけます。"
+  },
+  {
+   "key": "about:60",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "大広間（おおひろま）"
+  },
+  {
+   "key": "about:61",
+   "file": "about.html",
+   "tag": "p",
+   "text": "お参り後のひとときや、地域の交流の場として"
+  },
+  {
+   "key": "about:62",
+   "file": "about.html",
+   "tag": "p",
+   "text": "法要後の会食や、休憩・お集まりなど、多目的にご利用いただけます。皆さまが和やかに集い、心を休められる開放的な空間です。お子様が遊べるおもちゃも置いてあります。休憩中にご使用いただければ幸いです。"
+  },
+  {
+   "key": "about:63",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "歴代廟（れきだいびょう）"
+  },
+  {
+   "key": "about:64",
+   "file": "about.html",
+   "tag": "p",
+   "text": "当山の歴史を紡いだ上人と、廣瀬家への報恩"
+  },
+  {
+   "key": "about:65",
+   "file": "about.html",
+   "tag": "p",
+   "text": "妙傳寺の礎を築いた開山・而實院日憲上人と、代々お寺を支えてきた廣瀬家の墓所です。今日の妙傳寺があることへの感謝を捧げる大切な場所です。"
+  },
+  {
+   "key": "about:66",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "750遠忌日蓮大聖人像"
+  },
+  {
+   "key": "about:67",
+   "file": "about.html",
+   "tag": "p",
+   "text": "未来を指し示す、日蓮聖人の威徳を偲ぶ像"
+  },
+  {
+   "key": "about:68",
+   "file": "about.html",
+   "tag": "p",
+   "text": "日蓮大聖人の「立教開宗750年」を記念して建立されました。力強くも慈しみ深いお姿は、今を生きる私たちに勇気と希望を与えてくれます。"
+  },
+  {
+   "key": "about:69",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "撥塚（ばちづか）"
+  },
+  {
+   "key": "about:70",
+   "file": "about.html",
+   "tag": "p",
+   "text": "芸道への想いを供養する、杵屋会ゆかりの塚"
+  },
+  {
+   "key": "about:71",
+   "file": "about.html",
+   "tag": "p",
+   "text": "杵屋会による三味線の「撥（ばち）」など、芸に使用された道具を長年の労を労い供養した塚です。道具への感謝を忘れない、日本独自の美しい心を表しています。"
+  },
+  {
+   "key": "about:72",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "弁天堂（べんてんどう）"
+  },
+  {
+   "key": "about:73",
+   "file": "about.html",
+   "tag": "p",
+   "text": "才能の開花と財運を司る、妙蘭弁才天"
+  },
+  {
+   "key": "about:74",
+   "file": "about.html",
+   "tag": "p",
+   "text": "美しき女神、妙蘭弁才天が祀られています。芸事の上達や学問の成就、金運向上を願う多くの方々から親しまれています。"
+  },
+  {
+   "key": "about:75",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "駐車場（ちゅうしゃじょう）"
+  },
+  {
+   "key": "about:76",
+   "file": "about.html",
+   "tag": "p",
+   "text": "お車でも安心。約50台収容の広々とした駐車スペース"
+  },
+  {
+   "key": "about:77",
+   "file": "about.html",
+   "tag": "p",
+   "text": "境内には約50台まで駐車可能なスペースをご用意しております。法要やお墓参りなど、大人数でお集まりの際も安心してお越しいただけます。"
+  },
+  {
+   "key": "about:78",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "題目石（だいもくせき）"
+  },
+  {
+   "key": "about:79",
+   "file": "about.html",
+   "tag": "p",
+   "text": "本堂前に佇む、お題目を刻んだ霊石"
+  },
+  {
+   "key": "about:80",
+   "file": "about.html",
+   "tag": "p",
+   "text": "「南無妙法蓮華経」のお題目が力強く刻まれた石碑です。本堂を背景に佇むその姿は、訪れる人々の信仰の心を静かに支え、お題目の功徳を境内に広く伝えています。"
+  },
+  {
+   "key": "about:81",
+   "file": "about.html",
+   "tag": "div",
+   "text": "DEITIES"
+  },
+  {
+   "key": "about:82",
+   "file": "about.html",
+   "tag": "h3",
+   "text": "境内の御守護神"
+  },
+  {
+   "key": "about:83",
+   "file": "about.html",
+   "tag": "p",
+   "text": "皆さまを優しく守る神仏が、当山にお祀りされています。"
+  },
+  {
+   "key": "about:84",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "鬼子母神（きしもじん）"
+  },
+  {
+   "key": "about:85",
+   "file": "about.html",
+   "tag": "p",
+   "text": "お子さまの成長と、ご家族の平穏を願う慈愛の神"
+  },
+  {
+   "key": "about:86",
+   "file": "about.html",
+   "tag": "p",
+   "text": "法華経の守護神として、古くから厚く信仰されている神様です。子宝・安産のご利益はもちろん、お子さまが健やかに成長し、ご家族が日々を穏やかに過ごせるよう、母のような温かい心で見守ってくださいます。"
+  },
+  {
+   "key": "about:87",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "大黒天（だいこくてん）"
+  },
+  {
+   "key": "about:88",
+   "file": "about.html",
+   "tag": "p",
+   "text": "暮らしを豊かに彩り、福徳と笑顔を運ぶ開運の神"
+  },
+  {
+   "key": "about:89",
+   "file": "about.html",
+   "tag": "p",
+   "text": "打ち出の小槌と大きな袋を手に、皆さまの商売繁盛や開運、そして日々の暮らしに豊かな実りをもたらしてくださいます。お参りする人の心を明るく照らす福の神です。"
+  },
+  {
+   "key": "about:90",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "八大龍王（はちだいりゅうおう）"
+  },
+  {
+   "key": "about:91",
+   "file": "about.html",
+   "tag": "p",
+   "text": "命の源である「水」を司り、大いなる願いを成就させる守護神"
+  },
+  {
+   "key": "about:92",
+   "file": "about.html",
+   "tag": "p",
+   "text": "水の守護神であり、法華経を説くお釈迦さまを雨から守ったとされる力強い神様です。困難を洗い流し、皆さまが抱く尊い願いが成就するよう、大いなる力をもって後押ししてくださいます。"
+  },
+  {
+   "key": "about:93",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "慈母観音菩薩（じぼかんのんぼさつ）"
+  },
+  {
+   "key": "about:94",
+   "file": "about.html",
+   "tag": "p",
+   "text": "深い慈しみで包み込み、心の平穏を取り戻す救済の菩薩"
+  },
+  {
+   "key": "about:95",
+   "file": "about.html",
+   "tag": "p",
+   "text": "母が子を慈しむような無償の愛をもって、すべての人々に寄り添ってくださる菩薩さまです。悩みや不安を抱えるとき、その御手は優しく差し伸べられ、私たちの乾いた心に安らぎと潤いを与えてくださいます。"
+  },
+  {
+   "key": "about:96",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "妙蘭弁才天（みょうらんべんざいてん）"
+  },
+  {
+   "key": "about:97",
+   "file": "about.html",
+   "tag": "p",
+   "text": "才能を花開かせ、知恵と豊穣をもたらす美しき女神"
+  },
+  {
+   "key": "about:98",
+   "file": "about.html",
+   "tag": "p",
+   "text": "芸事の上達や学問の成就、そして財運の向上を司る女神さまです。妙傳寺に縁ある神様として、皆さまが持つ本来の才能が美しく花開き、人生がより豊かになるよう導いてくださいます。"
+  },
+  {
+   "key": "about:99",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "三宝荒神（さんぽうこうじん）"
+  },
+  {
+   "key": "about:100",
+   "file": "about.html",
+   "tag": "p",
+   "text": "不浄を清め、火の災いから大切な住まいを守る守護神"
+  },
+  {
+   "key": "about:101",
+   "file": "about.html",
+   "tag": "p",
+   "text": "私たちの暮らしに欠かせない「火」を司り、台所の神様としても親しまれています。不浄や災いを焼き尽くして清浄な空間を保ち、皆さまの住まいが火災や災難に見舞われぬよう、厳格かつ力強く守護してくださいます。"
+  },
+  {
+   "key": "about:102",
+   "file": "about.html",
+   "tag": "div",
+   "text": "NEWSLETTER"
+  },
+  {
+   "key": "about:103",
+   "file": "about.html",
+   "tag": "h3",
+   "text": "妙傳寺だより「法雨」"
+  },
+  {
+   "key": "about:104",
+   "file": "about.html",
+   "tag": "p",
+   "text": "「法雨（ほうう）」は、妙傳寺が定期的にお届けしているおたよりです。季節の法話や行事のご案内、住職からのメッセージなどをお届けしています。"
+  },
+  {
+   "key": "about:105",
+   "file": "about.html",
+   "tag": "span",
+   "text": "最新号"
+  },
+  {
+   "key": "about:106",
+   "file": "about.html",
+   "tag": "span",
+   "text": "バックナンバー"
+  },
+  {
+   "key": "about:107",
+   "file": "about.html",
+   "tag": "span",
+   "text": "バックナンバー"
+  },
+  {
+   "key": "about:108",
+   "file": "about.html",
+   "tag": "span",
+   "text": "準備中"
+  },
+  {
+   "key": "about:109",
+   "file": "about.html",
+   "tag": "p",
+   "text": "※ 購読をご希望の方はお問い合わせください。"
+  },
+  {
+   "key": "about:110",
+   "file": "about.html",
+   "tag": "div",
+   "text": "ANNUAL EVENTS"
+  },
+  {
+   "key": "about:111",
+   "file": "about.html",
+   "tag": "h3",
+   "text": "年中行事"
+  },
+  {
+   "key": "about:112",
+   "file": "about.html",
+   "tag": "p",
+   "text": "妙傳寺では、年間を通じてさまざまな仏教行事を執り行っております。"
+  },
+  {
+   "key": "about:113",
+   "file": "about.html",
+   "tag": "div",
+   "text": "2月3日"
+  },
+  {
+   "key": "about:114",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "節分会・特別祈祷会"
+  },
+  {
+   "key": "about:115",
+   "file": "about.html",
+   "tag": "p",
+   "text": "水行を行います。\n終了後、本堂にて節分会・特別祈祷会を行います。\nその後、豆まきを行います。"
+  },
+  {
+   "key": "about:116",
+   "file": "about.html",
+   "tag": "div",
+   "text": "3月"
+  },
+  {
+   "key": "about:117",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "春季彼岸会"
+  },
+  {
+   "key": "about:118",
+   "file": "about.html",
+   "tag": "p",
+   "text": "今年1年の抱負と祈りを込めて、ご先祖様を供養します。"
+  },
+  {
+   "key": "about:119",
+   "file": "about.html",
+   "tag": "div",
+   "text": "4月8日"
+  },
+  {
+   "key": "about:120",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "釈尊降誕会（花まつり）"
+  },
+  {
+   "key": "about:121",
+   "file": "about.html",
+   "tag": "p",
+   "text": "午後2時より 8日講と合わせて法要を行います。"
+  },
+  {
+   "key": "about:122",
+   "file": "about.html",
+   "tag": "p",
+   "text": "4月8日はお釈迦様の誕生日です。産まれた際に甘露の雨が降ったことから、この日に甘茶を飲む風習ができました。"
+  },
+  {
+   "key": "about:123",
+   "file": "about.html",
+   "tag": "div",
+   "text": "6月8日"
+  },
+  {
+   "key": "about:124",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "鬼子母神祭"
+  },
+  {
+   "key": "about:125",
+   "file": "about.html",
+   "tag": "p",
+   "text": "午後2時より"
+  },
+  {
+   "key": "about:126",
+   "file": "about.html",
+   "tag": "p",
+   "text": "このお祭りでは、皆様をお守りしている鬼子母神様や当山安置のご守護神様に感謝の祈りを捧げ、御加護を頂けるようご祈祷致します。"
+  },
+  {
+   "key": "about:127",
+   "file": "about.html",
+   "tag": "div",
+   "text": "8月"
+  },
+  {
+   "key": "about:128",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "盂蘭盆・施餓鬼会"
+  },
+  {
+   "key": "about:129",
+   "file": "about.html",
+   "tag": "p",
+   "text": "15日は午後2時より、新盆供養の法要を行います。\n16日は午後5時より施餓鬼法要をした後、精霊送り法要を行います。"
+  },
+  {
+   "key": "about:130",
+   "file": "about.html",
+   "tag": "div",
+   "text": "9月"
+  },
+  {
+   "key": "about:131",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "秋季彼岸会"
+  },
+  {
+   "key": "about:132",
+   "file": "about.html",
+   "tag": "p",
+   "text": "今年の農作物への喜びと、ご先祖様への感謝を込めて供養します。"
+  },
+  {
+   "key": "about:133",
+   "file": "about.html",
+   "tag": "div",
+   "text": "10月12・13日"
+  },
+  {
+   "key": "about:134",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "御会式御逮夜・正当法要"
+  },
+  {
+   "key": "about:135",
+   "file": "about.html",
+   "tag": "p",
+   "text": "12日 午後5時 高座説教\n午後6時 御逮夜法要\n13日 午前8時 正当法要"
+  },
+  {
+   "key": "about:136",
+   "file": "about.html",
+   "tag": "p",
+   "text": "御会式とは、日蓮聖人のご命日に報恩感謝を捧げる仏事です。日蓮聖人が亡くなった時、桜が満開に咲いたことからしだれ桜を飾ります。"
+  },
+  {
+   "key": "about:137",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "月例行事"
+  },
+  {
+   "key": "about:138",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "祈祷会"
+  },
+  {
+   "key": "about:139",
+   "file": "about.html",
+   "tag": "p",
+   "text": "毎月8日（8月はお休み）は鬼子母神様の御縁日として、祈祷会を営んでおります。年中祈願のお申し込みも随時承っております。"
+  },
+  {
+   "key": "about:140",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "題目講"
+  },
+  {
+   "key": "about:141",
+   "file": "about.html",
+   "tag": "p",
+   "text": "毎月13日（3・4・6・8月は休み）は日蓮聖人ご聖日（命日）の法要を営みます。お経や御遺文も毎月違う部分をお読みしますので、お釈迦様と日蓮大聖人の教えに触れられるこの機会に是非お参りください。"
+  },
+  {
+   "key": "about:142",
+   "file": "about.html",
+   "tag": "h4",
+   "text": "月例施餓鬼会"
+  },
+  {
+   "key": "about:143",
+   "file": "about.html",
+   "tag": "p",
+   "text": "毎月25日（3・8・9月は休み）は、当山で祀られている慈母聖観世音菩薩様のご縁日です。この法要では主に永代供養者、水子、ペットへの施餓鬼供養を行っております。\n水子供養のお申し込みは、年中承っておりますので、お寺にご連絡下さい。"
+  },
+  {
+   "key": "about:144",
+   "file": "about.html",
+   "tag": "p",
+   "text": "※ 日程は年により変わる場合があります。詳細はお問い合わせください。"
+  },
+  {
+   "key": "about:145",
+   "file": "about.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "about:146",
+   "file": "about.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "about:147",
+   "file": "about.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "apply:1",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "apply:2",
+   "file": "apply.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "apply:3",
+   "file": "apply.html",
+   "tag": "h2",
+   "text": "各種お申込み"
+  },
+  {
+   "key": "apply:4",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "法事・ご祈祷・水子供養・納骨堂など、ご希望の項目をお選びください"
+  },
+  {
+   "key": "apply:5",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "各申込フォームより必要事項をご入力の上、ご送信ください。送信後、内容を確認の上、当寺よりご連絡いたします。"
+  },
+  {
+   "key": "apply:6",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "※ お急ぎの場合・ご葬儀のご依頼はお電話(0143-22-4284)にて24時間承っております。"
+  },
+  {
+   "key": "apply:7",
+   "file": "apply.html",
+   "tag": "div",
+   "text": "法事のお申込み"
+  },
+  {
+   "key": "apply:8",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "四十九日・百ヶ日・一周忌・三回忌などの年回法要のお申込みを承ります。"
+  },
+  {
+   "key": "apply:9",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "お申込みフォームへ"
+  },
+  {
+   "key": "apply:10",
+   "file": "apply.html",
+   "tag": "div",
+   "text": "ご祈祷のお申込み"
+  },
+  {
+   "key": "apply:11",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "家内安全・厄除け・交通安全・商売繁盛など、各種ご祈祷を承ります。"
+  },
+  {
+   "key": "apply:12",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "お申込みフォームへ"
+  },
+  {
+   "key": "apply:13",
+   "file": "apply.html",
+   "tag": "div",
+   "text": "水子供養のお申込み"
+  },
+  {
+   "key": "apply:14",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "流産・死産・中絶等によりお別れされたお子様の供養を承ります。"
+  },
+  {
+   "key": "apply:15",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "お申込みフォームへ"
+  },
+  {
+   "key": "apply:16",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "要相談"
+  },
+  {
+   "key": "apply:17",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "納骨堂のご利用、永代供養、生前法号についてのご相談を承ります。詳細は下記お電話またはお問い合わせフォームよりご連絡ください。"
+  },
+  {
+   "key": "apply:18",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "納骨堂・永代供養のご案内へ"
+  },
+  {
+   "key": "apply:19",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "要相談"
+  },
+  {
+   "key": "apply:20",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "大切な家族であるペットの供養についてご相談を承ります。"
+  },
+  {
+   "key": "apply:21",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "ペット供養のご案内へ"
+  },
+  {
+   "key": "apply:22",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "要相談"
+  },
+  {
+   "key": "apply:23",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "お札・お守り・お写真などのお焚き上げを承ります。"
+  },
+  {
+   "key": "apply:24",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "お焚き上げのご案内へ"
+  },
+  {
+   "key": "apply:25",
+   "file": "apply.html",
+   "tag": "h3",
+   "text": "その他のご相談・お申込みはこちら"
+  },
+  {
+   "key": "apply:26",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "受付時間 9:00〜17:00 / 急を要するご葬儀・ご相談は24時間対応"
+  },
+  {
+   "key": "apply:27",
+   "file": "apply.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "apply:28",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "apply:29",
+   "file": "apply.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "faq:1",
+   "file": "faq.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "faq:2",
+   "file": "faq.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "faq:3",
+   "file": "faq.html",
+   "tag": "h2",
+   "text": "よくある質問"
+  },
+  {
+   "key": "faq:4",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "お問い合わせの多いご質問とご回答をまとめております"
+  },
+  {
+   "key": "faq:5",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "皆さまから多くお寄せいただくご質問をまとめました。下記で解決しないご質問は、お気軽にお寺までお問い合わせください。"
+  },
+  {
+   "key": "faq:6",
+   "file": "faq.html",
+   "tag": "h3",
+   "text": "参拝・お参りについて"
+  },
+  {
+   "key": "faq:7",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "通常のお参り(本堂・境内へのお参り)は予約不要です。どなたさまもお気軽にお越しください。法要・ご祈祷・水子供養など僧侶が読経するご供養は予約が必要です。お電話(0143-22-4284)またはお問い合わせフォームよりお申し込みください。"
+  },
+  {
+   "key": "faq:8",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "普段のお参りは平服で結構です。法事や法要にご参列の際は、男性は黒・紺・グレーのスーツ、女性はワンピースや黒いスーツなど、落ち着いた服装が一般的です。ご不安な場合は事前にご相談ください。"
+  },
+  {
+   "key": "faq:9",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "境内に駐車場をご用意しております。法要などで混み合う場合がございますので、お時間に余裕を持ってお越しください。"
+  },
+  {
+   "key": "faq:10",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "本堂等への段差がございますが、お申し付けいただければお手伝いいたします。事前にお電話でご相談いただけますと、よりスムーズにご案内できます。"
+  },
+  {
+   "key": "faq:11",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "はい、檀家・宗派を問わずどなたさまでもお参り・ご祈祷をお受けいただけます。お気軽にご相談ください。"
+  },
+  {
+   "key": "faq:12",
+   "file": "faq.html",
+   "tag": "h3",
+   "text": "お布施・費用について"
+  },
+  {
+   "key": "faq:13",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "お布施はあくまで「お気持ち」をお包みいただくものですので、決まった金額はございません。法要の規模や内容により目安はございますので、お気軽にお問い合わせください。"
+  },
+  {
+   "key": "faq:14",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "原則、現金でのお支払いをお願いしております。事情がある場合はお振込みも可能ですので、ご相談ください。"
+  },
+  {
+   "key": "faq:15",
+   "file": "faq.html",
+   "tag": "h3",
+   "text": "法事・お葬式について"
+  },
+  {
+   "key": "faq:16",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "日時のご相談、お塔婆のお申込、ご親族へのご連絡などをご準備いただきます。お申込時に詳しくご案内いたしますので、初めての方もご安心ください。お塔婆代やお斎(おとき)の手配についてもご相談に応じます。"
+  },
+  {
+   "key": "faq:17",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "急を要するご葬儀のご相談は、24時間お電話(0143-22-4284)にて承っております。葬儀社がお決まりでない場合のご相談にも応じます。"
+  },
+  {
+   "key": "faq:18",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "ご遠方の方向けに郵送でのお札のお届けや、ご相談に応じてオンラインでの読経などのご対応も検討いたします。お気軽にご相談ください。"
+  },
+  {
+   "key": "faq:19",
+   "file": "faq.html",
+   "tag": "h3",
+   "text": "水子供養・ペット供養・お焚き上げ"
+  },
+  {
+   "key": "faq:20",
+   "file": "faq.html",
+   "tag": "h3",
+   "text": "解決しない疑問は、お気軽にご相談ください"
+  },
+  {
+   "key": "faq:21",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "受付時間: 9:00 〜 17:00(急ぎのご葬儀は24時間対応)"
+  },
+  {
+   "key": "faq:22",
+   "file": "faq.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "faq:23",
+   "file": "faq.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "faq:24",
+   "file": "faq.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "houji-form:1",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "houji-form:2",
+   "file": "houji-form.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "houji-form:3",
+   "file": "houji-form.html",
+   "tag": "h2",
+   "text": "法事のお申込み"
+  },
+  {
+   "key": "houji-form:4",
+   "file": "houji-form.html",
+   "tag": "p",
+   "text": "四十九日・年回法要などのお申込みを承ります"
+  },
+  {
+   "key": "houji-form:5",
+   "file": "houji-form.html",
+   "tag": "p",
+   "text": "必要事項をご入力の上、送信してください。送信後、内容を確認の上、当寺よりご連絡いたします。"
+  },
+  {
+   "key": "houji-form:6",
+   "file": "houji-form.html",
+   "tag": "p",
+   "text": "※ お急ぎの場合はお電話(0143-22-4284)でも承っております。"
+  },
+  {
+   "key": "houji-form:7",
+   "file": "houji-form.html",
+   "tag": "h3",
+   "text": "お申込者様の情報"
+  },
+  {
+   "key": "houji-form:8",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "houji-form:9",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "houji-form:10",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "houji-form:11",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "houji-form:12",
+   "file": "houji-form.html",
+   "tag": "label",
+   "text": "ご住所"
+  },
+  {
+   "key": "houji-form:13",
+   "file": "houji-form.html",
+   "tag": "h3",
+   "text": "故人様の情報"
+  },
+  {
+   "key": "houji-form:14",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "houji-form:15",
+   "file": "houji-form.html",
+   "tag": "label",
+   "text": "戒名(法号)"
+  },
+  {
+   "key": "houji-form:16",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "houji-form:17",
+   "file": "houji-form.html",
+   "tag": "h3",
+   "text": "法要の内容"
+  },
+  {
+   "key": "houji-form:18",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "houji-form:19",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "houji-form:20",
+   "file": "houji-form.html",
+   "tag": "label",
+   "text": "ご希望日時(第2希望)"
+  },
+  {
+   "key": "houji-form:21",
+   "file": "houji-form.html",
+   "tag": "label",
+   "text": "会場のご希望"
+  },
+  {
+   "key": "houji-form:22",
+   "file": "houji-form.html",
+   "tag": "label",
+   "text": "ご参列予定人数"
+  },
+  {
+   "key": "houji-form:23",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "およその人数で結構です"
+  },
+  {
+   "key": "houji-form:24",
+   "file": "houji-form.html",
+   "tag": "h3",
+   "text": "お塔婆・お斎(おとき)"
+  },
+  {
+   "key": "houji-form:25",
+   "file": "houji-form.html",
+   "tag": "label",
+   "text": "お塔婆の本数"
+  },
+  {
+   "key": "houji-form:26",
+   "file": "houji-form.html",
+   "tag": "span",
+   "text": "不要の場合は0、又は空欄でかまいません"
+  },
+  {
+   "key": "houji-form:27",
+   "file": "houji-form.html",
+   "tag": "label",
+   "text": "お斎(食事)の手配"
+  },
+  {
+   "key": "houji-form:28",
+   "file": "houji-form.html",
+   "tag": "h3",
+   "text": "その他のご要望・ご質問"
+  },
+  {
+   "key": "houji-form:29",
+   "file": "houji-form.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "houji-form:30",
+   "file": "houji-form.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "houji-form:31",
+   "file": "houji-form.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "index:1",
+   "file": "index.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "index:2",
+   "file": "index.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "index:3",
+   "file": "index.html",
+   "tag": "span",
+   "text": "あなたの心に"
+  },
+  {
+   "key": "index:4",
+   "file": "index.html",
+   "tag": "span",
+   "text": "安らぎの法雨を"
+  },
+  {
+   "key": "index:5",
+   "file": "index.html",
+   "tag": "h2",
+   "text": "知る"
+  },
+  {
+   "key": "index:6",
+   "file": "index.html",
+   "tag": "p",
+   "text": "妙傳寺の歴史と歩み"
+  },
+  {
+   "key": "index:7",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "妙傳寺について"
+  },
+  {
+   "key": "index:8",
+   "file": "index.html",
+   "tag": "p",
+   "text": "当山の縁起と、室蘭の地で受け継がれてきた信仰の歴史についてご紹介します。"
+  },
+  {
+   "key": "index:9",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:10",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "ご挨拶"
+  },
+  {
+   "key": "index:11",
+   "file": "index.html",
+   "tag": "p",
+   "text": "住職・役僧の紹介。皆様の心に寄り添うお寺であり続けるための想いを綴ります。"
+  },
+  {
+   "key": "index:12",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:13",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "日蓮宗について"
+  },
+  {
+   "key": "index:14",
+   "file": "index.html",
+   "tag": "p",
+   "text": "「南無妙法蓮華経」のお題目を唱え、法華経の教えを広める日蓮宗の教義について。"
+  },
+  {
+   "key": "index:15",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:16",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "境内案内"
+  },
+  {
+   "key": "index:17",
+   "file": "index.html",
+   "tag": "p",
+   "text": "四季折々の表情を見せる本堂や境内の諸堂をご案内いたします。"
+  },
+  {
+   "key": "index:18",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:19",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "御守護神"
+  },
+  {
+   "key": "index:20",
+   "file": "index.html",
+   "tag": "p",
+   "text": "当山に祀られている守護神様方です。"
+  },
+  {
+   "key": "index:21",
+   "file": "index.html",
+   "tag": "span",
+   "text": "鬼子母神"
+  },
+  {
+   "key": "index:22",
+   "file": "index.html",
+   "tag": "span",
+   "text": "大黒天"
+  },
+  {
+   "key": "index:23",
+   "file": "index.html",
+   "tag": "span",
+   "text": "八大龍王"
+  },
+  {
+   "key": "index:24",
+   "file": "index.html",
+   "tag": "span",
+   "text": "慈母観音菩薩"
+  },
+  {
+   "key": "index:25",
+   "file": "index.html",
+   "tag": "span",
+   "text": "妙蘭弁才天"
+  },
+  {
+   "key": "index:26",
+   "file": "index.html",
+   "tag": "span",
+   "text": "三宝荒神"
+  },
+  {
+   "key": "index:27",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:28",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "年中行事"
+  },
+  {
+   "key": "index:29",
+   "file": "index.html",
+   "tag": "p",
+   "text": "初詣からお盆、お会式まで、年間を通じて行われる仏教行事のご案内です。"
+  },
+  {
+   "key": "index:30",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:31",
+   "file": "index.html",
+   "tag": "h2",
+   "text": "弔う"
+  },
+  {
+   "key": "index:32",
+   "file": "index.html",
+   "tag": "p",
+   "text": "大切な方への想いをかたちに"
+  },
+  {
+   "key": "index:33",
+   "file": "index.html",
+   "tag": "h2",
+   "text": "ご祈祷"
+  },
+  {
+   "key": "index:34",
+   "file": "index.html",
+   "tag": "p",
+   "text": "諸願成就・厄除けのご案内"
+  },
+  {
+   "key": "index:35",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "ご祈祷とは"
+  },
+  {
+   "key": "index:36",
+   "file": "index.html",
+   "tag": "p",
+   "text": "神仏に願いを届け、加護を頂くための儀式について解説いたします。"
+  },
+  {
+   "key": "index:37",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:38",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "お守り・お札"
+  },
+  {
+   "key": "index:39",
+   "file": "index.html",
+   "tag": "p",
+   "text": "常に身に付けたり、ご家庭に祀ることで守護を頂く授与品のご案内です。"
+  },
+  {
+   "key": "index:40",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:41",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "様々なご祈祷"
+  },
+  {
+   "key": "index:42",
+   "file": "index.html",
+   "tag": "p",
+   "text": "家内安全、身体健全、商売繁盛など、各種ご祈祷を承っております。"
+  },
+  {
+   "key": "index:43",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:44",
+   "file": "index.html",
+   "tag": "h2",
+   "text": "妙傳寺の取り組み"
+  },
+  {
+   "key": "index:45",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "生前法号"
+  },
+  {
+   "key": "index:46",
+   "file": "index.html",
+   "tag": "p",
+   "text": "ご存命のうちに仏弟子としての名前を授かり、人生をより豊かに、心穏やかに過ごすための取り組みです。"
+  },
+  {
+   "key": "index:47",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "妙傳寺だより「法雨」"
+  },
+  {
+   "key": "index:48",
+   "file": "index.html",
+   "tag": "p",
+   "text": "定期的にお届けしているおたよりのバックナンバーをご覧いただけます。住職からの法話・年中行事のお知らせをまとめて発行しています。"
+  },
+  {
+   "key": "index:49",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:50",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "よくある質問"
+  },
+  {
+   "key": "index:51",
+   "file": "index.html",
+   "tag": "p",
+   "text": "お布施・服装・法事・各種供養・お焚き上げなど、多くの方からいただくご質問とご回答をまとめております。"
+  },
+  {
+   "key": "index:52",
+   "file": "index.html",
+   "tag": "span",
+   "text": "詳しく見る →"
+  },
+  {
+   "key": "index:53",
+   "file": "index.html",
+   "tag": "h2",
+   "text": "お知らせ"
+  },
+  {
+   "key": "index:54",
+   "file": "index.html",
+   "tag": "p",
+   "text": "記事やページの更新情報をお伝えします"
+  },
+  {
+   "key": "index:55",
+   "file": "index.html",
+   "tag": "span",
+   "text": "2026年5月4日"
+  },
+  {
+   "key": "index:56",
+   "file": "index.html",
+   "tag": "span",
+   "text": "サイト更新"
+  },
+  {
+   "key": "index:57",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "公式サイトをリニューアル公開"
+  },
+  {
+   "key": "index:58",
+   "file": "index.html",
+   "tag": "p",
+   "text": "「知る」「弔う」「願う」の各詳細ページを新設し、サイト全体のデザインを一新しました。寺紋・ロゴも追加しています。"
+  },
+  {
+   "key": "index:59",
+   "file": "index.html",
+   "tag": "span",
+   "text": "2026年5月4日"
+  },
+  {
+   "key": "index:60",
+   "file": "index.html",
+   "tag": "span",
+   "text": "法雨"
+  },
+  {
+   "key": "index:61",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "妙傳寺だより「法雨」 2026年 春号 公開"
+  },
+  {
+   "key": "index:62",
+   "file": "index.html",
+   "tag": "p",
+   "text": "最新号のPDFを「知る」ページの法雨セクションよりご覧いただけます。"
+  },
+  {
+   "key": "index:63",
+   "file": "index.html",
+   "tag": "span",
+   "text": "2026年5月4日"
+  },
+  {
+   "key": "index:64",
+   "file": "index.html",
+   "tag": "span",
+   "text": "法雨"
+  },
+  {
+   "key": "index:65",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "法雨バックナンバー(2025年冬号)を公開"
+  },
+  {
+   "key": "index:66",
+   "file": "index.html",
+   "tag": "p",
+   "text": "過去のおたよりがバックナンバーよりお読みいただけるようになりました。"
+  },
+  {
+   "key": "index:67",
+   "file": "index.html",
+   "tag": "h2",
+   "text": "お問い合わせ・相談"
+  },
+  {
+   "key": "index:68",
+   "file": "index.html",
+   "tag": "p",
+   "text": "仏事、お墓、心のお悩みなど、お気軽にご相談ください"
+  },
+  {
+   "key": "index:69",
+   "file": "index.html",
+   "tag": "h3",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "index:70",
+   "file": "index.html",
+   "tag": "p",
+   "text": "〒051-0021\n北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "index:71",
+   "file": "index.html",
+   "tag": "p",
+   "text": "☎ 0143-22-4284"
+  },
+  {
+   "key": "index:72",
+   "file": "index.html",
+   "tag": "p",
+   "text": "急を要するご葬儀やご相談は、お電話にて24時間承っております。"
+  },
+  {
+   "key": "index:73",
+   "file": "index.html",
+   "tag": "p",
+   "text": "ラーメン味の大王から妙傳寺までの道のり"
+  },
+  {
+   "key": "index:74",
+   "file": "index.html",
+   "tag": "label",
+   "text": "氏名"
+  },
+  {
+   "key": "index:75",
+   "file": "index.html",
+   "tag": "label",
+   "text": "生年月日"
+  },
+  {
+   "key": "index:76",
+   "file": "index.html",
+   "tag": "label",
+   "text": "住所"
+  },
+  {
+   "key": "index:77",
+   "file": "index.html",
+   "tag": "label",
+   "text": "電話番号"
+  },
+  {
+   "key": "index:78",
+   "file": "index.html",
+   "tag": "label",
+   "text": "メールアドレス"
+  },
+  {
+   "key": "index:79",
+   "file": "index.html",
+   "tag": "label",
+   "text": "相談内容・各種申込"
+  },
+  {
+   "key": "index:80",
+   "file": "index.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "index:81",
+   "file": "index.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "index:82",
+   "file": "index.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "kitou-form:1",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "kitou-form:2",
+   "file": "kitou-form.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "kitou-form:3",
+   "file": "kitou-form.html",
+   "tag": "h2",
+   "text": "ご祈祷のお申込み"
+  },
+  {
+   "key": "kitou-form:4",
+   "file": "kitou-form.html",
+   "tag": "p",
+   "text": "各種ご祈祷のお申込みを承ります"
+  },
+  {
+   "key": "kitou-form:5",
+   "file": "kitou-form.html",
+   "tag": "p",
+   "text": "必要事項をご入力の上、送信してください。送信後、内容を確認の上、当寺よりご連絡いたします。"
+  },
+  {
+   "key": "kitou-form:6",
+   "file": "kitou-form.html",
+   "tag": "p",
+   "text": "※ お急ぎの場合はお電話(0143-22-4284)でも承っております。"
+  },
+  {
+   "key": "kitou-form:7",
+   "file": "kitou-form.html",
+   "tag": "h3",
+   "text": "申込者様の情報"
+  },
+  {
+   "key": "kitou-form:8",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "kitou-form:9",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "ご祈祷を受けられる方のお名前"
+  },
+  {
+   "key": "kitou-form:10",
+   "file": "kitou-form.html",
+   "tag": "label",
+   "text": "ふりがな"
+  },
+  {
+   "key": "kitou-form:11",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "kitou-form:12",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "星回りや厄年判定で使用します"
+  },
+  {
+   "key": "kitou-form:13",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "kitou-form:14",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "kitou-form:15",
+   "file": "kitou-form.html",
+   "tag": "label",
+   "text": "ご住所"
+  },
+  {
+   "key": "kitou-form:16",
+   "file": "kitou-form.html",
+   "tag": "h3",
+   "text": "祈願の内容"
+  },
+  {
+   "key": "kitou-form:17",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "kitou-form:18",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "該当するものをすべて選択してください(複数可)"
+  },
+  {
+   "key": "kitou-form:19",
+   "file": "kitou-form.html",
+   "tag": "label",
+   "text": "祈願の詳細・願意"
+  },
+  {
+   "key": "kitou-form:20",
+   "file": "kitou-form.html",
+   "tag": "h3",
+   "text": "祈願プラン・実施方法"
+  },
+  {
+   "key": "kitou-form:21",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "kitou-form:22",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "年中特別祈願は1年間毎日お祈り続けるお勤めです"
+  },
+  {
+   "key": "kitou-form:23",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "kitou-form:24",
+   "file": "kitou-form.html",
+   "tag": "label",
+   "text": "ご希望日時(第1希望)"
+  },
+  {
+   "key": "kitou-form:25",
+   "file": "kitou-form.html",
+   "tag": "span",
+   "text": "来寺希望の方はご記入ください"
+  },
+  {
+   "key": "kitou-form:26",
+   "file": "kitou-form.html",
+   "tag": "label",
+   "text": "ご希望日時(第2希望)"
+  },
+  {
+   "key": "kitou-form:27",
+   "file": "kitou-form.html",
+   "tag": "h3",
+   "text": "ご要望・ご質問"
+  },
+  {
+   "key": "kitou-form:28",
+   "file": "kitou-form.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "kitou-form:29",
+   "file": "kitou-form.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "kitou-form:30",
+   "file": "kitou-form.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "mizuko-form:1",
+   "file": "mizuko-form.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "mizuko-form:2",
+   "file": "mizuko-form.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "mizuko-form:3",
+   "file": "mizuko-form.html",
+   "tag": "h2",
+   "text": "水子供養のお申込み"
+  },
+  {
+   "key": "mizuko-form:4",
+   "file": "mizuko-form.html",
+   "tag": "p",
+   "text": "小さな命のためのご供養を、慈母観音菩薩さまのもとで"
+  },
+  {
+   "key": "mizuko-form:5",
+   "file": "mizuko-form.html",
+   "tag": "p",
+   "text": "必要事項をご入力の上、送信してください。お一人おひとりのお気持ちに丁寧に寄り添ってご供養いたします。"
+  },
+  {
+   "key": "mizuko-form:6",
+   "file": "mizuko-form.html",
+   "tag": "p",
+   "text": "※ お電話(0143-22-4284)でのご相談も承っております。"
+  },
+  {
+   "key": "mizuko-form:7",
+   "file": "mizuko-form.html",
+   "tag": "h3",
+   "text": "申込者様の情報"
+  },
+  {
+   "key": "mizuko-form:8",
+   "file": "mizuko-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "mizuko-form:9",
+   "file": "mizuko-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "mizuko-form:10",
+   "file": "mizuko-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "mizuko-form:11",
+   "file": "mizuko-form.html",
+   "tag": "label",
+   "text": "ご住所"
+  },
+  {
+   "key": "mizuko-form:12",
+   "file": "mizuko-form.html",
+   "tag": "label",
+   "text": "ご連絡方法のご希望"
+  },
+  {
+   "key": "mizuko-form:13",
+   "file": "mizuko-form.html",
+   "tag": "h3",
+   "text": "ご供養について"
+  },
+  {
+   "key": "mizuko-form:14",
+   "file": "mizuko-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "mizuko-form:15",
+   "file": "mizuko-form.html",
+   "tag": "label",
+   "text": "ご希望日時(第1希望)"
+  },
+  {
+   "key": "mizuko-form:16",
+   "file": "mizuko-form.html",
+   "tag": "span",
+   "text": "ご来寺希望の方はご記入ください"
+  },
+  {
+   "key": "mizuko-form:17",
+   "file": "mizuko-form.html",
+   "tag": "label",
+   "text": "ご希望日時(第2希望)"
+  },
+  {
+   "key": "mizuko-form:18",
+   "file": "mizuko-form.html",
+   "tag": "h3",
+   "text": "その他のご要望・ご質問"
+  },
+  {
+   "key": "mizuko-form:19",
+   "file": "mizuko-form.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "mizuko-form:20",
+   "file": "mizuko-form.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "mizuko-form:21",
+   "file": "mizuko-form.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "news:1",
+   "file": "news.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "news:2",
+   "file": "news.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "news:3",
+   "file": "news.html",
+   "tag": "h2",
+   "text": "お知らせ・新着情報"
+  },
+  {
+   "key": "news:4",
+   "file": "news.html",
+   "tag": "p",
+   "text": "妙傳寺からの最新情報をお届けします"
+  },
+  {
+   "key": "news:5",
+   "file": "news.html",
+   "tag": "span",
+   "text": "2026年5月8日"
+  },
+  {
+   "key": "news:6",
+   "file": "news.html",
+   "tag": "span",
+   "text": "サイト"
+  },
+  {
+   "key": "news:7",
+   "file": "news.html",
+   "tag": "h3",
+   "text": "公式ホームページをリニューアルしました"
+  },
+  {
+   "key": "news:8",
+   "file": "news.html",
+   "tag": "p",
+   "text": "このたび妙傳寺の公式ホームページをリニューアルいたしました。境内・年中行事・ご祈祷・各種供養のご案内など、皆さまにより分かりやすい構成にしております。今後もコンテンツを充実させてまいります。"
+  },
+  {
+   "key": "news:9",
+   "file": "news.html",
+   "tag": "span",
+   "text": "2026年5月"
+  },
+  {
+   "key": "news:10",
+   "file": "news.html",
+   "tag": "span",
+   "text": "行事"
+  },
+  {
+   "key": "news:11",
+   "file": "news.html",
+   "tag": "h3",
+   "text": "6月8日 鬼子母神祭のご案内"
+  },
+  {
+   "key": "news:12",
+   "file": "news.html",
+   "tag": "p",
+   "text": "6月8日 午後2時より、鬼子母神祭を執り行います。皆様をお守りしている鬼子母神様や当山安置のご守護神様に感謝の祈りを捧げ、御加護を頂けるようご祈祷致します。どなたさまもお気軽にご参列ください。"
+  },
+  {
+   "key": "news:13",
+   "file": "news.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "news:14",
+   "file": "news.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "news:15",
+   "file": "news.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "newsletter:1",
+   "file": "newsletter.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "newsletter:2",
+   "file": "newsletter.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "newsletter:3",
+   "file": "newsletter.html",
+   "tag": "h2",
+   "text": "妙傳寺だより「法雨」"
+  },
+  {
+   "key": "newsletter:4",
+   "file": "newsletter.html",
+   "tag": "p",
+   "text": "定期的にお届けしているおたよりのバックナンバー"
+  },
+  {
+   "key": "newsletter:5",
+   "file": "newsletter.html",
+   "tag": "p",
+   "text": "妙傳寺では、住職からの法話・年中行事のお知らせ・お寺の出来事などをまとめた寺報「法雨（ほうう）」を発行しております。バックナンバーをこちらでご覧いただけます。"
+  },
+  {
+   "key": "newsletter:6",
+   "file": "newsletter.html",
+   "tag": "h3",
+   "text": "2026年"
+  },
+  {
+   "key": "newsletter:7",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "2026年"
+  },
+  {
+   "key": "newsletter:8",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "春号"
+  },
+  {
+   "key": "newsletter:9",
+   "file": "newsletter.html",
+   "tag": "h3",
+   "text": "2025年"
+  },
+  {
+   "key": "newsletter:10",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "2025年"
+  },
+  {
+   "key": "newsletter:11",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "春号"
+  },
+  {
+   "key": "newsletter:12",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "2025年"
+  },
+  {
+   "key": "newsletter:13",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "夏号"
+  },
+  {
+   "key": "newsletter:14",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "2025年"
+  },
+  {
+   "key": "newsletter:15",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "秋号"
+  },
+  {
+   "key": "newsletter:16",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "2025年"
+  },
+  {
+   "key": "newsletter:17",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "冬号"
+  },
+  {
+   "key": "newsletter:18",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "newsletter:19",
+   "file": "newsletter.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "newsletter:20",
+   "file": "newsletter.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "prayer:1",
+   "file": "prayer.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "prayer:2",
+   "file": "prayer.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "prayer:3",
+   "file": "prayer.html",
+   "tag": "h2",
+   "text": "ご祈祷"
+  },
+  {
+   "key": "prayer:4",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "諸願成就・厄除けのご案内"
+  },
+  {
+   "key": "prayer:5",
+   "file": "prayer.html",
+   "tag": "div",
+   "text": "ABOUT KITO"
+  },
+  {
+   "key": "prayer:6",
+   "file": "prayer.html",
+   "tag": "h3",
+   "text": "ご祈祷とは"
+  },
+  {
+   "key": "prayer:7",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "ご祈祷とは、お題目「南無妙法蓮華経」を唱え、法華経の功徳をもって神仏に願いを届け、加護を頂くための儀式です。日蓮宗には、宗祖・日蓮大聖人より受け継がれた「修法（しゅほう）」と呼ばれる伝統的なご祈祷の作法があります。"
+  },
+  {
+   "key": "prayer:8",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "当山の祈祷殿には、皆さまをお守りする諸尊（御守護神）が祀られています。僧侶が木剣（ぼっけん）を打ち、お題目とお経をお唱えすることで、ご祈祷を願う方の心身を清め、災いを祓い、願い事の成就を後押しいたします。"
+  },
+  {
+   "key": "prayer:9",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "木剣修法とは"
+  },
+  {
+   "key": "prayer:10",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "毎年11月1日から翌年の2月10日までの寒中100日間、千葉県市川市の法華経寺にあります、世界三大荒行に数えられる「大荒行堂」で苦修錬行を積んだ者だけが、相伝される祈祷法であります。"
+  },
+  {
+   "key": "prayer:11",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "荒行堂の生活は、１日７回の水行と４回の勤行、それ以外読経三昧に入って、食事は一日２食のお粥のみ、自分自身を極限の状態に枯らしてこそ、授かることの出来る祈祷法です。"
+  },
+  {
+   "key": "prayer:12",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "僧侶が大荒行堂にて写経した撰法華経（せんほけきょう）というお経巻を人々に当て、心の垢である罪障を払い、祈願の成就を祈ります。"
+  },
+  {
+   "key": "prayer:13",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "年中特別祈願とは"
+  },
+  {
+   "key": "prayer:14",
+   "file": "prayer.html",
+   "tag": "li",
+   "text": "身体に自信のない方、病気や怪我をしやすい方"
+  },
+  {
+   "key": "prayer:15",
+   "file": "prayer.html",
+   "tag": "li",
+   "text": "心の不安定さを感じている方"
+  },
+  {
+   "key": "prayer:16",
+   "file": "prayer.html",
+   "tag": "li",
+   "text": "志の成就（願い事の達成）を強く願う方"
+  },
+  {
+   "key": "prayer:17",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "ご祈祷で得られるもの"
+  },
+  {
+   "key": "prayer:18",
+   "file": "prayer.html",
+   "tag": "li",
+   "text": "厄災や不浄を祓い、心身を清める"
+  },
+  {
+   "key": "prayer:19",
+   "file": "prayer.html",
+   "tag": "li",
+   "text": "諸願成就（願い事の成就）への力添え"
+  },
+  {
+   "key": "prayer:20",
+   "file": "prayer.html",
+   "tag": "li",
+   "text": "日々の暮らしへの加護"
+  },
+  {
+   "key": "prayer:21",
+   "file": "prayer.html",
+   "tag": "li",
+   "text": "お参りされた方ご自身の心の平穏"
+  },
+  {
+   "key": "prayer:22",
+   "file": "prayer.html",
+   "tag": "div",
+   "text": "FLOW"
+  },
+  {
+   "key": "prayer:23",
+   "file": "prayer.html",
+   "tag": "h3",
+   "text": "修法（しゅほう）のながれ"
+  },
+  {
+   "key": "prayer:24",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "ご祈祷は、お申し込みから授与品のお渡しまで、概ね以下の流れで執り行います。"
+  },
+  {
+   "key": "prayer:25",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "1. お申し込み"
+  },
+  {
+   "key": "prayer:26",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "お電話またはお問い合わせフォームより、ご希望の祈願内容・日時をご相談ください。"
+  },
+  {
+   "key": "prayer:27",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "2. ご来寺"
+  },
+  {
+   "key": "prayer:28",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "当日、ご予約の時間に祈祷殿へお越しください。"
+  },
+  {
+   "key": "prayer:29",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "3. 修法"
+  },
+  {
+   "key": "prayer:30",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "僧侶が祈願主のお名前・願意を奉読し、お題目をお唱えしてご祈祷いたします（約20〜30分）。"
+  },
+  {
+   "key": "prayer:31",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "4. 授与品のお渡し"
+  },
+  {
+   "key": "prayer:32",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "ご祈祷後、御札・御守などの授与品をお渡しいたします。"
+  },
+  {
+   "key": "prayer:33",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "※ ご都合により当山へお越しいただけない場合は、ご遠方ご祈祷（郵送でのお札のお届け）も承っております。お気軽にご相談ください。"
+  },
+  {
+   "key": "prayer:34",
+   "file": "prayer.html",
+   "tag": "div",
+   "text": "AMULET"
+  },
+  {
+   "key": "prayer:35",
+   "file": "prayer.html",
+   "tag": "h3",
+   "text": "御札・御守り"
+  },
+  {
+   "key": "prayer:36",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "常に身に付けたり、ご家庭にお祀りいただくことで、神仏の御加護を頂く授与品です。当山では各種お札・お守りをご用意しております。"
+  },
+  {
+   "key": "prayer:37",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "お札について"
+  },
+  {
+   "key": "prayer:38",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "お守り"
+  },
+  {
+   "key": "prayer:39",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "星守り"
+  },
+  {
+   "key": "prayer:40",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "九曜星の星周りによる当年の厄から守護します。"
+  },
+  {
+   "key": "prayer:41",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "厄除け守り"
+  },
+  {
+   "key": "prayer:42",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "厄年、八方塞がりの方に授与します。"
+  },
+  {
+   "key": "prayer:43",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "鬼子母神守り"
+  },
+  {
+   "key": "prayer:44",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "身体健全、闘病平癒、息災延命、子宝成就、発育増進、試験合格、学業増進の方に授与します。"
+  },
+  {
+   "key": "prayer:45",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "日蓮聖人守り"
+  },
+  {
+   "key": "prayer:46",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "家内安全、良縁成就、豊作祈願、海上安全、航空安全、作業安全"
+  },
+  {
+   "key": "prayer:47",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "大黒守り"
+  },
+  {
+   "key": "prayer:48",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "商売繁盛、事業繁栄、社運隆昌の方に授与します。"
+  },
+  {
+   "key": "prayer:49",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "交通安全守り"
+  },
+  {
+   "key": "prayer:50",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "交通安全の方に授与します。"
+  },
+  {
+   "key": "prayer:51",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "※ 古いお札・お守りは、年末年始や法要の機会にお焚き上げ供養を承っております。"
+  },
+  {
+   "key": "prayer:52",
+   "file": "prayer.html",
+   "tag": "div",
+   "text": "VARIOUS"
+  },
+  {
+   "key": "prayer:53",
+   "file": "prayer.html",
+   "tag": "h3",
+   "text": "様々なご祈願"
+  },
+  {
+   "key": "prayer:54",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "皆さまのご事情に応じて、各種ご祈願を承っております。下記以外のご祈願についてもお気軽にご相談ください。"
+  },
+  {
+   "key": "prayer:55",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "子宝・安産祈願"
+  },
+  {
+   "key": "prayer:56",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "『帯祝い』とも言われ、古くより妊娠五ヶ月目に入った最初の戌の日に腹帯を巻いて安産の無事を願うものであります。"
+  },
+  {
+   "key": "prayer:57",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "妙傳寺にお祀りされている安産、子育ての神様である鬼子母神像に祈願した御守をお渡ししております。腹帯守りと安産守りを授与します。"
+  },
+  {
+   "key": "prayer:58",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "お初参り・七五三"
+  },
+  {
+   "key": "prayer:59",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "子ども達のこれからの健康を願う人生の通過儀式として、健やかな成長を祈願する行事であります。ご家族揃ってお参りください。"
+  },
+  {
+   "key": "prayer:60",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "車両祈祷"
+  },
+  {
+   "key": "prayer:61",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "新たにお車を購入された時に、車両だけではなく、運転手も一緒に御祈祷をいたします。"
+  },
+  {
+   "key": "prayer:62",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "交通安全と道中無難、事故を起こさぬよう御祈願致します。交通安全の御札と御守を授与致します。"
+  },
+  {
+   "key": "prayer:63",
+   "file": "prayer.html",
+   "tag": "h4",
+   "text": "様々な御祈願"
+  },
+  {
+   "key": "prayer:64",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "ご希望に合わせた各種ご祈願を受付ております。"
+  },
+  {
+   "key": "prayer:65",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "家内安全"
+  },
+  {
+   "key": "prayer:66",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "家族が無事に過ごせますように"
+  },
+  {
+   "key": "prayer:67",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "身体健全"
+  },
+  {
+   "key": "prayer:68",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "体が健康でありますように"
+  },
+  {
+   "key": "prayer:69",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "闘病平癒"
+  },
+  {
+   "key": "prayer:70",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "病気が治りますように"
+  },
+  {
+   "key": "prayer:71",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "息災延命"
+  },
+  {
+   "key": "prayer:72",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "長生きできますように"
+  },
+  {
+   "key": "prayer:73",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "除厄開運"
+  },
+  {
+   "key": "prayer:74",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "厄を除き運気が上がりますように（厄年の方）"
+  },
+  {
+   "key": "prayer:75",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "除災得幸"
+  },
+  {
+   "key": "prayer:76",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "災いを除き幸福を得られますように（八方塞がりの方）"
+  },
+  {
+   "key": "prayer:77",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "良縁成就"
+  },
+  {
+   "key": "prayer:78",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "良き人に出会えますように"
+  },
+  {
+   "key": "prayer:79",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "子宝成就"
+  },
+  {
+   "key": "prayer:80",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "子供が授かりますように"
+  },
+  {
+   "key": "prayer:81",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "安産成就"
+  },
+  {
+   "key": "prayer:82",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "無事出産できますように"
+  },
+  {
+   "key": "prayer:83",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "発育成就"
+  },
+  {
+   "key": "prayer:84",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "子供が元気に育ちますように"
+  },
+  {
+   "key": "prayer:85",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "試験合格"
+  },
+  {
+   "key": "prayer:86",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "志望校に受かりますように"
+  },
+  {
+   "key": "prayer:87",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "学業増進"
+  },
+  {
+   "key": "prayer:88",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "頭が良くなりますように"
+  },
+  {
+   "key": "prayer:89",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "商売繁昌"
+  },
+  {
+   "key": "prayer:90",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "商売が繁昌しますように"
+  },
+  {
+   "key": "prayer:91",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "事業繁栄"
+  },
+  {
+   "key": "prayer:92",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "事業が成功しますように"
+  },
+  {
+   "key": "prayer:93",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "社運隆昌"
+  },
+  {
+   "key": "prayer:94",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "会社の運気が上がりますように"
+  },
+  {
+   "key": "prayer:95",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "豊作祈願"
+  },
+  {
+   "key": "prayer:96",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "作物が良く実りますように"
+  },
+  {
+   "key": "prayer:97",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "交通安全"
+  },
+  {
+   "key": "prayer:98",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "事故にあいませんように"
+  },
+  {
+   "key": "prayer:99",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "海上安全"
+  },
+  {
+   "key": "prayer:100",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "海上事故にあいませんように"
+  },
+  {
+   "key": "prayer:101",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "航空安全"
+  },
+  {
+   "key": "prayer:102",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "航空事故にあいませんように"
+  },
+  {
+   "key": "prayer:103",
+   "file": "prayer.html",
+   "tag": "th",
+   "text": "作業安全"
+  },
+  {
+   "key": "prayer:104",
+   "file": "prayer.html",
+   "tag": "td",
+   "text": "業務中の事故にあいませんように"
+  },
+  {
+   "key": "prayer:105",
+   "file": "prayer.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "prayer:106",
+   "file": "prayer.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "prayer:107",
+   "file": "prayer.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "rituals:1",
+   "file": "rituals.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "rituals:2",
+   "file": "rituals.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "rituals:3",
+   "file": "rituals.html",
+   "tag": "h2",
+   "text": "仏事・弔い"
+  },
+  {
+   "key": "rituals:4",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "大切な方への祈り"
+  },
+  {
+   "key": "rituals:5",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "日蓮宗の儀礼に基づき、真心を込めて故人様やご先祖様のご供養を執り行います。"
+  },
+  {
+   "key": "rituals:6",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "MONTHLY"
+  },
+  {
+   "key": "rituals:7",
+   "file": "rituals.html",
+   "tag": "h3",
+   "text": "月参り（つきまいり）"
+  },
+  {
+   "key": "rituals:8",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "日常の中に祈りの時間を — 毎月の命日のご供養"
+  },
+  {
+   "key": "rituals:9",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "毎月の命日にご自宅へ伺い、お仏壇の前で読経供養を行います。"
+  },
+  {
+   "key": "rituals:10",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "月参りの手引き"
+  },
+  {
+   "key": "rituals:11",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "基本的に毎月伺います"
+  },
+  {
+   "key": "rituals:12",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "行事がある際は、お休み 又は 日にちの変更をお願いしてます"
+  },
+  {
+   "key": "rituals:13",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "各家の状況に合わせて伺います（祥月命日のみ、盆彼岸と祥月命日の4回など）"
+  },
+  {
+   "key": "rituals:14",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "約10〜15分のお参りです"
+  },
+  {
+   "key": "rituals:15",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "事前にご連絡いただければ、その時だけ伺うことも可能です"
+  },
+  {
+   "key": "rituals:16",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "MEMORIAL"
+  },
+  {
+   "key": "rituals:17",
+   "file": "rituals.html",
+   "tag": "h3",
+   "text": "法事・先祖供養"
+  },
+  {
+   "key": "rituals:18",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "節目を丁寧に、心を込めて — 四十九日・年回法要"
+  },
+  {
+   "key": "rituals:19",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "四十九日、一周忌、三回忌などの大切な節目に、ご親族の皆さまと共に丁寧にご供養いたします。日蓮宗の伝統に則った法要を通じ、故人への想いを繋ぎます。"
+  },
+  {
+   "key": "rituals:20",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "令和8年 年回忌表"
+  },
+  {
+   "key": "rituals:21",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "一周忌"
+  },
+  {
+   "key": "rituals:22",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "令和7年（2025年）にご逝去された方"
+  },
+  {
+   "key": "rituals:23",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "三回忌"
+  },
+  {
+   "key": "rituals:24",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "令和6年（2024年）にご逝去された方"
+  },
+  {
+   "key": "rituals:25",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "七回忌"
+  },
+  {
+   "key": "rituals:26",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "令和2年（2020年）にご逝去された方"
+  },
+  {
+   "key": "rituals:27",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "十三回忌"
+  },
+  {
+   "key": "rituals:28",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "平成26年（2014年）にご逝去された方"
+  },
+  {
+   "key": "rituals:29",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "十七回忌"
+  },
+  {
+   "key": "rituals:30",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "平成22年（2010年）にご逝去された方"
+  },
+  {
+   "key": "rituals:31",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "二十三回忌"
+  },
+  {
+   "key": "rituals:32",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "平成16年（2004年）にご逝去された方"
+  },
+  {
+   "key": "rituals:33",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "二十七回忌"
+  },
+  {
+   "key": "rituals:34",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "平成12年（2000年）にご逝去された方"
+  },
+  {
+   "key": "rituals:35",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "三十三回忌"
+  },
+  {
+   "key": "rituals:36",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "平成6年（1994年）にご逝去された方"
+  },
+  {
+   "key": "rituals:37",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "五十回忌"
+  },
+  {
+   "key": "rituals:38",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "昭和52年（1977年）にご逝去された方"
+  },
+  {
+   "key": "rituals:39",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "お塔婆のお申し込みや、お斎（おとき）の手配などについてもご相談に応じます。日程はお早めにご連絡いただけますと幸いです。"
+  },
+  {
+   "key": "rituals:40",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "FUNERAL"
+  },
+  {
+   "key": "rituals:41",
+   "file": "rituals.html",
+   "tag": "h3",
+   "text": "お葬式"
+  },
+  {
+   "key": "rituals:42",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "お題目とともに歩む、最後のお見送り"
+  },
+  {
+   "key": "rituals:43",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "故人の旅立ちを、日蓮宗の儀礼に基づき厳かにお送りします。枕経から本葬まで、ご遺族に寄り添い、安心感のある葬儀を執り行います。"
+  },
+  {
+   "key": "rituals:44",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "お題目をお唱えし、戒名（法号）をお授けすることで、故人が安らかに霊山浄土へ旅立たれるよう、心を込めてお勤めいたします。"
+  },
+  {
+   "key": "rituals:45",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "急なご不幸の際は"
+  },
+  {
+   "key": "rituals:46",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "急を要するご葬儀のご相談は、24時間お電話にて承っております。葬儀社がまだお決まりでない場合のご相談にも応じます。"
+  },
+  {
+   "key": "rituals:47",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "☎ 0143-22-4284"
+  },
+  {
+   "key": "rituals:48",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "お葬式の流れ"
+  },
+  {
+   "key": "rituals:49",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "ご逝去のご連絡 → 枕経（まくらぎょう）"
+  },
+  {
+   "key": "rituals:50",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "お通夜"
+  },
+  {
+   "key": "rituals:51",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "葬儀・告別式"
+  },
+  {
+   "key": "rituals:52",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "火葬・収骨"
+  },
+  {
+   "key": "rituals:53",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "初七日法要・還骨勤行"
+  },
+  {
+   "key": "rituals:54",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "ご家族のお気持ちに寄り添い、形式に縛られすぎず、故人らしいお見送りができるようご相談に応じます。"
+  },
+  {
+   "key": "rituals:55",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "OSSUARY HALL"
+  },
+  {
+   "key": "rituals:56",
+   "file": "rituals.html",
+   "tag": "h3",
+   "text": "納骨堂（のうこつどう）"
+  },
+  {
+   "key": "rituals:57",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "天候を気にせず、いつでも会いに来られる屋内施設"
+  },
+  {
+   "key": "rituals:58",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "室蘭の厳しい気候の中でも、一年を通じて快適にお参りいただける屋内型の納骨堂です。清浄な空間で、大切な方との対話のひとときをお過ごしください。"
+  },
+  {
+   "key": "rituals:59",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "特長"
+  },
+  {
+   "key": "rituals:60",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "天候に左右されない"
+  },
+  {
+   "key": "rituals:61",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "雪深い室蘭の冬でも、雨の日でも、安心してお参りいただけます。"
+  },
+  {
+   "key": "rituals:62",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "清潔・快適な空間"
+  },
+  {
+   "key": "rituals:63",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "明るく整えられた屋内で、静かにお祈りに集中できます。"
+  },
+  {
+   "key": "rituals:64",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "後継者のご負担を軽減"
+  },
+  {
+   "key": "rituals:65",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "墓石の管理が不要のため、ご家族への負担がかかりません。"
+  },
+  {
+   "key": "rituals:66",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "当山が永代に管理"
+  },
+  {
+   "key": "rituals:67",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "日々のお勤めを通じて、僧侶が責任を持って管理いたします。"
+  },
+  {
+   "key": "rituals:68",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "お申し込み・ご見学"
+  },
+  {
+   "key": "rituals:69",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "区画のご見学やご相談は随時承っております。お申し込み前に、必ず実際の施設をご覧いただけますので、お気軽にお問い合わせください。"
+  },
+  {
+   "key": "rituals:70",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "区画タイプ"
+  },
+  {
+   "key": "rituals:71",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "1級"
+  },
+  {
+   "key": "rituals:72",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "100万円"
+  },
+  {
+   "key": "rituals:73",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "2級"
+  },
+  {
+   "key": "rituals:74",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "70万円"
+  },
+  {
+   "key": "rituals:75",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "3級"
+  },
+  {
+   "key": "rituals:76",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "40万円"
+  },
+  {
+   "key": "rituals:77",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "1級"
+  },
+  {
+   "key": "rituals:78",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "2級"
+  },
+  {
+   "key": "rituals:79",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "3級"
+  },
+  {
+   "key": "rituals:80",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "お申し込み"
+  },
+  {
+   "key": "rituals:81",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "お電話または当ホームページのお問い合わせフォームより"
+  },
+  {
+   "key": "rituals:82",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "永代供養・水子供養・ペット供養 — 多様な想いに寄り添う、慈しみの供養"
+  },
+  {
+   "key": "rituals:83",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "現代の生活スタイルやニーズに合わせ、お一人おひとりの事情に配慮した供養の形をご提案します。小さな命や、家族同然のペットへの祈りも大切にしています。"
+  },
+  {
+   "key": "rituals:84",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "ETERNAL MEMORIAL"
+  },
+  {
+   "key": "rituals:85",
+   "file": "rituals.html",
+   "tag": "h3",
+   "text": "永代供養（えいたいくよう）"
+  },
+  {
+   "key": "rituals:86",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "後継者の不安を安心へ — 永代にわたる管理と供養"
+  },
+  {
+   "key": "rituals:87",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "永代供養墓「久遠」"
+  },
+  {
+   "key": "rituals:88",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "「お墓の継承者がいない」「遠方で頻繁にお参りできない」など、現代のさまざまなご事情に応じて、当山が責任を持って永代にわたり管理・供養を続ける制度です。身寄りのない方や、ご家族に負担をかけたくない方も安心してご利用いただけます。"
+  },
+  {
+   "key": "rituals:89",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "毎日の読経と年中行事を通じて、お納めいただいたご遺骨は手厚く供養されます。お一人さまでも、ご夫婦でも、ご家族単位でもお申し込みいただけます。"
+  },
+  {
+   "key": "rituals:90",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "こんな方にご利用いただいています"
+  },
+  {
+   "key": "rituals:91",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "お墓の後継ぎがいらっしゃらない方"
+  },
+  {
+   "key": "rituals:92",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "独身の方、お子さまのいらっしゃらないご夫婦"
+  },
+  {
+   "key": "rituals:93",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "お子さまに負担をかけたくないとお考えの方"
+  },
+  {
+   "key": "rituals:94",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "遠方にお住まいで、お参りが難しい方"
+  },
+  {
+   "key": "rituals:95",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "生前のうちに供養先を決めておきたい方"
+  },
+  {
+   "key": "rituals:96",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "既存のお墓を整理（墓じまい）して移したい方"
+  },
+  {
+   "key": "rituals:97",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "墓じまいのご相談も承ります"
+  },
+  {
+   "key": "rituals:98",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "「遠方の実家のお墓を整理したい」「先祖代々のお墓を当山にまとめたい」といったご相談にも応じます。書類手続きから改葬まで、丁寧にサポートいたします。"
+  },
+  {
+   "key": "rituals:99",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "詳細内容"
+  },
+  {
+   "key": "rituals:100",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "1. 個別法号供養"
+  },
+  {
+   "key": "rituals:101",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "個別での供養プランです。位牌あり、過去帳への記入と、遺骨の個別保管が含まれます。"
+  },
+  {
+   "key": "rituals:102",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "1人"
+  },
+  {
+   "key": "rituals:103",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "30万円"
+  },
+  {
+   "key": "rituals:104",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "2人"
+  },
+  {
+   "key": "rituals:105",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "45万円"
+  },
+  {
+   "key": "rituals:106",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "3人"
+  },
+  {
+   "key": "rituals:107",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "60万円"
+  },
+  {
+   "key": "rituals:108",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "2. 先祖代々供養"
+  },
+  {
+   "key": "rituals:109",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "上記（個別法号供養）と同様に、位牌あり、過去帳への記入および遺骨の個別保管を行います。"
+  },
+  {
+   "key": "rituals:110",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "費用"
+  },
+  {
+   "key": "rituals:111",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "何人でも 50万円"
+  },
+  {
+   "key": "rituals:112",
+   "file": "rituals.html",
+   "tag": "h5",
+   "text": "3. 共同埋葬供養"
+  },
+  {
+   "key": "rituals:113",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "位牌なし、過去帳への記入なし、遺骨は他の方と一緒に合祀されます。"
+  },
+  {
+   "key": "rituals:114",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "費用"
+  },
+  {
+   "key": "rituals:115",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "何人でも 5万円"
+  },
+  {
+   "key": "rituals:116",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "詳細・費用などはお気軽にお問い合わせください。"
+  },
+  {
+   "key": "rituals:117",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "MIZUKO"
+  },
+  {
+   "key": "rituals:118",
+   "file": "rituals.html",
+   "tag": "h3",
+   "text": "水子供養"
+  },
+  {
+   "key": "rituals:119",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "この世に生を受けることが叶わなかった、小さな命のためのご供養です。流産・死産・中絶などにより別れを経験されたご家族の心に寄り添い、その魂が安らかであるようお祈りいたします。"
+  },
+  {
+   "key": "rituals:120",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "ご供養はご家族のお気持ちが最も大切です。お一人で抱え込まず、まずはお気軽にご相談ください。当山の慈母観音菩薩さまが、優しくその御魂を見守ってくださいます。"
+  },
+  {
+   "key": "rituals:121",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "お申込み"
+  },
+  {
+   "key": "rituals:122",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "PET MEMORIAL"
+  },
+  {
+   "key": "rituals:123",
+   "file": "rituals.html",
+   "tag": "h3",
+   "text": "ペット供養"
+  },
+  {
+   "key": "rituals:124",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "共に生きた証を刻む、愛するペットのための安らぎの地"
+  },
+  {
+   "key": "rituals:125",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "ペット供養墓「安穏」"
+  },
+  {
+   "key": "rituals:126",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "家族の一員として共に過ごしたペットたちへの感謝と弔いの気持ちを、お経とともにお捧げいたします。動物たちもまた、私たちの大切な仏縁を結ぶ存在です。"
+  },
+  {
+   "key": "rituals:127",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "当山には、ペットのための専用供養墓もご用意しております。お題目の響く聖地で、安らかに眠れる場所をご提供します。犬・猫はもちろん、小鳥や小動物までお受けしております。"
+  },
+  {
+   "key": "rituals:128",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "承っているご供養"
+  },
+  {
+   "key": "rituals:129",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "合祀による納骨"
+  },
+  {
+   "key": "rituals:130",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "個別の納骨（納骨壇）"
+  },
+  {
+   "key": "rituals:131",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "合同供養祭への参列"
+  },
+  {
+   "key": "rituals:132",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "費用"
+  },
+  {
+   "key": "rituals:133",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "永代合祀供養"
+  },
+  {
+   "key": "rituals:134",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "3万円"
+  },
+  {
+   "key": "rituals:135",
+   "file": "rituals.html",
+   "tag": "th",
+   "text": "個別納骨壇"
+  },
+  {
+   "key": "rituals:136",
+   "file": "rituals.html",
+   "tag": "td",
+   "text": "＋年間5千円"
+  },
+  {
+   "key": "rituals:137",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "「家族同然だった存在を、きちんと見送ってあげたい」というお気持ちを大切に、心を込めてお勤めいたします。詳細はお気軽にお問い合わせください。"
+  },
+  {
+   "key": "rituals:138",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "OTAKIAGE"
+  },
+  {
+   "key": "rituals:139",
+   "file": "rituals.html",
+   "tag": "h3",
+   "text": "お焚き上げ供養"
+  },
+  {
+   "key": "rituals:140",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "お焚き上げ供養とは"
+  },
+  {
+   "key": "rituals:141",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "代々にわたり大切にされてきたもの、人の想いが込められたものには古来より魂が宿ると言われています。事情により処分しなければならない時には丁寧にご供養する事が肝要であります。妙傳寺では魂抜き（閉眼）の法要を行い、お焚き上げで浄火ご供養いたします。"
+  },
+  {
+   "key": "rituals:142",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "まずはお電話にてご相談ください。内容によってはお受けで出来ない場合もございます。"
+  },
+  {
+   "key": "rituals:143",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "お焚き上げできるもの"
+  },
+  {
+   "key": "rituals:144",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "ご本尊などの掛け軸"
+  },
+  {
+   "key": "rituals:145",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "お位牌"
+  },
+  {
+   "key": "rituals:146",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "お守り、お札"
+  },
+  {
+   "key": "rituals:147",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "過去帳"
+  },
+  {
+   "key": "rituals:148",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "人形"
+  },
+  {
+   "key": "rituals:149",
+   "file": "rituals.html",
+   "tag": "h4",
+   "text": "お焚き上げできないもの"
+  },
+  {
+   "key": "rituals:150",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "不燃物（陶器・ガラス・金属）"
+  },
+  {
+   "key": "rituals:151",
+   "file": "rituals.html",
+   "tag": "li",
+   "text": "仏像・故人の遺品等"
+  },
+  {
+   "key": "rituals:152",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "※雛人形、五月人形の金属類は極力はずしてご持参ください。その他、人形以外の付属品もご遠慮いただいております。"
+  },
+  {
+   "key": "rituals:153",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "rituals:154",
+   "file": "rituals.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "rituals:155",
+   "file": "rituals.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "thanks:1",
+   "file": "thanks.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "thanks:2",
+   "file": "thanks.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "thanks:3",
+   "file": "thanks.html",
+   "tag": "h2",
+   "text": "お問い合わせありがとうございました"
+  },
+  {
+   "key": "thanks:4",
+   "file": "thanks.html",
+   "tag": "p",
+   "text": "内容を確認の上、お返事いたします。\n今しばらくお待ちくださいませ。"
+  },
+  {
+   "key": "thanks:5",
+   "file": "thanks.html",
+   "tag": "p",
+   "text": "お急ぎの場合はお電話にてご連絡ください"
+  },
+  {
+   "key": "thanks:6",
+   "file": "thanks.html",
+   "tag": "p",
+   "text": "急を要するご葬儀・ご相談は24時間承っております"
+  },
+  {
+   "key": "thanks:7",
+   "file": "thanks.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "thanks:8",
+   "file": "thanks.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "thanks:9",
+   "file": "thanks.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  }
+ ],
+ "images": [
+  {
+   "path": "about-temple.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "annonn_pet.JPG",
+   "used_in": [
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "bachizuka.JPG",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "bentendo.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "benzaiten.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "bokken_senkyo.jpg",
+   "used_in": [
+    "prayer.html"
+   ]
+  },
+  {
+   "path": "daimoku-stone.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "eitai_kuon.jpg",
+   "used_in": [
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "eitai-ihaidou.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "fukujushoku.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "hachidai-ryuou-2.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "hanamido.JPG",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "higan_yomiage.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "hondo-daishonin.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "houji_syoukou.jpg",
+   "used_in": [
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "IMG_3373.JPG",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "jushoku.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "kannon.jpg",
+   "used_in": [
+    "about.html",
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "kishimojin-matsuri.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "kishimojin.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "kitouden.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "kotudo_1kyu.jpg",
+   "used_in": [
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "kotudo_2kyu.jpg",
+   "used_in": [
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "kotudo_3kyu.jpg",
+   "used_in": [
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "nichiren.JPG",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "noukotsudou.jpg",
+   "used_in": [
+    "about.html",
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "obon.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "oesiki_jusyoku.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "oohiroma.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "prayer-bg.jpg",
+   "used_in": [
+    "index.html"
+   ]
+  },
+  {
+   "path": "prayer-hero.jpg",
+   "used_in": [
+    "prayer.html"
+   ]
+  },
+  {
+   "path": "rekidaibyou.JPG",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "rituals-bg.jpg",
+   "used_in": [
+    "index.html"
+   ]
+  },
+  {
+   "path": "sanbo_kojin.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "setsubun.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "sougi_dai5sei.JPG",
+   "used_in": [
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "temple-crest.png",
+   "used_in": [
+    "about.html",
+    "apply.html",
+    "faq.html",
+    "houji-form.html",
+    "index.html",
+    "kitou-form.html",
+    "mizuko-form.html",
+    "news.html",
+    "newsletter.html",
+    "prayer.html",
+    "rituals.html",
+    "thanks.html"
+   ]
+  },
+  {
+   "path": "temple-logo.jpg",
+   "used_in": [
+    "about.html",
+    "apply.html",
+    "faq.html",
+    "houji-form.html",
+    "index.html",
+    "kitou-form.html",
+    "mizuko-form.html",
+    "news.html",
+    "newsletter.html",
+    "prayer.html",
+    "rituals.html",
+    "thanks.html"
+   ]
+  },
+  {
+   "path": "temple.jpg",
+   "used_in": [
+    "animations.css",
+    "index.html"
+   ]
+  },
+  {
+   "path": "tukimairi_setuko.JPG",
+   "used_in": [
+    "rituals.html"
+   ]
+  },
+  {
+   "path": "tyoutin.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  },
+  {
+   "path": "tyusyajou.jpg",
+   "used_in": [
+    "about.html"
+   ]
+  }
+ ],
+ "forms": [
+  {
+   "name": "houji",
+   "file": "houji-form.html",
+   "subject": "【法事のお申込み】妙傳寺サイト",
+   "next": "https://myodenji7676.online/thanks.html",
+   "fields": [
+    {
+     "name": "申込者氏名",
+     "label": "お名前",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "故人との関係",
+     "label": "故人様とのご関係",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "電話番号",
+     "label": "電話番号",
+     "type": "tel",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "メールアドレス",
+     "label": "メールアドレス",
+     "type": "email",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "住所",
+     "label": "ご住所",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "故人氏名",
+     "label": "故人様 氏名",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "戒名",
+     "label": "戒名(法号)",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "命日",
+     "label": "ご命日",
+     "type": "date",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "年回忌",
+     "label": "年回忌",
+     "type": "select",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "希望日時_第1",
+     "label": "ご希望日時(第1希望)",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "希望日時_第2",
+     "label": "ご希望日時(第2希望)",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "会場",
+     "label": "会場",
+     "type": "radio",
+     "required": false,
+     "options": [
+      "お寺(妙傳寺)",
+      "ご自宅",
+      "その他"
+     ]
+    },
+    {
+     "name": "参列人数",
+     "label": "ご参列予定人数",
+     "type": "number",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "お塔婆本数",
+     "label": "お塔婆の本数",
+     "type": "number",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "お斎",
+     "label": "お斎",
+     "type": "radio",
+     "required": false,
+     "options": [
+      "不要",
+      "希望(別途相談)"
+     ]
+    },
+    {
+     "name": "備考",
+     "label": "備考",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    }
+   ]
+  },
+  {
+   "name": "contact",
+   "file": "index.html",
+   "subject": "妙傳寺サイトからのお問い合わせ",
+   "next": "https://myodenji7676.online/thanks.html",
+   "fields": [
+    {
+     "name": "name",
+     "label": "氏名",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "birthdate",
+     "label": "生年月日",
+     "type": "date",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "address",
+     "label": "住所",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "phone",
+     "label": "電話番号",
+     "type": "tel",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "email",
+     "label": "メールアドレス",
+     "type": "email",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "message",
+     "label": "相談内容・各種申込",
+     "type": "textarea",
+     "required": true,
+     "options": []
+    }
+   ]
+  },
+  {
+   "name": "kitou",
+   "file": "kitou-form.html",
+   "subject": "【ご祈祷のお申込み】妙傳寺サイト",
+   "next": "https://myodenji7676.online/thanks.html",
+   "fields": [
+    {
+     "name": "氏名",
+     "label": "お名前(祈願主)",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "ふりがな",
+     "label": "ふりがな",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "生年月日",
+     "label": "生年月日",
+     "type": "date",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "電話番号",
+     "label": "電話番号",
+     "type": "tel",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "メールアドレス",
+     "label": "メールアドレス",
+     "type": "email",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "住所",
+     "label": "ご住所",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "祈願_家内安全",
+     "label": "祈願_家内安全",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "家内安全"
+     ]
+    },
+    {
+     "name": "祈願_身体健全",
+     "label": "祈願_身体健全",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "身体健全"
+     ]
+    },
+    {
+     "name": "祈願_闘病平癒",
+     "label": "祈願_闘病平癒",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "闘病平癒"
+     ]
+    },
+    {
+     "name": "祈願_息災延命",
+     "label": "祈願_息災延命",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "息災延命"
+     ]
+    },
+    {
+     "name": "祈願_除厄開運",
+     "label": "祈願_除厄開運",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "除厄開運"
+     ]
+    },
+    {
+     "name": "祈願_除災得幸",
+     "label": "祈願_除災得幸",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "除災得幸"
+     ]
+    },
+    {
+     "name": "祈願_良縁成就",
+     "label": "祈願_良縁成就",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "良縁成就"
+     ]
+    },
+    {
+     "name": "祈願_子宝成就",
+     "label": "祈願_子宝成就",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "子宝成就"
+     ]
+    },
+    {
+     "name": "祈願_安産成就",
+     "label": "祈願_安産成就",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "安産成就"
+     ]
+    },
+    {
+     "name": "祈願_発育成就",
+     "label": "祈願_発育成就",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "発育成就"
+     ]
+    },
+    {
+     "name": "祈願_試験合格",
+     "label": "祈願_試験合格",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "試験合格"
+     ]
+    },
+    {
+     "name": "祈願_学業増進",
+     "label": "祈願_学業増進",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "学業増進"
+     ]
+    },
+    {
+     "name": "祈願_商売繁昌",
+     "label": "祈願_商売繁昌",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "商売繁昌"
+     ]
+    },
+    {
+     "name": "祈願_事業繁栄",
+     "label": "祈願_事業繁栄",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "事業繁栄"
+     ]
+    },
+    {
+     "name": "祈願_社運隆昌",
+     "label": "祈願_社運隆昌",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "社運隆昌"
+     ]
+    },
+    {
+     "name": "祈願_豊作祈願",
+     "label": "祈願_豊作祈願",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "豊作祈願"
+     ]
+    },
+    {
+     "name": "祈願_交通安全",
+     "label": "祈願_交通安全",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "交通安全"
+     ]
+    },
+    {
+     "name": "祈願_海上安全",
+     "label": "祈願_海上安全",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "海上安全"
+     ]
+    },
+    {
+     "name": "祈願_航空安全",
+     "label": "祈願_航空安全",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "航空安全"
+     ]
+    },
+    {
+     "name": "祈願_作業安全",
+     "label": "祈願_作業安全",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "作業安全"
+     ]
+    },
+    {
+     "name": "祈願_その他",
+     "label": "祈願_その他",
+     "type": "checkbox",
+     "required": false,
+     "options": [
+      "その他"
+     ]
+    },
+    {
+     "name": "願意詳細",
+     "label": "祈願の詳細・願意",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "プラン",
+     "label": "プラン",
+     "type": "radio",
+     "required": true,
+     "options": [
+      "単発祈祷(1回)",
+      "年中特別祈願(1年間)"
+     ]
+    },
+    {
+     "name": "実施方法",
+     "label": "実施方法",
+     "type": "radio",
+     "required": true,
+     "options": [
+      "ご来寺",
+      "ご遠方祈祷(郵送)"
+     ]
+    },
+    {
+     "name": "希望日時_第1",
+     "label": "ご希望日時(第1希望)",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "希望日時_第2",
+     "label": "ご希望日時(第2希望)",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "備考",
+     "label": "ご希望日時(第2希望)",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    }
+   ]
+  },
+  {
+   "name": "mizuko",
+   "file": "mizuko-form.html",
+   "subject": "【水子供養のお申込み】妙傳寺サイト",
+   "next": "https://myodenji7676.online/thanks.html",
+   "fields": [
+    {
+     "name": "氏名",
+     "label": "お名前",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "電話番号",
+     "label": "電話番号",
+     "type": "tel",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "メールアドレス",
+     "label": "メールアドレス",
+     "type": "email",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "住所",
+     "label": "ご住所",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "連絡方法",
+     "label": "連絡方法",
+     "type": "radio",
+     "required": false,
+     "options": [
+      "電話",
+      "メール",
+      "どちらでも可"
+     ]
+    },
+    {
+     "name": "供養形式",
+     "label": "供養形式",
+     "type": "radio",
+     "required": true,
+     "options": [
+      "個別供養(ご来寺)",
+      "個別供養(郵送・ご遠方)",
+      "お任せ・ご相談"
+     ]
+    },
+    {
+     "name": "希望日時_第1",
+     "label": "ご希望日時(第1希望)",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "希望日時_第2",
+     "label": "ご希望日時(第2希望)",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "備考",
+     "label": "ご希望日時(第2希望)",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    }
+   ]
+  }
+ ]
+}

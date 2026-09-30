@@ -1,0 +1,4 @@
+
+# Cloudflare に載せる写し(scripts/build-dist.mjs が作る)
+/dist/
+.wrangler/

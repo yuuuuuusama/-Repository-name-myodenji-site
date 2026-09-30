@@ -82,6 +82,7 @@
     </style>
     <link rel="stylesheet" href="/animations.css">
     <link rel="stylesheet" href="/chatbot.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -91,8 +92,8 @@
             <a href="index.html">
                 <img src="temple-logo.jpg" alt="感応山 妙傳寺 ロゴ" class="logo-mark">
                 <span class="logo-text">
-                    <span>日蓮宗</span>
-                    <h1>感応山 妙傳寺</h1>
+                    <span data-edit="kitou-form:1">日蓮宗</span>
+                    <h1 data-edit="kitou-form:2">感応山 妙傳寺</h1>
                 </span>
                 <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋" class="logo-crest">
             </a>
@@ -101,71 +102,55 @@
 </header>
 
 <div class="page-hero">
-    <h2>ご祈祷のお申込み</h2>
-    <p>各種ご祈祷のお申込みを承ります</p>
+    <h2 data-edit="kitou-form:3">ご祈祷のお申込み</h2>
+    <p data-edit="kitou-form:4">各種ご祈祷のお申込みを承ります</p>
 </div>
 
 <main class="form-wrapper">
     <div class="form-intro">
-        <p>必要事項をご入力の上、送信してください。送信後、内容を確認の上、当寺よりご連絡いたします。</p>
-        <p>※ お急ぎの場合はお電話(0143-22-4284)でも承っております。</p>
+        <p data-edit="kitou-form:5">必要事項をご入力の上、送信してください。送信後、内容を確認の上、当寺よりご連絡いたします。</p>
+        <p data-edit="kitou-form:6">※ お急ぎの場合はお電話(0143-22-4284)でも承っております。</p>
     </div>
 
-    <form action="https://formsubmit.co/myodenji7676@gmail.com" method="POST">
+    <form action="https://myodenji-hp.myodenji7676.workers.dev/__form/kitou" method="POST">
         <input type="hidden" name="_subject" value="【ご祈祷のお申込み】妙傳寺サイト">
         <input type="hidden" name="_next" value="https://myodenji7676.online/thanks.html">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_autoresponse" value="この度は感応山 妙傳寺へご祈祷のお申込みをいただき、誠にありがとうございます。
-
-ご入力いただいた内容を確認の上、ご希望の日時等について当寺よりご連絡を差し上げます。
-今しばらくお待ちくださいますよう、お願い申し上げます。
-
-なお、お急ぎの場合はお電話にて承っております。
-☎ 0143-22-4284(受付 9:00-17:00)
-
-―――――――――――――――――――
-感応山 妙傳寺
-〒051-0021 北海道室蘭市常盤町5-7
-☎ 0143-22-4284
-https://myodenji7676.online/
-―――――――――――――――――――
-※このメールは自動送信です。">
 
         <section class="form-section">
-            <h3>申込者様の情報</h3>
+            <h3 data-edit="kitou-form:7">申込者様の情報</h3>
             <div class="form-group">
-                <label>お名前(祈願主)<span class="required">必須</span></label>
+                <label>お名前(祈願主)<span class="required" data-edit="kitou-form:8">必須</span></label>
                 <input type="text" name="氏名" required placeholder="山田 太郎">
-                <span class="hint">ご祈祷を受けられる方のお名前</span>
+                <span class="hint" data-edit="kitou-form:9">ご祈祷を受けられる方のお名前</span>
             </div>
             <div class="form-group">
-                <label>ふりがな</label>
+                <label data-edit="kitou-form:10">ふりがな</label>
                 <input type="text" name="ふりがな" placeholder="やまだ たろう">
             </div>
             <div class="form-group">
-                <label>生年月日<span class="required">必須</span></label>
+                <label>生年月日<span class="required" data-edit="kitou-form:11">必須</span></label>
                 <input type="date" name="生年月日" required>
-                <span class="hint">星回りや厄年判定で使用します</span>
+                <span class="hint" data-edit="kitou-form:12">星回りや厄年判定で使用します</span>
             </div>
             <div class="form-group">
-                <label>電話番号<span class="required">必須</span></label>
+                <label>電話番号<span class="required" data-edit="kitou-form:13">必須</span></label>
                 <input type="tel" name="電話番号" required placeholder="000-0000-0000">
             </div>
             <div class="form-group">
-                <label>メールアドレス<span class="required">必須</span></label>
+                <label>メールアドレス<span class="required" data-edit="kitou-form:14">必須</span></label>
                 <input type="email" name="メールアドレス" required placeholder="example@mail.com">
             </div>
             <div class="form-group">
-                <label>ご住所</label>
+                <label data-edit="kitou-form:15">ご住所</label>
                 <input type="text" name="住所" placeholder="ご住所をご入力ください">
             </div>
         </section>
 
         <section class="form-section">
-            <h3>祈願の内容</h3>
+            <h3 data-edit="kitou-form:16">祈願の内容</h3>
             <div class="form-group">
-                <label>祈願内容<span class="required">必須</span></label>
-                <span class="hint">該当するものをすべて選択してください(複数可)</span>
+                <label>祈願内容<span class="required" data-edit="kitou-form:17">必須</span></label>
+                <span class="hint" data-edit="kitou-form:18">該当するものをすべて選択してください(複数可)</span>
                 <div class="checkbox-group">
                     <label><input type="checkbox" name="祈願_家内安全" value="家内安全">家内安全</label>
                     <label><input type="checkbox" name="祈願_身体健全" value="身体健全">身体健全</label>
@@ -191,55 +176,56 @@ https://myodenji7676.online/
                 </div>
             </div>
             <div class="form-group">
-                <label>祈願の詳細・願意</label>
+                <label data-edit="kitou-form:19">祈願の詳細・願意</label>
                 <textarea name="願意詳細" placeholder="例: 子供が高校受験を控えており合格を願います。/車両祈祷の対象車種が ○○ です。 など、具体的なご事情をお書きいただくと、祈願内容に反映されます。"></textarea>
             </div>
         </section>
 
         <section class="form-section">
-            <h3>祈願プラン・実施方法</h3>
+            <h3 data-edit="kitou-form:20">祈願プラン・実施方法</h3>
             <div class="form-group">
-                <label>ご祈願プラン<span class="required">必須</span></label>
+                <label>ご祈願プラン<span class="required" data-edit="kitou-form:21">必須</span></label>
                 <div class="radio-group">
                     <label><input type="radio" name="プラン" value="単発祈祷(1回)" required checked>単発祈祷(1回のお勤め)</label>
                     <label><input type="radio" name="プラン" value="年中特別祈願(1年間)">年中特別祈願(1年間)</label>
                 </div>
-                <span class="hint">年中特別祈願は1年間毎日お祈り続けるお勤めです</span>
+                <span class="hint" data-edit="kitou-form:22">年中特別祈願は1年間毎日お祈り続けるお勤めです</span>
             </div>
             <div class="form-group">
-                <label>実施方法<span class="required">必須</span></label>
+                <label>実施方法<span class="required" data-edit="kitou-form:23">必須</span></label>
                 <div class="radio-group">
                     <label><input type="radio" name="実施方法" value="ご来寺" required checked>ご来寺(妙傳寺へお越しいただく)</label>
                     <label><input type="radio" name="実施方法" value="ご遠方祈祷(郵送)">ご遠方祈祷(お札を郵送)</label>
                 </div>
             </div>
             <div class="form-group">
-                <label>ご希望日時(第1希望)</label>
+                <label data-edit="kitou-form:24">ご希望日時(第1希望)</label>
                 <input type="text" name="希望日時_第1" placeholder="例: 2026年6月15日 午前10時">
-                <span class="hint">来寺希望の方はご記入ください</span>
+                <span class="hint" data-edit="kitou-form:25">来寺希望の方はご記入ください</span>
             </div>
             <div class="form-group">
-                <label>ご希望日時(第2希望)</label>
+                <label data-edit="kitou-form:26">ご希望日時(第2希望)</label>
                 <input type="text" name="希望日時_第2" placeholder="例: 2026年6月22日 午後2時">
             </div>
         </section>
 
         <section class="form-section">
-            <h3>ご要望・ご質問</h3>
+            <h3 data-edit="kitou-form:27">ご要望・ご質問</h3>
             <div class="form-group">
                 <textarea name="備考" placeholder="ご要望やご質問などをご自由にご記入ください"></textarea>
             </div>
         </section>
 
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAFJr9IUFvEgeZePc" data-language="ja" style="margin: 12px 0;"></div>
         <button type="submit" class="submit-btn">内容を確認して送信する</button>
         <a href="prayer.html" class="back-link">← ご祈祷ページへ戻る</a>
     </form>
 </main>
 
 <footer>
-    <div class="footer-logo">感応山 妙傳寺</div>
-    <p>日蓮宗 | 北海道室蘭市常盤町5-7</p>
-    <div class="copyright">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+    <div class="footer-logo" data-edit="kitou-form:28">感応山 妙傳寺</div>
+    <p data-edit="kitou-form:29">日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <div class="copyright" data-edit="kitou-form:30">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
 </footer>
 
 <script>
