@@ -7,6 +7,7 @@
 //     ・写真:法輪で差し替えた道筋の写真を、法輪から出す
 //   フォームの送信(/__form/:名前)は法輪に渡し、投函箱に入れる(ロボット判定は法輪で確かめる)。
 //   節分・塔婆の申込(/api/auth・/api/me)と受付期間(/api/public)は、法輪の檀家向けの API にそのまま渡す。
+//   お知らせのページ(news.html)の先頭には、法輪の「お知らせ」で「ホームページにも載せる」を付けたものを新しい順に足す。
 //   法輪とはサービスバインディング(KANRI)でつなぐ。法輪は KANRI_HOST のホスト名で、妙傳寺のホームページとして扱う。
 // =========================================================================
 const EMPTY = { texts: {}, images: {} };
@@ -23,6 +24,34 @@ async function loadEdits(env) {
   } catch {
     return memo.data ?? EMPTY;   // 法輪に届かないときは、元のまま配る
   }
+}
+
+let newsMemo = { at: 0, data: null };
+async function loadNews(env) {
+  if (newsMemo.data && Date.now() - newsMemo.at < TTL_MS) return newsMemo.data;
+  try {
+    const r = await env.KANRI.fetch(new Request(`https://${env.KANRI_HOST}/__site/news.json`));
+    const data = r.ok ? await r.json() : { items: [] };
+    newsMemo = { at: Date.now(), data };
+    return data;
+  } catch {
+    return newsMemo.data ?? { items: [] };
+  }
+}
+
+const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+/** 法輪のお知らせを、今のお知らせのページと同じ形の記事にする(本文は法輪が HTML に直して渡す) */
+function newsArticles(items) {
+  return (items || []).map(n => `
+    <article class="news-item" data-horin-news="${Number(n.id) || 0}">
+        <div class="news-meta">
+            <span class="news-date">${esc(n.date)}</span>${n.category ? `
+            <span class="news-tag">${esc(n.category)}</span>` : ''}
+        </div>
+        <h3>${esc(n.title)}</h3>
+        <p>${n.html || ''}</p>
+    </article>`).join('');
 }
 
 export default {
@@ -75,7 +104,12 @@ export default {
     }
 
     const texts = edits.texts || {};
+    const isNews = /^\/news(\.html)?$/.test(url.pathname);
+    const news = isNews ? newsArticles((await loadNews(env)).items) : '';
     const out = new HTMLRewriter()
+      .on('main.news-wrapper', {
+        element(el) { if (news) el.prepend(news, { html: true }); },
+      })
       .on('[data-edit]', {
         element(el) {
           const v = texts[el.getAttribute('data-edit')];
