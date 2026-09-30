@@ -9,7 +9,9 @@
  * 1. リポジトリの一番上で  npx wrangler deploy -c chatbot/wrangler.toml
  *    (設定は chatbot/wrangler.toml。回数の上限の仕組みもそこで結ぶ)
  * 2. Secret は Worker に登録済み(値はここにもリポジトリにも書かない):
- *    - GEMINI_API_KEY              (Google AI Studio で取得)
+ *    - ANTHROPIC_API_KEY           (Claude。console.anthropic.com で取得。入っていれば Claude で答える)
+ *    - GEMINI_API_KEY              (Google AI Studio で取得。ANTHROPIC_API_KEY が無いときだけ使う)
+ *    モデルは既定 claude-haiku-4-5-20251001(安く速い)。変えるときは Worker の変数 CLAUDE_MODEL
  *    - LINE_CHANNEL_ACCESS_TOKEN  (LINE Developers → Messaging API設定)
  *    - LINE_CHANNEL_SECRET         (LINE Developers → チャネル基本設定)
  *    変えるときは  npx wrangler secret put <名前> -c chatbot/wrangler.toml
@@ -172,7 +174,7 @@ async function handleWebChat(request, env) {
       return jsonResp({ error: 'message required' }, 400, origin);
     }
 
-    const reply = await callGemini(message, history, env.GEMINI_API_KEY);
+    const reply = await callAI(message, history, env);
     return jsonResp({ reply }, 200, origin);
   } catch (e) {
     // 中身(Gemini の返答など)は外へ出さず、ログにだけ残す
@@ -284,7 +286,7 @@ async function handleLineEvent(event, env) {
     }
 
     try {
-      const reply = await callGemini(userText, [], env.GEMINI_API_KEY);
+      const reply = await callAI(userText, [], env);
       await lineReply(replyToken, reply, env.LINE_CHANNEL_ACCESS_TOKEN);
     } catch {
       await lineReply(
@@ -305,6 +307,51 @@ async function handleLineEvent(event, env) {
     ).catch(() => {});
   }
   // follow / unfollow / postback などはLINE側のあいさつメッセージ等で対応するため何もしない
+}
+
+// ============================================================
+// 答える AI を選ぶ(2026-10-01 住職の希望で Claude へ。鍵が入るまでは Gemini のまま)
+// ============================================================
+const FALLBACK_REPLY = 'すみません、お答えを生成できませんでした。お電話 0143-22-4284 までお気軽にお問い合わせください。';
+
+async function callAI(message, history, env) {
+  if (env.ANTHROPIC_API_KEY) return callClaude(message, history, env.ANTHROPIC_API_KEY, env.CLAUDE_MODEL);
+  return callGemini(message, history, env.GEMINI_API_KEY);
+}
+
+// ============================================================
+// Claude(Anthropic Messages API)
+// ============================================================
+async function callClaude(message, history, apiKey, model) {
+  // 会話は user から始まり、user と assistant が交互でなければならない
+  const msgs = [];
+  for (const m of [...history, { role: 'user', text: message }]) {
+    const role = m.role === 'user' ? 'user' : 'assistant';
+    if (!msgs.length && role !== 'user') continue;
+    const last = msgs[msgs.length - 1];
+    if (last && last.role === role) last.content += '\n' + m.text;
+    else msgs.push({ role, content: m.text });
+  }
+  const resp = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+    body: JSON.stringify({
+      model: model || 'claude-haiku-4-5-20251001',
+      max_tokens: 1024,
+      temperature: 0.6,
+      // 案内文は毎回同じなので控えを使う(料金と待ち時間を減らす)
+      system: [{ type: 'text', text: SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } }],
+      messages: msgs,
+    }),
+  });
+  if (!resp.ok) {
+    const errText = await resp.text();
+    throw new Error('Claude API error: ' + resp.status + ' ' + errText.slice(0, 200));
+  }
+  const data = await resp.json();
+  if (data.stop_reason && data.stop_reason !== 'end_turn') console.warn('claude stop', data.stop_reason, JSON.stringify(data.usage || {}));
+  const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('').trim();
+  return text || FALLBACK_REPLY;
 }
 
 // ============================================================
