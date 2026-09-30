@@ -12,6 +12,7 @@ const PRECACHE_URLS = [
   '/kitou-form.html',
   '/mizuko-form.html',
   '/thanks.html',
+  '/privacy.html',
   '/manifest.json',
   '/animations.css',
   '/animations.js',

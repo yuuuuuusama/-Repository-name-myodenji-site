@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- 住職の確認待ちのたたき台(2026-09-30) -->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人情報の取扱い | 感応山 妙傳寺</title>
+    <meta name="description" content="感応山 妙傳寺のホームページにおける個人情報の取扱い(プライバシーポリシー)。お預かりする情報、利用目的、管理の方法、開示・訂正・削除のご依頼先などをご案内します。">
+    <link rel="canonical" href="https://myodenji7676.online/privacy.html">
+    <meta name="theme-color" content="#E6B422">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB8CLNYL1V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HB8CLNYL1V');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --floral-white: #FFFAF0;
+            --cherry-pink: #FADADD;
+            --deep-pink: #D48A94;
+            --gold-yellow: #E6B422;
+            --soft-yellow: #FFF9E5;
+            --charcoal: #333333;
+            --text-gray: #555555;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Shippori Mincho', serif;
+            background-color: var(--floral-white);
+            color: var(--charcoal);
+            line-height: 1.8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(255, 250, 240, 0.95);
+            border-bottom: 2px solid var(--gold-yellow);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .logo-mark { width: 52px; height: 52px; object-fit: contain; }
+        .logo-crest { height: 48px; width: auto; opacity: 0.9; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo h1 { font-size: 1.4rem; letter-spacing: 0.1em; margin: 0; }
+        .logo span { font-size: 0.8rem; color: var(--gold-yellow); font-weight: bold; }
+
+        .policy-wrapper {
+            flex: 1;
+            padding: 60px 20px;
+        }
+        .policy-card {
+            background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 45px;
+            border-radius: 8px;
+            border-top: 4px solid var(--gold-yellow);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .policy-card h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .policy-card .lead {
+            color: var(--text-gray);
+            margin-bottom: 36px;
+        }
+        .policy-card h3 {
+            font-size: 1.15rem;
+            margin: 36px 0 12px;
+            padding-left: 12px;
+            border-left: 4px solid var(--gold-yellow);
+            line-height: 1.5;
+        }
+        .policy-card p { margin-bottom: 10px; }
+        .policy-card ul { margin: 6px 0 12px 1.4em; }
+        .policy-card li { margin-bottom: 4px; }
+        .policy-card a { color: var(--deep-pink); }
+        .contact-box {
+            background: var(--soft-yellow);
+            border: 1px solid var(--gold-yellow);
+            padding: 20px 22px;
+            border-radius: 6px;
+            margin-top: 12px;
+        }
+        .contact-box p { margin-bottom: 4px; }
+        .dates {
+            margin-top: 40px;
+            text-align: right;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        .home-link { text-align: center; margin-top: 40px; }
+        .home-btn {
+            display: inline-block;
+            padding: 14px 40px;
+            background: var(--gold-yellow);
+            color: #fff !important;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .home-btn:hover { background: #cfa11d; }
+
+        footer {
+            background: var(--charcoal);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-logo { font-size: 1.5rem; margin-bottom: 10px; }
+        .copyright { margin-top: 20px; font-size: 0.8rem; color: #999; }
+
+        @media (max-width: 600px) {
+            .logo h1 { font-size: 1.1rem; }
+            .logo-mark { width: 42px; height: 42px; }
+            .logo-crest { height: 38px; }
+            .policy-wrapper { padding: 36px 16px; }
+            .policy-card { padding: 36px 22px; }
+            .policy-card h2 { font-size: 1.4rem; }
+            .policy-card h3 { font-size: 1.05rem; }
+        }
+    </style>
+    <link rel="stylesheet" href="/animations.css">
+    <link rel="stylesheet" href="/chatbot.css">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="temple-logo.jpg" alt="感応山 妙傳寺 ロゴ" class="logo-mark">
+                <span class="logo-text">
+                    <span data-edit="privacy:1">日蓮宗</span>
+                    <h1 data-edit="privacy:2">感応山 妙傳寺</h1>
+                </span>
+                <img src="temple-crest.png" alt="感応山 妙傳寺 寺紋（桜陰陽）" class="logo-crest">
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="policy-wrapper">
+    <article class="policy-card">
+        <h2 data-edit="privacy:3">個人情報の取扱い</h2>
+        <p class="lead" data-edit="privacy:4">感応山 妙傳寺(以下「当寺」といいます)は、ご縁をいただく皆様からお預かりする個人情報を大切に取り扱います。個人情報の保護に関する法律その他の関係法令を守り、次のとおり取り扱います。</p>
+
+        <h3 data-edit="privacy:5">1. 事業者</h3>
+        <p data-edit="privacy:6">感応山 妙傳寺<br>〒051-0021 北海道室蘭市常盤町5-7<br>電話 0143-22-4284</p>
+
+        <h3 data-edit="privacy:7">2. お預かりする情報</h3>
+        <p data-edit="privacy:8">当寺のホームページでは、お問い合わせ・各種お申込みの際に、次の情報をお預かりします。</p>
+        <ul>
+            <li data-edit="privacy:9">お名前・ふりがな</li>
+            <li data-edit="privacy:10">ご住所・電話番号・メールアドレス</li>
+            <li data-edit="privacy:11">生年月日(ご祈祷の星回り・厄年の判定などに用います)</li>
+            <li data-edit="privacy:12">故人様のお名前・戒名(法号)・ご命日・ご関係など、ご供養に必要な事柄</li>
+            <li data-edit="privacy:13">ご希望の日時、ご祈願の内容、ご相談の内容、備考にご記入いただいた事柄</li>
+            <li data-edit="privacy:14">節分・塔婆などの檀家向けお申込みでは、ログインのためのIDと、お申込みの内容</li>
+        </ul>
+        <p data-edit="privacy:15">このほか、ホームページをご覧いただいた際の閲覧の記録(次の「アクセス解析とCookie」をご覧ください)や、フォームの不正な送信を防ぐための確認の情報を、自動で取得することがあります。</p>
+
+        <h3 data-edit="privacy:16">3. 利用の目的</h3>
+        <p data-edit="privacy:17">お預かりした情報は、次の目的に限って用います。</p>
+        <ul>
+            <li data-edit="privacy:18">お問い合わせ・ご相談へのお返事</li>
+            <li data-edit="privacy:19">法事・ご祈祷・ご供養・各種お申込みの受付と、その準備・日程のご連絡</li>
+            <li data-edit="privacy:20">檀信徒の皆様との連絡、お寺からのご案内</li>
+            <li data-edit="privacy:21">ホームページの改善(閲覧の記録を統計として用います)</li>
+        </ul>
+        <p data-edit="privacy:22">これらの目的を超えて用いることはいたしません。</p>
+
+        <h3 data-edit="privacy:23">4. 第三者への提供</h3>
+        <p data-edit="privacy:24">お預かりした個人情報を、ご本人の同意なく第三者へ提供することはいたしません。ただし、法令に基づく場合や、人の生命・身体・財産の保護のために必要でご本人の同意を得ることが難しい場合など、法令で認められている場合を除きます。</p>
+
+        <h3 data-edit="privacy:25">5. 利用している外部のサービス</h3>
+        <p data-edit="privacy:26">ホームページの運営にあたり、次のサービスを利用しています。お預かりした情報の保管や送信のために、これらのサービスの設備を用いることがあります。</p>
+        <ul>
+            <li data-edit="privacy:27">Cloudflare(クラウドフレア):ホームページの配信、フォームの受付、お申込み内容の保管(当寺の管理システムに保管します)、受付のお知らせと自動返信のメールの送信、ロボットによる不正な送信の防止(Cloudflare Turnstile)</li>
+            <li data-edit="privacy:28">Google Analytics(グーグル アナリティクス):ホームページの閲覧状況の統計</li>
+            <li data-edit="privacy:29">Google Fonts:ホームページの文字の表示</li>
+            <li data-edit="privacy:30">ホームページのご案内チャット:ご質問への自動のお答えに、Google の AI(Gemini)を用いています。チャットにはお名前・ご住所などの個人情報を入力なさらないようお願いいたします。</li>
+        </ul>
+
+        <h3 data-edit="privacy:31">6. 安全の管理</h3>
+        <p data-edit="privacy:32">お預かりした情報は、当寺の管理システムにて、限られた者だけが扱える形で保管し、なくしたり、漏れたり、書き換えられたりすることのないよう、必要かつ適切な措置を講じます。通信は暗号化(SSL/TLS)しています。</p>
+
+        <h3 data-edit="privacy:33">7. 開示・訂正・削除のご依頼</h3>
+        <p data-edit="privacy:34">ご本人から、ご自身の個人情報の開示・訂正・利用の停止・削除のご依頼があったときは、ご本人であることを確かめたうえで、速やかに対応いたします。下記の窓口までご連絡ください。</p>
+
+        <h3 data-edit="privacy:35">8. アクセス解析とCookie</h3>
+        <p data-edit="privacy:36">当寺のホームページでは、閲覧の状況を知るために Google Analytics を利用しています。Google Analytics は Cookie(クッキー)を用いて、どのページが見られたかなどの情報を集めます。この情報はお名前などと結び付けず、個人を特定するものではありません。</p>
+        <p>Cookie はお使いのブラウザの設定で無効にできます。また、Google が提供する<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">オプトアウト アドオン</a>で、集計の対象から外すこともできます。Google による情報の取扱いは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Google のポリシー</a>をご覧ください。</p>
+
+        <h3 data-edit="privacy:37">9. この方針の改定</h3>
+        <p data-edit="privacy:38">法令の改正や運営の変更にあわせて、この方針を改めることがあります。改めたときは、このページでお知らせいたします。</p>
+
+        <h3 data-edit="privacy:39">10. お問い合わせの窓口</h3>
+        <div class="contact-box">
+            <p><strong>感応山 妙傳寺</strong></p>
+            <p data-edit="privacy:40">〒051-0021 北海道室蘭市常盤町5-7</p>
+            <p>電話 <a href="tel:0143-22-4284">0143-22-4284</a>(受付時間 9:00 〜 17:00)</p>
+        </div>
+
+        <p class="dates" data-edit="privacy:41">制定日:2026年9月30日</p>
+
+        <div class="home-link"><a href="index.html" class="home-btn">トップへ戻る</a></div>
+    </article>
+</main>
+
+<footer>
+    <div class="footer-logo" data-edit="privacy:42">感応山 妙傳寺</div>
+    <p data-edit="privacy:43">日蓮宗 | 北海道室蘭市常盤町5-7</p>
+    <p style="margin-top: 12px; font-size: 0.8rem;"><a href="privacy.html" style="color: #bbb;">個人情報の取扱い</a></p>
+    <div class="copyright" data-edit="privacy:44">&copy; 2026 Kanno-zan Myodenji. All Rights Reserved.</div>
+</footer>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+    }
+</script>
+
+<script src="/animations.js" defer></script>
+<script src="/chatbot.js" defer></script>
+</body>
+</html>

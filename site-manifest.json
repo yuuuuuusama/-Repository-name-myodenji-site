@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-30T11:05:39.580Z",
+ "generated_at": "2026-09-30T13:33:54.123Z",
  "pages": [
   {
    "file": "about.html",
@@ -41,6 +41,10 @@
   {
    "file": "prayer.html",
    "title": "ご祈祷 | 感応山 妙傳寺"
+  },
+  {
+   "file": "privacy.html",
+   "title": "個人情報の取扱い | 感応山 妙傳寺"
   },
   {
    "file": "rituals.html",
@@ -3133,6 +3137,270 @@
    "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
   },
   {
+   "key": "privacy:1",
+   "file": "privacy.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "privacy:2",
+   "file": "privacy.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "privacy:3",
+   "file": "privacy.html",
+   "tag": "h2",
+   "text": "個人情報の取扱い"
+  },
+  {
+   "key": "privacy:4",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "感応山 妙傳寺(以下「当寺」といいます)は、ご縁をいただく皆様からお預かりする個人情報を大切に取り扱います。個人情報の保護に関する法律その他の関係法令を守り、次のとおり取り扱います。"
+  },
+  {
+   "key": "privacy:5",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "1. 事業者"
+  },
+  {
+   "key": "privacy:6",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "感応山 妙傳寺\n〒051-0021 北海道室蘭市常盤町5-7\n電話 0143-22-4284"
+  },
+  {
+   "key": "privacy:7",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "2. お預かりする情報"
+  },
+  {
+   "key": "privacy:8",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "当寺のホームページでは、お問い合わせ・各種お申込みの際に、次の情報をお預かりします。"
+  },
+  {
+   "key": "privacy:9",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "お名前・ふりがな"
+  },
+  {
+   "key": "privacy:10",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "ご住所・電話番号・メールアドレス"
+  },
+  {
+   "key": "privacy:11",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "生年月日(ご祈祷の星回り・厄年の判定などに用います)"
+  },
+  {
+   "key": "privacy:12",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "故人様のお名前・戒名(法号)・ご命日・ご関係など、ご供養に必要な事柄"
+  },
+  {
+   "key": "privacy:13",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "ご希望の日時、ご祈願の内容、ご相談の内容、備考にご記入いただいた事柄"
+  },
+  {
+   "key": "privacy:14",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "節分・塔婆などの檀家向けお申込みでは、ログインのためのIDと、お申込みの内容"
+  },
+  {
+   "key": "privacy:15",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "このほか、ホームページをご覧いただいた際の閲覧の記録(次の「アクセス解析とCookie」をご覧ください)や、フォームの不正な送信を防ぐための確認の情報を、自動で取得することがあります。"
+  },
+  {
+   "key": "privacy:16",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "3. 利用の目的"
+  },
+  {
+   "key": "privacy:17",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "お預かりした情報は、次の目的に限って用います。"
+  },
+  {
+   "key": "privacy:18",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "お問い合わせ・ご相談へのお返事"
+  },
+  {
+   "key": "privacy:19",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "法事・ご祈祷・ご供養・各種お申込みの受付と、その準備・日程のご連絡"
+  },
+  {
+   "key": "privacy:20",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "檀信徒の皆様との連絡、お寺からのご案内"
+  },
+  {
+   "key": "privacy:21",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "ホームページの改善(閲覧の記録を統計として用います)"
+  },
+  {
+   "key": "privacy:22",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "これらの目的を超えて用いることはいたしません。"
+  },
+  {
+   "key": "privacy:23",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "4. 第三者への提供"
+  },
+  {
+   "key": "privacy:24",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "お預かりした個人情報を、ご本人の同意なく第三者へ提供することはいたしません。ただし、法令に基づく場合や、人の生命・身体・財産の保護のために必要でご本人の同意を得ることが難しい場合など、法令で認められている場合を除きます。"
+  },
+  {
+   "key": "privacy:25",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "5. 利用している外部のサービス"
+  },
+  {
+   "key": "privacy:26",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "ホームページの運営にあたり、次のサービスを利用しています。お預かりした情報の保管や送信のために、これらのサービスの設備を用いることがあります。"
+  },
+  {
+   "key": "privacy:27",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "Cloudflare(クラウドフレア):ホームページの配信、フォームの受付、お申込み内容の保管(当寺の管理システムに保管します)、受付のお知らせと自動返信のメールの送信、ロボットによる不正な送信の防止(Cloudflare Turnstile)"
+  },
+  {
+   "key": "privacy:28",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "Google Analytics(グーグル アナリティクス):ホームページの閲覧状況の統計"
+  },
+  {
+   "key": "privacy:29",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "Google Fonts:ホームページの文字の表示"
+  },
+  {
+   "key": "privacy:30",
+   "file": "privacy.html",
+   "tag": "li",
+   "text": "ホームページのご案内チャット:ご質問への自動のお答えに、Google の AI(Gemini)を用いています。チャットにはお名前・ご住所などの個人情報を入力なさらないようお願いいたします。"
+  },
+  {
+   "key": "privacy:31",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "6. 安全の管理"
+  },
+  {
+   "key": "privacy:32",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "お預かりした情報は、当寺の管理システムにて、限られた者だけが扱える形で保管し、なくしたり、漏れたり、書き換えられたりすることのないよう、必要かつ適切な措置を講じます。通信は暗号化(SSL/TLS)しています。"
+  },
+  {
+   "key": "privacy:33",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "7. 開示・訂正・削除のご依頼"
+  },
+  {
+   "key": "privacy:34",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "ご本人から、ご自身の個人情報の開示・訂正・利用の停止・削除のご依頼があったときは、ご本人であることを確かめたうえで、速やかに対応いたします。下記の窓口までご連絡ください。"
+  },
+  {
+   "key": "privacy:35",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "8. アクセス解析とCookie"
+  },
+  {
+   "key": "privacy:36",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "当寺のホームページでは、閲覧の状況を知るために Google Analytics を利用しています。Google Analytics は Cookie(クッキー)を用いて、どのページが見られたかなどの情報を集めます。この情報はお名前などと結び付けず、個人を特定するものではありません。"
+  },
+  {
+   "key": "privacy:37",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "9. この方針の改定"
+  },
+  {
+   "key": "privacy:38",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "法令の改正や運営の変更にあわせて、この方針を改めることがあります。改めたときは、このページでお知らせいたします。"
+  },
+  {
+   "key": "privacy:39",
+   "file": "privacy.html",
+   "tag": "h3",
+   "text": "10. お問い合わせの窓口"
+  },
+  {
+   "key": "privacy:40",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "〒051-0021 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "privacy:41",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "制定日:2026年9月30日"
+  },
+  {
+   "key": "privacy:42",
+   "file": "privacy.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "privacy:43",
+   "file": "privacy.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "privacy:44",
+   "file": "privacy.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
    "key": "rituals:1",
    "file": "rituals.html",
    "tag": "span",
@@ -4721,6 +4989,7 @@
     "news.html",
     "newsletter.html",
     "prayer.html",
+    "privacy.html",
     "rituals.html",
     "setsubun-form.html",
     "thanks.html",
@@ -4740,6 +5009,7 @@
     "news.html",
     "newsletter.html",
     "prayer.html",
+    "privacy.html",
     "rituals.html",
     "setsubun-form.html",
     "thanks.html",
