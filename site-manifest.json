@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-30T13:33:54.123Z",
+ "generated_at": "2026-09-30T18:40:52.680Z",
  "pages": [
   {
    "file": "about.html",
@@ -1040,13 +1040,13 @@
    "key": "apply:30",
    "file": "apply.html",
    "tag": "span",
-   "text": "檀家の方"
+   "text": "1月1日〜2月3日"
   },
   {
    "key": "apply:31",
    "file": "apply.html",
    "tag": "p",
-   "text": "檀家の方は、ログインしてお申込みいただけます。受付は毎年1月1日からです。"
+   "text": "星守り・願意祈祷のお申込みを承ります。受付は毎年1月1日から2月3日までです。"
   },
   {
    "key": "apply:32",
@@ -1058,13 +1058,13 @@
    "key": "apply:33",
    "file": "apply.html",
    "tag": "span",
-   "text": "檀家の方"
+   "text": "7月1日〜8月16日"
   },
   {
    "key": "apply:34",
    "file": "apply.html",
    "tag": "p",
-   "text": "お盆の塔婆・提灯・新盆供養のお申込みです。檀家の方はログインしてお申込みいただけます。受付は毎年7月1日からです。"
+   "text": "お盆の塔婆・提灯・新盆供養のお申込みを承ります。受付は毎年7月1日から8月16日までです。"
   },
   {
    "key": "apply:35",
@@ -3254,7 +3254,7 @@
    "key": "privacy:20",
    "file": "privacy.html",
    "tag": "li",
-   "text": "檀信徒の皆様との連絡、お寺からのご案内"
+   "text": "いただいたお問い合わせ・お申込みに関するご連絡"
   },
   {
    "key": "privacy:21",
@@ -3266,7 +3266,7 @@
    "key": "privacy:22",
    "file": "privacy.html",
    "tag": "p",
-   "text": "これらの目的を超えて用いることはいたしません。"
+   "text": "これらの目的を超えて用いることはいたしません。ホームページからお預かりした情報を、行事のご案内やお知らせの送付に用いることはありません。"
   },
   {
    "key": "privacy:23",
@@ -3314,7 +3314,7 @@
    "key": "privacy:30",
    "file": "privacy.html",
    "tag": "li",
-   "text": "ホームページのご案内チャット:ご質問への自動のお答えに、Google の AI(Gemini)を用いています。チャットにはお名前・ご住所などの個人情報を入力なさらないようお願いいたします。"
+   "text": "ホームページのご案内チャット:ご質問への自動のお答えに、Anthropic 社の AI(Claude)を用いています。チャットにはお名前・ご住所などの個人情報を入力なさらないようお願いいたします。"
   },
   {
    "key": "privacy:31",
@@ -4355,46 +4355,16 @@
    "text": "星守り(1個 ¥500)・願意祈祷(1件 ¥5,000)"
   },
   {
-   "key": "setsubun-form:5",
-   "file": "setsubun-form.html",
-   "tag": "h3",
-   "text": "檀家ログイン"
-  },
-  {
-   "key": "setsubun-form:6",
-   "file": "setsubun-form.html",
-   "tag": "p",
-   "text": "節分申込には檀家アカウントが必要です。\nID・パスワードをお持ちでない方は、お寺までお問い合わせください。"
-  },
-  {
-   "key": "setsubun-form:7",
-   "file": "setsubun-form.html",
-   "tag": "label",
-   "text": "ID"
-  },
-  {
-   "key": "setsubun-form:8",
-   "file": "setsubun-form.html",
-   "tag": "label",
-   "text": "パスワード"
-  },
-  {
-   "key": "setsubun-form:9",
-   "file": "setsubun-form.html",
-   "tag": "p",
-   "text": "続けてお申込みされる場合は下のボタンから。一覧確認や法事のお申込みも可能です。"
-  },
-  {
    "key": "setsubun-form:10",
    "file": "setsubun-form.html",
    "tag": "p",
-   "text": "檀家としてログイン中です。お申込み内容を入力し、「申込む」を押してください。"
+   "text": "必要事項をご入力の上、「この内容で申込む」を押してください。どなたでもお申込みいただけます。"
   },
   {
    "key": "setsubun-form:11",
    "file": "setsubun-form.html",
    "tag": "p",
-   "text": "※ お申込み内容はお寺の管理システムに自動で反映されます。"
+   "text": "※ お申込みの内容を確認の上、当寺よりご連絡いたします。お急ぎの場合はお電話(0143-22-4284)でも承っております。"
   },
   {
    "key": "setsubun-form:12",
@@ -4421,10 +4391,16 @@
    "text": "住所"
   },
   {
-   "key": "setsubun-form:16",
+   "key": "setsubun-form:31",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "setsubun-form:32",
    "file": "setsubun-form.html",
    "tag": "label",
-   "text": "電話番号"
+   "text": "メールアドレス"
   },
   {
    "key": "setsubun-form:17",
@@ -4433,13 +4409,13 @@
    "text": "1個 ¥500 / 年齢を入力した枠が申込対象になります"
   },
   {
-   "key": "setsubun-form:18",
+   "key": "setsubun-form:33",
    "file": "setsubun-form.html",
    "tag": "span",
    "text": "0 名"
   },
   {
-   "key": "setsubun-form:19",
+   "key": "setsubun-form:34",
    "file": "setsubun-form.html",
    "tag": "span",
    "text": "0 名"
@@ -4457,13 +4433,19 @@
    "text": "備考(任意)"
   },
   {
+   "key": "setsubun-form:35",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "備考"
+  },
+  {
    "key": "setsubun-form:22",
    "file": "setsubun-form.html",
    "tag": "span",
    "text": "星守り"
   },
   {
-   "key": "setsubun-form:23",
+   "key": "setsubun-form:36",
    "file": "setsubun-form.html",
    "tag": "span",
    "text": "¥0"
@@ -4475,7 +4457,7 @@
    "text": "願意祈祷"
   },
   {
-   "key": "setsubun-form:25",
+   "key": "setsubun-form:37",
    "file": "setsubun-form.html",
    "tag": "span",
    "text": "¥0"
@@ -4487,10 +4469,28 @@
    "text": "総合計"
   },
   {
-   "key": "setsubun-form:27",
+   "key": "setsubun-form:38",
    "file": "setsubun-form.html",
    "tag": "span",
    "text": "¥0"
+  },
+  {
+   "key": "setsubun-form:39",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "星守り"
+  },
+  {
+   "key": "setsubun-form:40",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "願意祈祷"
+  },
+  {
+   "key": "setsubun-form:41",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "合計"
   },
   {
    "key": "setsubun-form:28",
@@ -4511,13 +4511,13 @@
    "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
   },
   {
-   "key": "setsubun-form:31",
+   "key": "setsubun-form:42",
    "file": "setsubun-form.html",
    "tag": "span",
    "text": "' + (i + 1) + '"
   },
   {
-   "key": "setsubun-form:32",
+   "key": "setsubun-form:43",
    "file": "setsubun-form.html",
    "tag": "span",
    "text": "' + (i + 1) + '"
@@ -4601,46 +4601,16 @@
    "text": "提灯(1本 ¥3,000)・特別塔婆(1本 ¥10,000)・新盆供養(1組 ¥12,000)"
   },
   {
-   "key": "toba-form:5",
-   "file": "toba-form.html",
-   "tag": "h3",
-   "text": "檀家ログイン"
-  },
-  {
-   "key": "toba-form:6",
-   "file": "toba-form.html",
-   "tag": "p",
-   "text": "塔婆・提灯申込には檀家アカウントが必要です。\nID・パスワードをお持ちでない方は、お寺までお問い合わせください。"
-  },
-  {
-   "key": "toba-form:7",
-   "file": "toba-form.html",
-   "tag": "label",
-   "text": "ID"
-  },
-  {
-   "key": "toba-form:8",
-   "file": "toba-form.html",
-   "tag": "label",
-   "text": "パスワード"
-  },
-  {
-   "key": "toba-form:9",
-   "file": "toba-form.html",
-   "tag": "p",
-   "text": "続けてお申込みされる場合は下のボタンから。"
-  },
-  {
    "key": "toba-form:10",
    "file": "toba-form.html",
    "tag": "p",
-   "text": "檀家としてログイン中です。お申込み内容を入力し、「申込む」を押してください。"
+   "text": "必要事項をご入力の上、「この内容で申込む」を押してください。どなたでもお申込みいただけます。"
   },
   {
    "key": "toba-form:11",
    "file": "toba-form.html",
    "tag": "p",
-   "text": "※ 戒名は直接入力するか、過去帳に登録されているご先祖様から選択できます。"
+   "text": "※ 戒名が分からない場合は、ご俗名(生前のお名前)をご記入ください。内容を確認の上、当寺よりご連絡いたします。"
   },
   {
    "key": "toba-form:12",
@@ -4655,16 +4625,28 @@
    "text": "必須"
   },
   {
-   "key": "toba-form:14",
+   "key": "toba-form:30",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "toba-form:31",
    "file": "toba-form.html",
    "tag": "label",
-   "text": "電話番号"
+   "text": "住所"
+  },
+  {
+   "key": "toba-form:32",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "メールアドレス"
   },
   {
    "key": "toba-form:15",
    "file": "toba-form.html",
    "tag": "span",
-   "text": "1本 ¥3,000 / 戒名を入力または過去帳から選択した枠が申込対象"
+   "text": "1本 ¥3,000 / 戒名(またはご俗名)を入力した枠が申込対象"
   },
   {
    "key": "toba-form:16",
@@ -4685,13 +4667,19 @@
    "text": "備考(任意)"
   },
   {
+   "key": "toba-form:33",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "備考"
+  },
+  {
    "key": "toba-form:19",
    "file": "toba-form.html",
    "tag": "span",
    "text": "提灯"
   },
   {
-   "key": "toba-form:20",
+   "key": "toba-form:34",
    "file": "toba-form.html",
    "tag": "span",
    "text": "¥0"
@@ -4703,7 +4691,7 @@
    "text": "塔婆"
   },
   {
-   "key": "toba-form:22",
+   "key": "toba-form:35",
    "file": "toba-form.html",
    "tag": "span",
    "text": "¥0"
@@ -4715,7 +4703,7 @@
    "text": "新盆"
   },
   {
-   "key": "toba-form:24",
+   "key": "toba-form:36",
    "file": "toba-form.html",
    "tag": "span",
    "text": "¥0"
@@ -4727,10 +4715,34 @@
    "text": "総合計"
   },
   {
-   "key": "toba-form:26",
+   "key": "toba-form:37",
    "file": "toba-form.html",
    "tag": "span",
    "text": "¥0"
+  },
+  {
+   "key": "toba-form:38",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "提灯"
+  },
+  {
+   "key": "toba-form:39",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "特別塔婆"
+  },
+  {
+   "key": "toba-form:40",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "新盆供養"
+  },
+  {
+   "key": "toba-form:41",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "合計"
   },
   {
    "key": "toba-form:27",
@@ -4751,7 +4763,7 @@
    "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
   },
   {
-   "key": "toba-form:30",
+   "key": "toba-form:42",
    "file": "toba-form.html",
    "tag": "span",
    "text": "' + (i + 1) + '"
@@ -5580,6 +5592,148 @@
     {
      "name": "備考",
      "label": "ご希望日時(第2希望)",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    }
+   ]
+  },
+  {
+   "name": "setsubun",
+   "file": "setsubun-form.html",
+   "subject": "【節分のお申込み】妙傳寺サイト",
+   "next": "https://myodenji7676.online/thanks.html",
+   "fields": [
+    {
+     "name": "氏名",
+     "label": "氏名",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "ふりがな",
+     "label": "ふりがな",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "住所",
+     "label": "住所",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "電話番号",
+     "label": "電話番号",
+     "type": "tel",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "メールアドレス",
+     "label": "メールアドレス",
+     "type": "email",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "備考",
+     "label": "備考",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "星守り",
+     "label": "星守り",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "願意祈祷",
+     "label": "願意祈祷",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "合計",
+     "label": "合計",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    }
+   ]
+  },
+  {
+   "name": "toba",
+   "file": "toba-form.html",
+   "subject": "【塔婆・提灯のお申込み】妙傳寺サイト",
+   "next": "https://myodenji7676.online/thanks.html",
+   "fields": [
+    {
+     "name": "氏名",
+     "label": "氏名",
+     "type": "text",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "電話番号",
+     "label": "電話番号",
+     "type": "tel",
+     "required": true,
+     "options": []
+    },
+    {
+     "name": "住所",
+     "label": "住所",
+     "type": "text",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "メールアドレス",
+     "label": "メールアドレス",
+     "type": "email",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "備考",
+     "label": "備考",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "提灯",
+     "label": "提灯",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "特別塔婆",
+     "label": "特別塔婆",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "新盆供養",
+     "label": "新盆供養",
+     "type": "textarea",
+     "required": false,
+     "options": []
+    },
+    {
+     "name": "合計",
+     "label": "合計",
      "type": "textarea",
      "required": false,
      "options": []

@@ -122,6 +122,7 @@
             .page-hero h2 { font-size: 1.5rem; }
         }
     </style>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -148,69 +149,39 @@
 
 <main class="form-wrapper">
 
-    <!-- ログイン画面 -->
-    <section id="login-view" class="hidden">
-        <div class="login-card">
-            <h3 data-edit="setsubun-form:5">檀家ログイン</h3>
-            <p class="login-sub" data-edit="setsubun-form:6">節分申込には檀家アカウントが必要です。<br>ID・パスワードをお持ちでない方は、お寺までお問い合わせください。</p>
-            <div id="login-err" class="alert error hidden"></div>
-            <form id="login-form">
-                <div class="form-group">
-                    <label data-edit="setsubun-form:7">ID</label>
-                    <input type="text" name="username" required autocomplete="username" autofocus>
-                </div>
-                <div class="form-group">
-                    <label data-edit="setsubun-form:8">パスワード</label>
-                    <input type="password" name="password" required autocomplete="current-password">
-                </div>
-                <button type="submit" class="submit-btn">ログイン</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- 完了画面 -->
-    <section id="done-view" class="hidden">
-        <div class="alert ok"><strong>お申込みを受け付けました。</strong>
-            <div id="done-detail" style="margin-top:6px; font-size:0.88rem;"></div>
-        </div>
-        <p style="margin: 16px 0; color: var(--text-gray); font-size:0.9rem;" data-edit="setsubun-form:9">続けてお申込みされる場合は下のボタンから。一覧確認や法事のお申込みも可能です。</p>
-        <button type="button" id="again-btn" class="submit-btn">続けて節分を申込む</button>
-        <a href="apply.html" class="back-link">← 各種申込トップへ</a>
-    </section>
-
-    <!-- フォーム画面 -->
-    <section id="form-view" class="hidden">
+    <section id="form-view">
         <div class="form-intro">
-            <p data-edit="setsubun-form:10">檀家としてログイン中です。お申込み内容を入力し、「申込む」を押してください。</p>
-            <p data-edit="setsubun-form:11">※ お申込み内容はお寺の管理システムに自動で反映されます。</p>
-        </div>
-
-        <div class="auth-bar">
-            <span class="who">ログイン中: <strong id="who-name">-</strong> <span id="who-ie" style="color:var(--text-gray); margin-left:6px;"></span></span>
-            <button type="button" id="logout-btn">ログアウト</button>
+            <p data-edit="setsubun-form:10">必要事項をご入力の上、「この内容で申込む」を押してください。どなたでもお申込みいただけます。</p>
+            <p data-edit="setsubun-form:11">※ お申込みの内容を確認の上、当寺よりご連絡いたします。お急ぎの場合はお電話(0143-22-4284)でも承っております。</p>
         </div>
 
         <div id="submit-err" class="alert error hidden"></div>
 
-        <form id="apply-form">
+        <form id="apply-form" action="/__form/setsubun" method="POST">
+            <input type="hidden" name="_subject" value="【節分のお申込み】妙傳寺サイト">
+            <input type="hidden" name="_next" value="https://myodenji7676.online/thanks.html">
             <section class="form-section">
                 <h3 data-edit="setsubun-form:12">お申込者</h3>
                 <div class="field-grid">
                     <div class="form-group">
                         <label>氏名<span class="required" data-edit="setsubun-form:13">必須</span></label>
-                        <input type="text" name="applicant_name" required>
+                        <input type="text" name="氏名" required>
                     </div>
                     <div class="form-group">
                         <label data-edit="setsubun-form:14">ふりがな</label>
-                        <input type="text" name="applicant_kana">
+                        <input type="text" name="ふりがな">
                     </div>
                     <div class="form-group" style="grid-column: 1 / -1;">
                         <label data-edit="setsubun-form:15">住所</label>
-                        <input type="text" name="applicant_addr">
+                        <input type="text" name="住所">
                     </div>
                     <div class="form-group">
-                        <label data-edit="setsubun-form:16">電話番号</label>
-                        <input type="tel" name="applicant_tel">
+                        <label>電話番号<span class="required" data-edit="setsubun-form:31">必須</span></label>
+                        <input type="tel" name="電話番号" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-edit="setsubun-form:32">メールアドレス</label>
+                        <input type="email" name="メールアドレス" placeholder="受付のお知らせをお送りします(任意)">
                     </div>
                 </div>
             </section>
@@ -219,11 +190,11 @@
                 <h3>星守り <span class="sub" data-edit="setsubun-form:17">1個 ¥500 / 年齢を入力した枠が申込対象になります</span></h3>
                 <div class="hoshi-grid">
                     <div class="hoshi-block male">
-                        <h4>男 <span class="qty" id="hoshi-m-qty" data-edit="setsubun-form:18">0 名</span></h4>
+                        <h4>男 <span class="qty" id="hoshi-m-qty" data-edit="setsubun-form:33">0 名</span></h4>
                         <div class="hoshi-ages" id="hoshi-m"></div>
                     </div>
                     <div class="hoshi-block female">
-                        <h4>女 <span class="qty" id="hoshi-f-qty" data-edit="setsubun-form:19">0 名</span></h4>
+                        <h4>女 <span class="qty" id="hoshi-f-qty" data-edit="setsubun-form:34">0 名</span></h4>
                         <div class="hoshi-ages" id="hoshi-f"></div>
                     </div>
                 </div>
@@ -239,19 +210,28 @@
             <section class="form-section">
                 <h3 data-edit="setsubun-form:21">備考(任意)</h3>
                 <div class="form-group">
-                    <textarea name="bikou" placeholder="ご要望・ご質問があればご記入ください"></textarea>
+                    <label data-edit="setsubun-form:35">備考</label>
+                    <textarea name="備考" placeholder="ご要望・ご質問があればご記入ください"></textarea>
                 </div>
             </section>
 
             <div class="totals-card">
-                <div class="row"><span class="lbl" data-edit="setsubun-form:22">星守り</span><span class="val" id="t-hoshi" data-edit="setsubun-form:23">¥0</span></div>
-                <div class="row"><span class="lbl" data-edit="setsubun-form:24">願意祈祷</span><span class="val" id="t-gani" data-edit="setsubun-form:25">¥0</span></div>
-                <div class="row grand"><span class="lbl" data-edit="setsubun-form:26">総合計</span><span class="val" id="t-grand" data-edit="setsubun-form:27">¥0</span></div>
+                <div class="row"><span class="lbl" data-edit="setsubun-form:22">星守り</span><span class="val" id="t-hoshi" data-edit="setsubun-form:36">¥0</span></div>
+                <div class="row"><span class="lbl" data-edit="setsubun-form:24">願意祈祷</span><span class="val" id="t-gani" data-edit="setsubun-form:37">¥0</span></div>
+                <div class="row grand"><span class="lbl" data-edit="setsubun-form:26">総合計</span><span class="val" id="t-grand" data-edit="setsubun-form:38">¥0</span></div>
             </div>
 
+            <!-- 送る中身(上の枠から自動で書き込む。お寺には文として届く) -->
+            <div class="form-group" style="display:none">
+                <label data-edit="setsubun-form:39">星守り</label><textarea name="星守り" readonly></textarea>
+                <label data-edit="setsubun-form:40">願意祈祷</label><textarea name="願意祈祷" readonly></textarea>
+                <label data-edit="setsubun-form:41">合計</label><textarea name="合計" readonly></textarea>
+            </div>
+
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAFJr9IUFvEgeZePc" data-language="ja" style="margin: 12px 0;"></div>
             <p style="margin: 8px 0 0; font-size: 0.8rem; color: var(--text-gray); text-align: center;">送信の前に<a href="privacy.html" style="color: inherit; text-decoration: underline;">個人情報の取扱い</a>をご確認ください。</p>
             <button type="submit" id="submit-btn" class="submit-btn">この内容で申込む</button>
-            <a href="apply.html" class="back-link">← 各種申込トップへ</a>
+            <a href="apply.html" class="back-link">← 各種申込へ</a>
         </form>
     </section>
 
@@ -267,8 +247,6 @@
 <script>
 (function() {
     'use strict';
-    var API_BASE = '';   // 同じアドレス(Cloudflare が法輪へ渡す)
-    var TOKEN_KEY = 'danka_token_v1';
     var SLOTS_HOSHI = 10;
     var SLOTS_GANI  = 8;
     var UNIT = { hoshi: 500, gani: 5000 };
@@ -280,38 +258,27 @@
         '交通安全','海上安全','航空安全','作業安全',
         '家相方除'
     ];
-
     function el(id) { return document.getElementById(id); }
-    function show(id) { el(id).classList.remove('hidden'); }
-    function hide(id) { el(id).classList.add('hidden'); }
-    function getToken() { try { return sessionStorage.getItem(TOKEN_KEY); } catch (e) { return null; } }
-    function setToken(t) { try { sessionStorage.setItem(TOKEN_KEY, t); } catch (e) {} }
-    function clearToken() { try { sessionStorage.removeItem(TOKEN_KEY); } catch (e) {} }
-
     function yen(n) { return '¥' + (n || 0).toLocaleString(); }
+    function q(sel) { return document.querySelector(sel); }
 
     function buildHoshi() {
         ['m','f'].forEach(function(s) {
-            var container = el('hoshi-' + s);
             var html = '';
             for (var i = 0; i < SLOTS_HOSHI; i++) {
-                html += '<div class="cell"><span class="idx" data-edit="setsubun-form:31">' + (i + 1) + '</span>' +
-                    '<input type="number" min="0" max="120" data-sex="' + s + '" data-i="' + i + '" class="hoshi-age"></div>';
+                html += '<div class="cell"><span class="idx" data-edit="setsubun-form:42">' + (i + 1) + '</span>' +
+                    '<input type="number" min="0" max="120" data-sex="' + s + '" data-i="' + i + '" class="hoshi-age" aria-label="年齢"></div>';
             }
-            container.innerHTML = html;
+            el('hoshi-' + s).innerHTML = html;
         });
     }
-
     function buildGani() {
-        var container = el('gani-slots');
         var html = '';
         for (var i = 0; i < SLOTS_GANI; i++) {
             var opts = '<option value="">― 願意 ―</option>';
-            for (var j = 0; j < GANI_LIST.length; j++) {
-                opts += '<option value="' + GANI_LIST[j] + '">' + GANI_LIST[j] + '</option>';
-            }
+            for (var j = 0; j < GANI_LIST.length; j++) opts += '<option value="' + GANI_LIST[j] + '">' + GANI_LIST[j] + '</option>';
             html += '<div class="gani-slot" data-i="' + i + '">' +
-                '<span class="idx" data-edit="setsubun-form:32">' + (i + 1) + '</span>' +
+                '<span class="idx" data-edit="setsubun-form:43">' + (i + 1) + '</span>' +
                 '<select class="g-sel" data-i="' + i + '">' + opts + '</select>' +
                 '<input type="text" class="gani-bikou" placeholder="備考(任意)" data-i="' + i + '">' +
                 '<select class="g-sex" data-i="' + i + '"><option value="">性別</option><option value="男">男</option><option value="女">女</option></select>' +
@@ -322,197 +289,71 @@
                   '<label>ふりがな<input type="text" class="g-kana" data-i="' + i + '"></label>' +
                 '</div>';
         }
-        container.innerHTML = html;
+        el('gani-slots').innerHTML = html;
     }
 
-    function recalc() {
-        var mQty = 0, fQty = 0;
+    // 枠の中身を、お寺に届く文にする
+    function collect() {
+        var hoshi = { m: [], f: [] };
         document.querySelectorAll('.hoshi-age').forEach(function(inp) {
-            if (inp.value !== '' && !isNaN(parseInt(inp.value, 10))) {
-                if (inp.dataset.sex === 'm') mQty++; else fQty++;
-            }
+            var age = parseInt(inp.value, 10);
+            if (inp.value !== '' && !isNaN(age)) hoshi[inp.dataset.sex].push(age);
         });
-        var hQty = mQty + fQty;
-        var gQty = 0;
-        document.querySelectorAll('.g-sel').forEach(function(sel) { if (sel.value) gQty++; });
-        var hSum = hQty * UNIT.hoshi;
-        var gSum = gQty * UNIT.gani;
-        el('hoshi-m-qty').textContent = mQty + ' 名';
-        el('hoshi-f-qty').textContent = fQty + ' 名';
+        var gani = [];
+        for (var i = 0; i < SLOTS_GANI; i++) {
+            var sel = q('.g-sel[data-i="' + i + '"]');
+            if (!sel || !sel.value) continue;
+            var v = function(c) { return q('.' + c + '[data-i="' + i + '"]').value.trim(); };
+            var who = [v('g-name'), v('g-kana') ? '(' + v('g-kana') + ')' : '', v('g-sex'), v('g-age') ? v('g-age') + '歳' : ''].filter(Boolean).join(' ');
+            gani.push(sel.value + (who ? ' ' + who : '') + (v('gani-bikou') ? ' 備考:' + v('gani-bikou') : ''));
+        }
+        return { hoshi: hoshi, gani: gani };
+    }
+    function recalc() {
+        var c = collect();
+        var hQty = c.hoshi.m.length + c.hoshi.f.length, gQty = c.gani.length;
+        var hSum = hQty * UNIT.hoshi, gSum = gQty * UNIT.gani;
+        el('hoshi-m-qty').textContent = c.hoshi.m.length + ' 名';
+        el('hoshi-f-qty').textContent = c.hoshi.f.length + ' 名';
         el('hoshi-sum').textContent = yen(hSum);
         el('gani-sum').textContent  = yen(gSum);
         el('t-hoshi').textContent = yen(hSum);
         el('t-gani').textContent  = yen(gSum);
         el('t-grand').textContent = yen(hSum + gSum);
-    }
-
-    function collectPayload() {
         var f = el('apply-form');
-        var name = f.applicant_name.value.trim();
-        var payload = {
-            applicant_name: name,
-            applicant_kana: f.applicant_kana.value.trim(),
-            applicant_addr: f.applicant_addr.value.trim(),
-            applicant_tel:  f.applicant_tel.value.trim(),
-            bikou:          f.bikou.value.trim(),
-            hoshi: [],
-            gani: []
-        };
-        document.querySelectorAll('.hoshi-age').forEach(function(inp) {
-            if (inp.value !== '') {
-                var age = parseInt(inp.value, 10);
-                if (!isNaN(age)) {
-                    payload.hoshi.push({ sex: inp.dataset.sex === 'm' ? '男' : '女', age: age });
-                }
-            }
-        });
-        for (var i = 0; i < SLOTS_GANI; i++) {
-            var sel = document.querySelector('.g-sel[data-i="' + i + '"]');
-            if (sel && sel.value) {
-                payload.gani.push({
-                    gani: sel.value,
-                    name: document.querySelector('.g-name[data-i="' + i + '"]').value.trim(),
-                    kana: document.querySelector('.g-kana[data-i="' + i + '"]').value.trim(),
-                    sex:  document.querySelector('.g-sex[data-i="' + i + '"]').value,
-                    age:  document.querySelector('.g-age[data-i="' + i + '"]').value,
-                    bikou: document.querySelector('.gani-bikou[data-i="' + i + '"]').value.trim()
-                });
-            }
-        }
-        return payload;
+        f['星守り'].value = hQty
+            ? (c.hoshi.m.length ? '男 ' + c.hoshi.m.map(function(a) { return a + '歳'; }).join('・') : '') +
+              (c.hoshi.m.length && c.hoshi.f.length ? ' / ' : '') +
+              (c.hoshi.f.length ? '女 ' + c.hoshi.f.map(function(a) { return a + '歳'; }).join('・') : '') + '(' + hQty + '個)'
+            : 'なし';
+        f['願意祈祷'].value = gQty ? c.gani.map(function(g, k) { return (k + 1) + '. ' + g; }).join('\n') : 'なし';
+        f['合計'].value = '星守り ' + yen(hSum) + ' + 願意祈祷 ' + yen(gSum) + ' = ' + yen(hSum + gSum);
+        return { hQty: hQty, gQty: gQty };
     }
 
-    function showError(elId, msg) {
-        var e = el(elId);
-        e.textContent = msg;
-        e.classList.remove('hidden');
-    }
-    function clearError(elId) { el(elId).classList.add('hidden'); }
-
-    function showFormView() {
-        hide('login-view'); hide('done-view'); show('form-view');
-        fetch(API_BASE + '/api/me/profile', {
-            headers: { 'Authorization': 'Bearer ' + getToken() }
-        })
-        .then(function(r) {
-            if (r.status === 401) { clearToken(); showLoginView(); return null; }
-            return r.json();
-        })
-        .then(function(j) {
-            if (!j) return;
-            el('who-name').textContent = j.full_name || '-';
-            el('who-ie').textContent = j.ie_no ? '(家番号 ' + j.ie_no + ')' : '';
-            var f = el('apply-form');
-            if (j.full_name && !f.applicant_name.value) f.applicant_name.value = j.full_name;
-            if (j.full_name_kana && !f.applicant_kana.value) f.applicant_kana.value = j.full_name_kana;
-            if (j.address && j.address.addr && !f.applicant_addr.value) {
-                f.applicant_addr.value = (j.address.addr || '') + (j.address.building ? ' ' + j.address.building : '');
-            }
-            if (j.contact && (j.contact.mobile || j.contact.tel) && !f.applicant_tel.value) {
-                f.applicant_tel.value = j.contact.mobile || j.contact.tel;
-            }
-        })
-        .catch(function() {});
-    }
-    function showLoginView() {
-        hide('form-view'); hide('done-view'); show('login-view');
-    }
-    function showDoneView(detail) {
-        hide('form-view'); hide('login-view'); show('done-view');
-        el('done-detail').textContent = detail;
-    }
-
-    el('login-form').addEventListener('submit', function(ev) {
-        ev.preventDefault();
-        clearError('login-err');
-        var u = ev.target.username.value.trim();
-        var p = ev.target.password.value;
-        fetch(API_BASE + '/api/auth/login', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username: u, password: p })
-        })
-        .then(function(r) { return r.json().then(function(j) { return { ok: r.ok, j: j }; }); })
-        .then(function(res) {
-            if (!res.ok || !res.j.token) {
-                showError('login-err', (res.j.error && res.j.error.message) || 'ログインに失敗しました');
-                return;
-            }
-            setToken(res.j.token);
-            showFormView();
-        })
-        .catch(function() { showError('login-err', '通信エラー。時間をおいて再度お試しください'); });
-    });
-
-    el('logout-btn').addEventListener('click', function() {
-        clearToken();
-        showLoginView();
-    });
-
-    el('again-btn').addEventListener('click', function() {
-        el('apply-form').reset();
-        recalc();
-        showFormView();
-    });
-
-    el('apply-form').addEventListener('input', recalc);
-    el('apply-form').addEventListener('change', recalc);
-
-    el('apply-form').addEventListener('submit', function(ev) {
-        ev.preventDefault();
-        clearError('submit-err');
-        var payload = collectPayload();
-        if (!payload.applicant_name) { showError('submit-err', '氏名は必須です'); return; }
-        if (payload.hoshi.length === 0 && payload.gani.length === 0) {
-            showError('submit-err', '星守り または 願意祈祷 を1件以上ご指定ください');
+    var form = el('apply-form');
+    form.addEventListener('input', recalc);
+    form.addEventListener('change', recalc);
+    form.addEventListener('submit', function(ev) {
+        var n = recalc();
+        if (n.hQty === 0 && n.gQty === 0) {
+            ev.preventDefault();
+            var e = el('submit-err');
+            e.textContent = '星守り または 願意祈祷 を1件以上ご指定ください';
+            e.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             return;
         }
-        var btn = el('submit-btn');
-        btn.disabled = true;
-        btn.textContent = '送信中…';
-        fetch(API_BASE + '/api/me/setsubun', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + getToken()
-            },
-            body: JSON.stringify(payload)
-        })
-        .then(function(r) { return r.json().then(function(j) { return { ok: r.ok, status: r.status, j: j }; }); })
-        .then(function(res) {
-            btn.disabled = false;
-            btn.textContent = 'この内容で申込む';
-            if (res.status === 401) {
-                clearToken();
-                showError('submit-err', 'セッションの有効期限が切れました。再度ログインしてください。');
-                setTimeout(showLoginView, 1200);
-                return;
-            }
-            if (!res.ok) {
-                showError('submit-err', (res.j.error && res.j.error.message) || '申込に失敗しました');
-                return;
-            }
-            var detail = '星守り ' + (res.j.hoshi_qty || 0) + ' 個 / 願意祈祷 ' + (res.j.gani_qty || 0) + ' 件 / 合計 ' + yen(res.j.amount);
-            showDoneView(detail);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        })
-        .catch(function() {
-            btn.disabled = false;
-            btn.textContent = 'この内容で申込む';
-            showError('submit-err', '通信エラー。時間をおいて再度お試しください');
-        });
+        el('submit-btn').textContent = '送信中…';
     });
-
-    // 初期化
     buildHoshi();
     buildGani();
     recalc();
-    if (getToken()) showFormView(); else showLoginView();
 })();
 </script>
 
 
-<style>body.period-closed #login-view, body.period-closed #form-view, body.period-closed #done-view { display: none !important; }</style>
+<style>body.period-closed #form-view { display: none !important; }</style>
 <script>
 // 受付期間の外は、申込の画面を閉じて「受付は○月○日から」と出す(期間は法輪の「申込期間」で決める)
 (function () {

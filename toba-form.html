@@ -107,6 +107,7 @@
             .page-hero h2 { font-size: 1.5rem; }
         }
     </style>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -133,67 +134,41 @@
 
 <main class="form-wrapper">
 
-    <!-- ログイン画面 -->
-    <section id="login-view" class="hidden">
-        <div class="login-card">
-            <h3 data-edit="toba-form:5">檀家ログイン</h3>
-            <p class="login-sub" data-edit="toba-form:6">塔婆・提灯申込には檀家アカウントが必要です。<br>ID・パスワードをお持ちでない方は、お寺までお問い合わせください。</p>
-            <div id="login-err" class="alert error hidden"></div>
-            <form id="login-form">
-                <div class="form-group">
-                    <label data-edit="toba-form:7">ID</label>
-                    <input type="text" name="username" required autocomplete="username" autofocus>
-                </div>
-                <div class="form-group">
-                    <label data-edit="toba-form:8">パスワード</label>
-                    <input type="password" name="password" required autocomplete="current-password">
-                </div>
-                <button type="submit" class="submit-btn">ログイン</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- 完了画面 -->
-    <section id="done-view" class="hidden">
-        <div class="alert ok"><strong>お申込みを受け付けました。</strong>
-            <div id="done-detail" style="margin-top:6px; font-size:0.88rem;"></div>
-        </div>
-        <p style="margin: 16px 0; color: var(--text-gray); font-size:0.9rem;" data-edit="toba-form:9">続けてお申込みされる場合は下のボタンから。</p>
-        <button type="button" id="again-btn" class="submit-btn">続けて塔婆・提灯を申込む</button>
-        <a href="apply.html" class="back-link">← 各種申込トップへ</a>
-    </section>
-
-    <!-- フォーム画面 -->
-    <section id="form-view" class="hidden">
+    <section id="form-view">
         <div class="form-intro">
-            <p data-edit="toba-form:10">檀家としてログイン中です。お申込み内容を入力し、「申込む」を押してください。</p>
-            <p data-edit="toba-form:11">※ 戒名は直接入力するか、過去帳に登録されているご先祖様から選択できます。</p>
-        </div>
-
-        <div class="auth-bar">
-            <span class="who">ログイン中: <strong id="who-name">-</strong> <span id="who-ie" style="color:var(--text-gray); margin-left:6px;"></span></span>
-            <button type="button" id="logout-btn">ログアウト</button>
+            <p data-edit="toba-form:10">必要事項をご入力の上、「この内容で申込む」を押してください。どなたでもお申込みいただけます。</p>
+            <p data-edit="toba-form:11">※ 戒名が分からない場合は、ご俗名(生前のお名前)をご記入ください。内容を確認の上、当寺よりご連絡いたします。</p>
         </div>
 
         <div id="submit-err" class="alert error hidden"></div>
 
-        <form id="apply-form">
+        <form id="apply-form" action="/__form/toba" method="POST">
+            <input type="hidden" name="_subject" value="【塔婆・提灯のお申込み】妙傳寺サイト">
+            <input type="hidden" name="_next" value="https://myodenji7676.online/thanks.html">
             <section class="form-section">
                 <h3 data-edit="toba-form:12">お申込者</h3>
                 <div class="field-grid">
                     <div class="form-group">
                         <label>氏名<span class="required" data-edit="toba-form:13">必須</span></label>
-                        <input type="text" name="applicant_name" required>
+                        <input type="text" name="氏名" required>
                     </div>
                     <div class="form-group">
-                        <label data-edit="toba-form:14">電話番号</label>
-                        <input type="tel" name="applicant_tel">
+                        <label>電話番号<span class="required" data-edit="toba-form:30">必須</span></label>
+                        <input type="tel" name="電話番号" required>
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <label data-edit="toba-form:31">住所</label>
+                        <input type="text" name="住所">
+                    </div>
+                    <div class="form-group">
+                        <label data-edit="toba-form:32">メールアドレス</label>
+                        <input type="email" name="メールアドレス" placeholder="受付のお知らせをお送りします(任意)">
                     </div>
                 </div>
             </section>
 
             <section class="form-section">
-                <h3>提灯 <span class="sub" data-edit="toba-form:15">1本 ¥3,000 / 戒名を入力または過去帳から選択した枠が申込対象</span></h3>
+                <h3>提灯 <span class="sub" data-edit="toba-form:15">1本 ¥3,000 / 戒名(またはご俗名)を入力した枠が申込対象</span></h3>
                 <div id="chochin-slots"></div>
                 <p style="margin-top:8px; font-size:0.9rem;">提灯 小計: <strong id="chochin-sum">¥0</strong></p>
             </section>
@@ -218,20 +193,30 @@
             <section class="form-section">
                 <h3 data-edit="toba-form:18">備考(任意)</h3>
                 <div class="form-group">
-                    <textarea name="bikou" placeholder="ご要望・ご質問があればご記入ください"></textarea>
+                    <label data-edit="toba-form:33">備考</label>
+                    <textarea name="備考" placeholder="ご要望・ご質問があればご記入ください"></textarea>
                 </div>
             </section>
 
             <div class="totals-card">
-                <div class="row"><span class="lbl" data-edit="toba-form:19">提灯</span><span class="val" id="t-chochin" data-edit="toba-form:20">¥0</span></div>
-                <div class="row"><span class="lbl" data-edit="toba-form:21">塔婆</span><span class="val" id="t-toba" data-edit="toba-form:22">¥0</span></div>
-                <div class="row"><span class="lbl" data-edit="toba-form:23">新盆</span><span class="val" id="t-niibon" data-edit="toba-form:24">¥0</span></div>
-                <div class="row grand"><span class="lbl" data-edit="toba-form:25">総合計</span><span class="val" id="t-grand" data-edit="toba-form:26">¥0</span></div>
+                <div class="row"><span class="lbl" data-edit="toba-form:19">提灯</span><span class="val" id="t-chochin" data-edit="toba-form:34">¥0</span></div>
+                <div class="row"><span class="lbl" data-edit="toba-form:21">塔婆</span><span class="val" id="t-toba" data-edit="toba-form:35">¥0</span></div>
+                <div class="row"><span class="lbl" data-edit="toba-form:23">新盆</span><span class="val" id="t-niibon" data-edit="toba-form:36">¥0</span></div>
+                <div class="row grand"><span class="lbl" data-edit="toba-form:25">総合計</span><span class="val" id="t-grand" data-edit="toba-form:37">¥0</span></div>
             </div>
 
+            <!-- 送る中身(上の枠から自動で書き込む。お寺には文として届く) -->
+            <div class="form-group" style="display:none">
+                <label data-edit="toba-form:38">提灯</label><textarea name="提灯" readonly></textarea>
+                <label data-edit="toba-form:39">特別塔婆</label><textarea name="特別塔婆" readonly></textarea>
+                <label data-edit="toba-form:40">新盆供養</label><textarea name="新盆供養" readonly></textarea>
+                <label data-edit="toba-form:41">合計</label><textarea name="合計" readonly></textarea>
+            </div>
+
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAFJr9IUFvEgeZePc" data-language="ja" style="margin: 12px 0;"></div>
             <p style="margin: 8px 0 0; font-size: 0.8rem; color: var(--text-gray); text-align: center;">送信の前に<a href="privacy.html" style="color: inherit; text-decoration: underline;">個人情報の取扱い</a>をご確認ください。</p>
             <button type="submit" id="submit-btn" class="submit-btn">この内容で申込む</button>
-            <a href="apply.html" class="back-link">← 各種申込トップへ</a>
+            <a href="apply.html" class="back-link">← 各種申込へ</a>
         </form>
     </section>
 
@@ -247,272 +232,68 @@
 <script>
 (function() {
     'use strict';
-    var API_BASE = '';   // 同じアドレス(Cloudflare が法輪へ渡す)
-    var TOKEN_KEY = 'danka_token_v1';
     var SLOTS = { chochin: 4, toba: 4, niibon: 3 };
     var UNIT  = { chochin: 3000, toba: 10000, niibon: 12000 };
-    var ancestors = [];   // {id, kaimyo, secular_name, death_date}
-
+    var FIELD = { chochin: '提灯', toba: '特別塔婆', niibon: '新盆供養' };
     function el(id) { return document.getElementById(id); }
-    function show(id) { el(id).classList.remove('hidden'); }
-    function hide(id) { el(id).classList.add('hidden'); }
-    function getToken() { try { return sessionStorage.getItem(TOKEN_KEY); } catch (e) { return null; } }
-    function setToken(t) { try { sessionStorage.setItem(TOKEN_KEY, t); } catch (e) {} }
-    function clearToken() { try { sessionStorage.removeItem(TOKEN_KEY); } catch (e) {} }
     function yen(n) { return '¥' + (n || 0).toLocaleString(); }
 
     function buildKind(kind) {
-        var container = el(kind + '-slots');
         var withKaiki = (kind === 'toba');
         var html = '';
         for (var i = 0; i < SLOTS[kind]; i++) {
             html += '<div class="toba-slot' + (withKaiki ? ' with-kaiki' : '') + '" data-i="' + i + '">' +
-                '<span class="idx" data-edit="toba-form:30">' + (i + 1) + '</span>';
-            if (withKaiki) {
-                html += '<input type="text" class="t-kaiki" data-kind="' + kind + '" data-i="' + i + '" placeholder="◯回忌" list="kaiki-list">';
-            }
-            html += '<input type="text" class="t-kaimyou" data-kind="' + kind + '" data-i="' + i + '" placeholder="戒名(自由入力)">' +
-                '<select class="t-tsuban" data-kind="' + kind + '" data-i="' + i + '"><option value="">― 過去帳から ―</option></select>' +
+                '<span class="idx" data-edit="toba-form:42">' + (i + 1) + '</span>';
+            if (withKaiki) html += '<input type="text" class="t-kaiki" data-kind="' + kind + '" data-i="' + i + '" placeholder="◯回忌" list="kaiki-list">';
+            html += '<input type="text" class="t-kaimyou" data-kind="' + kind + '" data-i="' + i + '" placeholder="戒名(またはご俗名)">' +
                 '</div>';
         }
-        container.innerHTML = html;
+        el(kind + '-slots').innerHTML = html;
     }
-
-    function fillAncestorSelects() {
-        document.querySelectorAll('select.t-tsuban').forEach(function(sel) {
-            var prev = sel.value;
-            var html = '<option value="">― 過去帳から ―</option>';
-            ancestors.forEach(function(a) {
-                var label = (a.kaimyo || '(未授戒)');
-                if (a.secular_name) label += ' / ' + a.secular_name;
-                if (a.death_date) label += ' [' + a.death_date + ']';
-                html += '<option value="' + a.id + '" data-kaimyou="' + (a.kaimyo || '').replace(/"/g, '&quot;') + '">' + label + '</option>';
-            });
-            sel.innerHTML = html;
-            if (prev) {
-                var match = Array.prototype.find.call(sel.options, function(o) { return o.value === prev; });
-                if (match) sel.value = prev;
-            }
-        });
-    }
-
-    function countFilled(kind) {
-        var n = 0;
-        for (var i = 0; i < SLOTS[kind]; i++) {
-            var km = document.querySelector('.t-kaimyou[data-kind="' + kind + '"][data-i="' + i + '"]');
-            var ts = document.querySelector('.t-tsuban[data-kind="' + kind + '"][data-i="' + i + '"]');
-            var ka = document.querySelector('.t-kaiki[data-kind="' + kind + '"][data-i="' + i + '"]');
-            if ((km && km.value.trim()) || (ts && ts.value) || (ka && ka.value.trim())) n++;
-        }
-        return n;
-    }
-
-    function recalc() {
-        var chQty = countFilled('chochin');
-        var tbQty = countFilled('toba');
-        var nbQty = countFilled('niibon');
-        var ch = chQty * UNIT.chochin;
-        var tb = tbQty * UNIT.toba;
-        var nb = nbQty * UNIT.niibon;
-        el('chochin-sum').textContent = yen(ch);
-        el('toba-sum').textContent    = yen(tb);
-        el('niibon-sum').textContent  = yen(nb);
-        el('t-chochin').textContent = yen(ch);
-        el('t-toba').textContent    = yen(tb);
-        el('t-niibon').textContent  = yen(nb);
-        el('t-grand').textContent   = yen(ch + tb + nb);
-    }
-
-    function collectKind(kind, withKaiki) {
+    function collectKind(kind) {
         var arr = [];
         for (var i = 0; i < SLOTS[kind]; i++) {
             var km = document.querySelector('.t-kaimyou[data-kind="' + kind + '"][data-i="' + i + '"]');
-            var ts = document.querySelector('.t-tsuban[data-kind="' + kind + '"][data-i="' + i + '"]');
-            var ka = withKaiki ? document.querySelector('.t-kaiki[data-kind="' + kind + '"][data-i="' + i + '"]') : null;
-            var item = {
-                kaimyou: km ? km.value.trim() : '',
-                tsuban:  ts && ts.value ? parseInt(ts.value, 10) : null
-            };
-            if (withKaiki) item.kaiki = ka ? ka.value.trim() : '';
-            if (item.kaimyou || item.tsuban || (item.kaiki || '').length) arr.push(item);
+            var ka = document.querySelector('.t-kaiki[data-kind="' + kind + '"][data-i="' + i + '"]');
+            var name = km ? km.value.trim() : '', kaiki = ka ? ka.value.trim() : '';
+            if (name || kaiki) arr.push((kaiki ? kaiki + ' ' : '') + (name || '(戒名の記入なし)'));
         }
         return arr;
     }
-
-    function collectPayload() {
-        var f = el('apply-form');
-        return {
-            applicant_name: f.applicant_name.value.trim(),
-            applicant_tel:  f.applicant_tel.value.trim(),
-            bikou:          f.bikou.value.trim(),
-            chochin: collectKind('chochin', false),
-            toba:    collectKind('toba', true),
-            niibon:  collectKind('niibon', false)
-        };
+    function recalc() {
+        var f = el('apply-form'), total = 0, count = 0;
+        ['chochin', 'toba', 'niibon'].forEach(function(k) {
+            var items = collectKind(k), sum = items.length * UNIT[k];
+            total += sum; count += items.length;
+            el(k + '-sum').textContent = yen(sum);
+            el('t-' + k).textContent = yen(sum);
+            f[FIELD[k]].value = items.length ? items.map(function(x, n) { return (n + 1) + '. ' + x; }).join('\n') + '\n(' + items.length + '件 ' + yen(sum) + ')' : 'なし';
+        });
+        el('t-grand').textContent = yen(total);
+        f['合計'].value = yen(total);
+        return count;
     }
-
-    function showError(elId, msg) {
-        var e = el(elId);
-        e.textContent = msg;
-        e.classList.remove('hidden');
-    }
-    function clearError(elId) { el(elId).classList.add('hidden'); }
-
-    function loadProfile() {
-        return fetch(API_BASE + '/api/me/profile', {
-            headers: { 'Authorization': 'Bearer ' + getToken() }
-        })
-        .then(function(r) {
-            if (r.status === 401) { clearToken(); showLoginView(); return null; }
-            return r.json();
-        })
-        .then(function(j) {
-            if (!j) return;
-            el('who-name').textContent = j.full_name || '-';
-            el('who-ie').textContent = j.ie_no ? '(家番号 ' + j.ie_no + ')' : '';
-            var f = el('apply-form');
-            if (j.full_name && !f.applicant_name.value) f.applicant_name.value = j.full_name;
-            if (j.contact && (j.contact.mobile || j.contact.tel) && !f.applicant_tel.value) {
-                f.applicant_tel.value = j.contact.mobile || j.contact.tel;
-            }
-        })
-        .catch(function() {});
-    }
-
-    function loadAncestors() {
-        return fetch(API_BASE + '/api/me/ancestors', {
-            headers: { 'Authorization': 'Bearer ' + getToken() }
-        })
-        .then(function(r) { return r.ok ? r.json() : { items: [] }; })
-        .then(function(j) {
-            ancestors = (j.items || []).map(function(a) {
-                return {
-                    id: a.id,
-                    kaimyo: a.kaimyo,
-                    secular_name: a.secular_name,
-                    death_date: a.death_date
-                };
-            });
-            fillAncestorSelects();
-        })
-        .catch(function() {});
-    }
-
-    function showFormView() {
-        hide('login-view'); hide('done-view'); show('form-view');
-        loadProfile();
-        loadAncestors();
-    }
-    function showLoginView() { hide('form-view'); hide('done-view'); show('login-view'); }
-    function showDoneView(detail) {
-        hide('form-view'); hide('login-view'); show('done-view');
-        el('done-detail').textContent = detail;
-    }
-
-    el('login-form').addEventListener('submit', function(ev) {
-        ev.preventDefault();
-        clearError('login-err');
-        var u = ev.target.username.value.trim();
-        var p = ev.target.password.value;
-        fetch(API_BASE + '/api/auth/login', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username: u, password: p })
-        })
-        .then(function(r) { return r.json().then(function(j) { return { ok: r.ok, j: j }; }); })
-        .then(function(res) {
-            if (!res.ok || !res.j.token) {
-                showError('login-err', (res.j.error && res.j.error.message) || 'ログインに失敗しました');
-                return;
-            }
-            setToken(res.j.token);
-            showFormView();
-        })
-        .catch(function() { showError('login-err', '通信エラー。時間をおいて再度お試しください'); });
-    });
-
-    el('logout-btn').addEventListener('click', function() {
-        clearToken();
-        showLoginView();
-    });
-
-    el('again-btn').addEventListener('click', function() {
-        el('apply-form').reset();
-        recalc();
-        showFormView();
-    });
-
-    el('apply-form').addEventListener('input', recalc);
-    el('apply-form').addEventListener('change', function(ev) {
-        // 過去帳セレクト変更時、戒名欄に自動反映
-        if (ev.target.classList.contains('t-tsuban')) {
-            var opt = ev.target.options[ev.target.selectedIndex];
-            if (opt && opt.dataset.kaimyou) {
-                var km = document.querySelector('.t-kaimyou[data-kind="' + ev.target.dataset.kind + '"][data-i="' + ev.target.dataset.i + '"]');
-                if (km && !km.value.trim()) km.value = opt.dataset.kaimyou;
-            }
-        }
-        recalc();
-    });
-
-    el('apply-form').addEventListener('submit', function(ev) {
-        ev.preventDefault();
-        clearError('submit-err');
-        var payload = collectPayload();
-        if (!payload.applicant_name) { showError('submit-err', '氏名は必須です'); return; }
-        var total = payload.chochin.length + payload.toba.length + payload.niibon.length;
-        if (total === 0) {
-            showError('submit-err', '提灯・特別塔婆・新盆供養 のいずれかを1件以上ご指定ください');
+    var form = el('apply-form');
+    form.addEventListener('input', recalc);
+    form.addEventListener('change', recalc);
+    form.addEventListener('submit', function(ev) {
+        if (recalc() === 0) {
+            ev.preventDefault();
+            var e = el('submit-err');
+            e.textContent = '提灯・特別塔婆・新盆供養 のいずれかを1件以上ご記入ください';
+            e.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             return;
         }
-        var btn = el('submit-btn');
-        btn.disabled = true;
-        btn.textContent = '送信中…';
-        fetch(API_BASE + '/api/me/toba', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + getToken()
-            },
-            body: JSON.stringify(payload)
-        })
-        .then(function(r) { return r.json().then(function(j) { return { ok: r.ok, status: r.status, j: j }; }); })
-        .then(function(res) {
-            btn.disabled = false;
-            btn.textContent = 'この内容で申込む';
-            if (res.status === 401) {
-                clearToken();
-                showError('submit-err', 'セッションの有効期限が切れました。再度ログインしてください。');
-                setTimeout(showLoginView, 1200);
-                return;
-            }
-            if (!res.ok) {
-                showError('submit-err', (res.j.error && res.j.error.message) || '申込に失敗しました');
-                return;
-            }
-            var d = '提灯 ' + (res.j.chochin_qty || 0) + ' 本 / 塔婆 ' + (res.j.toba_qty || 0) +
-                    ' 本 / 新盆 ' + (res.j.niibon_qty || 0) + ' 組 / 合計 ' + yen(res.j.amount);
-            showDoneView(d);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        })
-        .catch(function() {
-            btn.disabled = false;
-            btn.textContent = 'この内容で申込む';
-            showError('submit-err', '通信エラー。時間をおいて再度お試しください');
-        });
+        el('submit-btn').textContent = '送信中…';
     });
-
-    // 初期化
-    buildKind('chochin');
-    buildKind('toba');
-    buildKind('niibon');
+    buildKind('chochin'); buildKind('toba'); buildKind('niibon');
     recalc();
-    if (getToken()) showFormView(); else showLoginView();
 })();
 </script>
 
 
-<style>body.period-closed #login-view, body.period-closed #form-view, body.period-closed #done-view { display: none !important; }</style>
+<style>body.period-closed #form-view { display: none !important; }</style>
 <script>
 // 受付期間の外は、申込の画面を閉じて「受付は○月○日から」と出す(期間は法輪の「申込期間」で決める)
 (function () {
