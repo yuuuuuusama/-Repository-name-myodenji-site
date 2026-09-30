@@ -1,0 +1,26 @@
+# 妙傳寺サポート AI チャットボット(2026-09-30 ダッシュボード貼り付けから、ここで配る形へ)
+#   配り方(リポジトリの一番上で):npx wrangler deploy -c chatbot/wrangler.toml
+#   本体は ../cloudflare-worker.js(ホームページの dist/ には載せない)
+#   秘密の値(GEMINI_API_KEY・LINE_CHANNEL_ACCESS_TOKEN・LINE_CHANNEL_SECRET)は Worker に登録済み。
+#   ここには書かない。変えるときは npx wrangler secret put <名前> -c chatbot/wrangler.toml
+name = "myodenji-chatbot"
+main = "../cloudflare-worker.js"
+compatibility_date = "2026-05-08"
+# chatbot.js と LINE の Webhook が呼ぶアドレス(https://myodenji-chatbot.myodenji7676.workers.dev)
+workers_dev = true
+# 版ごとの下見アドレスは使わない(入口を一つにする)
+preview_urls = false
+
+# 呼び出しの回数の上限(Durable Object で数える。一人 10 分に 20 回・全体 10 分に 200 回。数は cloudflare-worker.js)
+# ※ Workers Rate Limiting の仕組み([[ratelimits]])は期間を 10 秒か 60 秒しか選べず、
+#   2026-09-30 に試したところ上限を超えても止まらなかったため使わない
+[[durable_objects.bindings]]
+name = "RATE_COUNTER"
+class_name = "RateCounter"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RateCounter"]
+
+[observability]
+enabled = true

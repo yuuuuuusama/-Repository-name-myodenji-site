@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DIST = path.join(ROOT, 'dist');
-const SKIP = [/^scripts\//, /^line-richmenu\//, /^dist\//, /^\.claude\//, /^worker\.js$/, /^wrangler\.toml$/, /^cloudflare-worker\.js$/,
+const SKIP = [/^scripts\//, /^line-richmenu\//, /^dist\//, /^\.claude\//, /^worker\.js$/, /^wrangler\.toml$/, /^cloudflare-worker\.js$/, /^chatbot\//,
   /^site-manifest\.json$/, /^CNAME$/, /\.md$/, /^\.gitignore$/, /^\.assetsignore$/];
 const MAX = 25 * 1024 * 1024;   // Cloudflare の一ファイルの上限
 

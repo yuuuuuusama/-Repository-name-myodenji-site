@@ -62,13 +62,35 @@
     return win;
   }
 
+  // ========== AI の返答の整形 ==========
+  // 先に HTML として意味を持つ文字をすべて無害にしてから、**太字** だけを <strong> にする。
+  // (返答に HTML が混じっても、そのまま文字として出る)
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+  function formatBotText(text) {
+    return escapeHtml(text)
+      .replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>')   // **太字**
+      .replace(/^[ \t]*[*\-][ \t]+/gm, '・')                   // 行頭の「* 」「- 」の箇条書き
+      .replace(/\*\*/g, '');                                     // 対にならず残った **
+  }
+
   // ========== メッセージ追加 ==========
   function addMessage(messagesEl, role, text) {
     const msg = document.createElement('div');
     msg.className = 'chat-msg ' + role;
     const bubble = document.createElement('div');
     bubble.className = 'chat-msg-bubble';
-    bubble.textContent = text;
+    if (role === 'bot') {
+      bubble.innerHTML = formatBotText(text);
+    } else {
+      bubble.textContent = text;
+    }
     msg.appendChild(bubble);
     messagesEl.appendChild(msg);
     messagesEl.scrollTop = messagesEl.scrollHeight;
@@ -136,6 +158,13 @@
           history: history.slice(-MAX_HISTORY)
         })
       });
+      if (response.status === 429) {
+        // 回数の上限(お寺側で決めた案内文をそのまま出す)
+        const limited = await response.json().catch(() => ({}));
+        return {
+          reply: limited.reply || 'ただいまご質問が続いているため、少しお時間を置いてからもう一度お試しください。\n\nお急ぎの場合は ☎ 0143-22-4284 までお電話くださいませ。'
+        };
+      }
       if (!response.ok) {
         throw new Error('HTTP ' + response.status);
       }
