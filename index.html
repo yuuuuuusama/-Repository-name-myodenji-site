@@ -1189,11 +1189,53 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <div style="text-align:center; padding: 24px 8px;">
-                        <p style="margin: 0 0 16px;">お問い合わせは、下のボタンからお送りください。<br>内容はお寺の受付に直接届きます。</p>
-                        <a href="https://myodenji-hp.myodenji7676.workers.dev/contact" class="pill-btn" style="display:inline-block;">お問い合わせフォームを開く →</a>
-                        <p style="margin: 16px 0 0; font-size: 0.9em;">お急ぎのご葬儀・ご相談はお電話で(24時間)<br>☎ 0143-22-4284</p>
-                    </div>
+                    <form action="https://formsubmit.co/myodenji7676@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="妙傳寺サイトからのお問い合わせ">
+                        <input type="hidden" name="_next" value="https://myodenji7676.online/thanks.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_autoresponse" value="この度は感応山 妙傳寺へお問い合わせをいただき、誠にありがとうございます。
+
+以下の内容にてお問い合わせを承りました。
+
+内容を確認の上、担当者よりご連絡を差し上げます。
+今しばらくお待ちくださいますよう、お願い申し上げます。
+
+なお、お急ぎのご葬儀・ご相談につきましては、お電話にて24時間承っております。
+☎ 0143-22-4284
+
+―――――――――――――――――――
+感応山 妙傳寺
+〒051-0021 北海道室蘭市常盤町5-7
+☎ 0143-22-4284
+https://myodenji7676.online/
+―――――――――――――――――――
+※このメールは自動送信です。">
+                        <div class="form-group">
+                            <label>氏名</label>
+                            <input type="text" name="name" placeholder="お名前をご入力ください" required>
+                        </div>
+                        <div class="form-group">
+                            <label>生年月日</label>
+                            <input type="date" name="birthdate" required>
+                        </div>
+                        <div class="form-group">
+                            <label>住所</label>
+                            <input type="text" name="address" placeholder="ご住所をご入力ください">
+                        </div>
+                        <div class="form-group">
+                            <label>電話番号</label>
+                            <input type="tel" name="phone" placeholder="000-0000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label>メールアドレス</label>
+                            <input type="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>相談内容・各種申込</label>
+                            <textarea name="message" rows="6" placeholder="ご相談内容や、生前法号・納骨堂への申込希望などをご記入ください" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">内容を確認して送信する</button>
+                    </form>
                 </div>
             </div>
         </div>
