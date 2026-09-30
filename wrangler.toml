@@ -1,11 +1,17 @@
 # 感応山 妙傳寺のホームページ(Cloudflare から配る。2026-09-30)
 #   npm がなくてよい。node scripts/build-dist.mjs で dist/ を作ってから npx wrangler deploy
 #   仮のアドレス:https://myodenji-hp.myodenji7676.workers.dev
-#   myodenji7676.online をここにつなぐのは、住職が確かめてから(ネームサーバーを Cloudflare に移したあと、Custom Domain を足す)
+#   本来のアドレス:https://myodenji7676.online(www も)
 name = "myodenji-hp"
 main = "worker.js"
 compatibility_date = "2026-05-01"
 workers_dev = true
+
+# 本来のアドレス(2026-09-30 住職の依頼で付け替え。ネームサーバーを Cloudflare に移した)
+routes = [
+  { pattern = "myodenji7676.online", custom_domain = true },
+  { pattern = "www.myodenji7676.online", custom_domain = true },
+]
 
 [assets]
 directory = "./dist"
