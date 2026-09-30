@@ -82,7 +82,8 @@ export default {
     if (request.method === 'GET' || request.method === 'HEAD') {
       let p = url.pathname.replace(/^\//, '');
       try { p = decodeURIComponent(p); } catch { /* そのまま */ }
-      const id = edits.images?.[p];
+      // ?orig=1 は元の写真(法輪で差し替えるとき、元の縦横の比を見るため)
+      const id = url.searchParams.has('orig') ? 0 : edits.images?.[p];
       if (id) {
         const r = await env.KANRI.fetch(new Request(`https://${env.KANRI_HOST}/img/site/${id}`));
         if (r.ok) return new Response(r.body, { headers: { 'Content-Type': r.headers.get('Content-Type') || 'image/jpeg', 'Cache-Control': 'public, max-age=300' } });
