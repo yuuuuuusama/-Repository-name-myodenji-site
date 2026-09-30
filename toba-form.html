@@ -267,10 +267,10 @@
             total += sum; count += items.length;
             el(k + '-sum').textContent = yen(sum);
             el('t-' + k).textContent = yen(sum);
-            f[FIELD[k]].value = items.length ? items.map(function(x, n) { return (n + 1) + '. ' + x; }).join('\n') + '\n(' + items.length + '件 ' + yen(sum) + ')' : 'なし';
+            f.querySelector('[name="' + FIELD[k] + '"]').value = items.length ? items.map(function(x, n) { return (n + 1) + '. ' + x; }).join('\n') + '\n(' + items.length + '件 ' + yen(sum) + ')' : 'なし';
         });
         el('t-grand').textContent = yen(total);
-        f['合計'].value = yen(total);
+        f.querySelector('[name=\"合計\"]').value = yen(total);
         return count;
     }
     var form = el('apply-form');

@@ -321,13 +321,13 @@
         el('t-gani').textContent  = yen(gSum);
         el('t-grand').textContent = yen(hSum + gSum);
         var f = el('apply-form');
-        f['星守り'].value = hQty
+        f.querySelector('[name=\"星守り\"]').value = hQty
             ? (c.hoshi.m.length ? '男 ' + c.hoshi.m.map(function(a) { return a + '歳'; }).join('・') : '') +
               (c.hoshi.m.length && c.hoshi.f.length ? ' / ' : '') +
               (c.hoshi.f.length ? '女 ' + c.hoshi.f.map(function(a) { return a + '歳'; }).join('・') : '') + '(' + hQty + '個)'
             : 'なし';
-        f['願意祈祷'].value = gQty ? c.gani.map(function(g, k) { return (k + 1) + '. ' + g; }).join('\n') : 'なし';
-        f['合計'].value = '星守り ' + yen(hSum) + ' + 願意祈祷 ' + yen(gSum) + ' = ' + yen(hSum + gSum);
+        f.querySelector('[name=\"願意祈祷\"]').value = gQty ? c.gani.map(function(g, k) { return (k + 1) + '. ' + g; }).join('\n') : 'なし';
+        f.querySelector('[name=\"合計\"]').value = '星守り ' + yen(hSum) + ' + 願意祈祷 ' + yen(gSum) + ' = ' + yen(hSum + gSum);
         return { hQty: hQty, gQty: gQty };
     }
 
