@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-30T01:35:31.598Z",
+ "generated_at": "2026-09-30T11:05:39.580Z",
  "pages": [
   {
    "file": "about.html",
@@ -47,8 +47,16 @@
    "title": "仏事・弔い | 感応山 妙傳寺"
   },
   {
+   "file": "setsubun-form.html",
+   "title": "節分申込 | 感応山 妙傳寺"
+  },
+  {
    "file": "thanks.html",
    "title": "お問い合わせありがとうございました | 感応山 妙傳寺"
+  },
+  {
+   "file": "toba-form.html",
+   "title": "塔婆・提灯 申込 | 感応山 妙傳寺"
   }
  ],
  "texts": [
@@ -1020,6 +1028,42 @@
   },
   {
    "key": "apply:15",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "お申込みフォームへ"
+  },
+  {
+   "key": "apply:30",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "檀家の方"
+  },
+  {
+   "key": "apply:31",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "檀家の方は、ログインしてお申込みいただけます。受付は毎年1月1日からです。"
+  },
+  {
+   "key": "apply:32",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "お申込みフォームへ"
+  },
+  {
+   "key": "apply:33",
+   "file": "apply.html",
+   "tag": "span",
+   "text": "檀家の方"
+  },
+  {
+   "key": "apply:34",
+   "file": "apply.html",
+   "tag": "p",
+   "text": "お盆の塔婆・提灯・新盆供養のお申込みです。檀家の方はログインしてお申込みいただけます。受付は毎年7月1日からです。"
+  },
+  {
+   "key": "apply:35",
    "file": "apply.html",
    "tag": "span",
    "text": "お申込みフォームへ"
@@ -4019,6 +4063,198 @@
    "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
   },
   {
+   "key": "setsubun-form:1",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "setsubun-form:2",
+   "file": "setsubun-form.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "setsubun-form:3",
+   "file": "setsubun-form.html",
+   "tag": "h2",
+   "text": "節分申込"
+  },
+  {
+   "key": "setsubun-form:4",
+   "file": "setsubun-form.html",
+   "tag": "p",
+   "text": "星守り(1個 ¥500)・願意祈祷(1件 ¥5,000)"
+  },
+  {
+   "key": "setsubun-form:5",
+   "file": "setsubun-form.html",
+   "tag": "h3",
+   "text": "檀家ログイン"
+  },
+  {
+   "key": "setsubun-form:6",
+   "file": "setsubun-form.html",
+   "tag": "p",
+   "text": "節分申込には檀家アカウントが必要です。\nID・パスワードをお持ちでない方は、お寺までお問い合わせください。"
+  },
+  {
+   "key": "setsubun-form:7",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "ID"
+  },
+  {
+   "key": "setsubun-form:8",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "パスワード"
+  },
+  {
+   "key": "setsubun-form:9",
+   "file": "setsubun-form.html",
+   "tag": "p",
+   "text": "続けてお申込みされる場合は下のボタンから。一覧確認や法事のお申込みも可能です。"
+  },
+  {
+   "key": "setsubun-form:10",
+   "file": "setsubun-form.html",
+   "tag": "p",
+   "text": "檀家としてログイン中です。お申込み内容を入力し、「申込む」を押してください。"
+  },
+  {
+   "key": "setsubun-form:11",
+   "file": "setsubun-form.html",
+   "tag": "p",
+   "text": "※ お申込み内容はお寺の管理システムに自動で反映されます。"
+  },
+  {
+   "key": "setsubun-form:12",
+   "file": "setsubun-form.html",
+   "tag": "h3",
+   "text": "お申込者"
+  },
+  {
+   "key": "setsubun-form:13",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "setsubun-form:14",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "ふりがな"
+  },
+  {
+   "key": "setsubun-form:15",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "住所"
+  },
+  {
+   "key": "setsubun-form:16",
+   "file": "setsubun-form.html",
+   "tag": "label",
+   "text": "電話番号"
+  },
+  {
+   "key": "setsubun-form:17",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "1個 ¥500 / 年齢を入力した枠が申込対象になります"
+  },
+  {
+   "key": "setsubun-form:18",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "0 名"
+  },
+  {
+   "key": "setsubun-form:19",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "0 名"
+  },
+  {
+   "key": "setsubun-form:20",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "1件 ¥5,000 / 願意を選択した枠が申込対象になります"
+  },
+  {
+   "key": "setsubun-form:21",
+   "file": "setsubun-form.html",
+   "tag": "h3",
+   "text": "備考(任意)"
+  },
+  {
+   "key": "setsubun-form:22",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "星守り"
+  },
+  {
+   "key": "setsubun-form:23",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "¥0"
+  },
+  {
+   "key": "setsubun-form:24",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "願意祈祷"
+  },
+  {
+   "key": "setsubun-form:25",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "¥0"
+  },
+  {
+   "key": "setsubun-form:26",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "総合計"
+  },
+  {
+   "key": "setsubun-form:27",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "¥0"
+  },
+  {
+   "key": "setsubun-form:28",
+   "file": "setsubun-form.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "setsubun-form:29",
+   "file": "setsubun-form.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "setsubun-form:30",
+   "file": "setsubun-form.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "setsubun-form:31",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "' + (i + 1) + '"
+  },
+  {
+   "key": "setsubun-form:32",
+   "file": "setsubun-form.html",
+   "tag": "span",
+   "text": "' + (i + 1) + '"
+  },
+  {
    "key": "thanks:1",
    "file": "thanks.html",
    "tag": "span",
@@ -4071,6 +4307,186 @@
    "file": "thanks.html",
    "tag": "div",
    "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "toba-form:1",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "日蓮宗"
+  },
+  {
+   "key": "toba-form:2",
+   "file": "toba-form.html",
+   "tag": "h1",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "toba-form:3",
+   "file": "toba-form.html",
+   "tag": "h2",
+   "text": "塔婆・提灯 申込"
+  },
+  {
+   "key": "toba-form:4",
+   "file": "toba-form.html",
+   "tag": "p",
+   "text": "提灯(1本 ¥3,000)・特別塔婆(1本 ¥10,000)・新盆供養(1組 ¥12,000)"
+  },
+  {
+   "key": "toba-form:5",
+   "file": "toba-form.html",
+   "tag": "h3",
+   "text": "檀家ログイン"
+  },
+  {
+   "key": "toba-form:6",
+   "file": "toba-form.html",
+   "tag": "p",
+   "text": "塔婆・提灯申込には檀家アカウントが必要です。\nID・パスワードをお持ちでない方は、お寺までお問い合わせください。"
+  },
+  {
+   "key": "toba-form:7",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "ID"
+  },
+  {
+   "key": "toba-form:8",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "パスワード"
+  },
+  {
+   "key": "toba-form:9",
+   "file": "toba-form.html",
+   "tag": "p",
+   "text": "続けてお申込みされる場合は下のボタンから。"
+  },
+  {
+   "key": "toba-form:10",
+   "file": "toba-form.html",
+   "tag": "p",
+   "text": "檀家としてログイン中です。お申込み内容を入力し、「申込む」を押してください。"
+  },
+  {
+   "key": "toba-form:11",
+   "file": "toba-form.html",
+   "tag": "p",
+   "text": "※ 戒名は直接入力するか、過去帳に登録されているご先祖様から選択できます。"
+  },
+  {
+   "key": "toba-form:12",
+   "file": "toba-form.html",
+   "tag": "h3",
+   "text": "お申込者"
+  },
+  {
+   "key": "toba-form:13",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "必須"
+  },
+  {
+   "key": "toba-form:14",
+   "file": "toba-form.html",
+   "tag": "label",
+   "text": "電話番号"
+  },
+  {
+   "key": "toba-form:15",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "1本 ¥3,000 / 戒名を入力または過去帳から選択した枠が申込対象"
+  },
+  {
+   "key": "toba-form:16",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "1本 ¥10,000 / 回忌をご指定ください"
+  },
+  {
+   "key": "toba-form:17",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "1組 ¥12,000 / 塔婆+提灯セット"
+  },
+  {
+   "key": "toba-form:18",
+   "file": "toba-form.html",
+   "tag": "h3",
+   "text": "備考(任意)"
+  },
+  {
+   "key": "toba-form:19",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "提灯"
+  },
+  {
+   "key": "toba-form:20",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "¥0"
+  },
+  {
+   "key": "toba-form:21",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "塔婆"
+  },
+  {
+   "key": "toba-form:22",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "¥0"
+  },
+  {
+   "key": "toba-form:23",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "新盆"
+  },
+  {
+   "key": "toba-form:24",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "¥0"
+  },
+  {
+   "key": "toba-form:25",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "総合計"
+  },
+  {
+   "key": "toba-form:26",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "¥0"
+  },
+  {
+   "key": "toba-form:27",
+   "file": "toba-form.html",
+   "tag": "div",
+   "text": "感応山 妙傳寺"
+  },
+  {
+   "key": "toba-form:28",
+   "file": "toba-form.html",
+   "tag": "p",
+   "text": "日蓮宗 | 北海道室蘭市常盤町5-7"
+  },
+  {
+   "key": "toba-form:29",
+   "file": "toba-form.html",
+   "tag": "div",
+   "text": "&copy; 2026 Kanno-zan Myodenji. All Rights Reserved."
+  },
+  {
+   "key": "toba-form:30",
+   "file": "toba-form.html",
+   "tag": "span",
+   "text": "' + (i + 1) + '"
   }
  ],
  "images": [
@@ -4306,7 +4722,9 @@
     "newsletter.html",
     "prayer.html",
     "rituals.html",
-    "thanks.html"
+    "setsubun-form.html",
+    "thanks.html",
+    "toba-form.html"
    ]
   },
   {
@@ -4323,7 +4741,9 @@
     "newsletter.html",
     "prayer.html",
     "rituals.html",
-    "thanks.html"
+    "setsubun-form.html",
+    "thanks.html",
+    "toba-form.html"
    ]
   },
   {

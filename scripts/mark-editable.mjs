@@ -75,6 +75,7 @@ for (const file of files) {
 
   // フォーム
   for (const f of html.matchAll(/<form\b([^>]*)>([\s\S]*?)<\/form>/gi)) {
+    if (!/\baction="[^"]*\/__form\//.test(f[1])) continue;   // Cloudflare で受けるフォームだけ
     const body = f[2];
     const name = file === 'index.html' ? 'contact' : page.replace(/-form$/, '');
     const subject = /name="_subject"\s+value="([^"]*)"/.exec(body)?.[1] ?? '';

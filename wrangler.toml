@@ -1,11 +1,11 @@
 # 感応山 妙傳寺のホームページ(Cloudflare から配る。2026-09-30)
 #   npm がなくてよい。node scripts/build-dist.mjs で dist/ を作ってから npx wrangler deploy
-#   仮のアドレス:https://myodenji-hp.myodenji7676.workers.dev
 #   本来のアドレス:https://myodenji7676.online(www も)
 name = "myodenji-hp"
 main = "worker.js"
 compatibility_date = "2026-05-01"
-workers_dev = true
+# 仮のアドレス(myodenji-hp.myodenji7676.workers.dev)は閉じた(2026-09-30 住職の依頼)
+workers_dev = false
 
 # 本来のアドレス(2026-09-30 住職の依頼で付け替え。ネームサーバーを Cloudflare に移した)
 routes = [
@@ -26,4 +26,7 @@ binding = "KANRI"
 service = "myodenji-kanri"
 
 [vars]
+# 法輪が妙傳寺のホームページとして扱うホスト名(名前として使うだけ。仮のアドレスは閉じている)
 KANRI_HOST = "myodenji-hp.myodenji7676.workers.dev"
+# 法輪の寺務のホスト名(檀家向けの API を渡す先)
+KANRI_ADMIN_HOST = "myodenji-kanri.myodenji7676.workers.dev"

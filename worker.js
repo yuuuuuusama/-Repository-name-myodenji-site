@@ -6,6 +6,7 @@
 //     ・文面:data-edit の目印の所(scripts/mark-editable.mjs が付けた)の中身を、法輪の直しに置き換える
 //     ・写真:法輪で差し替えた道筋の写真を、法輪から出す
 //   フォームの送信(/__form/:名前)は法輪に渡し、投函箱に入れる(ロボット判定は法輪で確かめる)。
+//   節分・塔婆の申込(/api/auth・/api/me)と受付期間(/api/public)は、法輪の檀家向けの API にそのまま渡す。
 //   法輪とはサービスバインディング(KANRI)でつなぐ。法輪は KANRI_HOST のホスト名で、妙傳寺のホームページとして扱う。
 // =========================================================================
 const EMPTY = { texts: {}, images: {} };
@@ -37,6 +38,14 @@ export default {
       }));
     }
     if (url.pathname.startsWith('/__site/')) return new Response('Not Found', { status: 404 });
+
+    // 節分・塔婆の申込(檀家のログインと申込)と受付期間 → 法輪の檀家向けの API(寺務のホスト名で渡す)
+    if (/^\/api\/(auth|me|public)\//.test(url.pathname)) {
+      return env.KANRI.fetch(new Request(`https://${env.KANRI_ADMIN_HOST}${url.pathname}${url.search}`, {
+        method: request.method, headers: request.headers,
+        body: request.method === 'GET' || request.method === 'HEAD' ? undefined : request.body, redirect: 'manual',
+      }));
+    }
 
     const edits = await loadEdits(env);
 
